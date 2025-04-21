@@ -1,22 +1,13 @@
 package main
 
 import (
-	"html/template"
 	"net/http"
 )
 
-func handler(w http.ResponseWriter, r *http.Request) {
-	tmpl := template.Must(template.ParseFiles("templates/index.html"))
-	data := struct {
-		Name string
-	}{
-		Name: "world",
-	}
-
-	tmpl.Execute(w, data)
-}
-
 func main() {
-	http.HandleFunc("/", handler)
+	fs := http.FileServer(http.Dir("static"))
+	http.Handle("/", fs)
+
+	println("Сервер запущен на http://localhost:8080")
 	http.ListenAndServe(":8080", nil)
 }
