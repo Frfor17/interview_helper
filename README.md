@@ -5,7 +5,7 @@
 Как запустить всё это? Короче всё просто
 
 Снаачал всё это открывам в vs code, потом заходим в терминал и тут три команды стреляем:
-python3 -m venv env
+`python3 -m venv env`
 Set-ExecutionPolicy Unrestricted -Scope Process
 env\Scripts\Activate
 
