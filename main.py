@@ -26,10 +26,6 @@ class ChatResponse(BaseModel):
     response: str
     model_used: str
 
-# Конфигурация
-OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
-OPENROUTER_API_KEY = "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"  # Замените на ваш ключ
-
 # Популярные модели на OpenRouter
 AVAILABLE_MODELS = {
     "deepseek": "deepseek/deepseek-chat",
