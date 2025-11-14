@@ -50,3 +50,12 @@
 OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 OPENROUTER_API_KEY = "удали этот текст и вставь в эти ковычки, между этими ковычками, апи ключ с опен роутера или откуда там у тебя есть"
 ```
+
+
+ФУЛЛ ГАЙД КАК ЗАПУСТИТЬ ЭТО:
+
+- запускаешь бэкенд через uvicorn main:app --reload --port 8000
+- запускаешь фронт через cd frontend
+потом cd frontend-for-app
+потом npm run build
+потом и финалочка npm run start
