@@ -4,6 +4,7 @@ from pydantic import BaseModel
 import requests
 import json
 from typing import Optional
+from fastapi.responses import RedirectResponse
 
 # Импортируем конфигурацию из отдельного файла
 try:
@@ -113,9 +114,10 @@ async def health_check():
     """
     return {"status": "healthy", "service": "OpenRouter Chat API"}
 
-@app.get("/")
-async def welcome():
-    return {"message": "Добро пожаловать", "next_endpoint": "/start-interview"}
+@app.get("/start")
+async def start_interview():
+    # А вот это уже редирект на другую страницу
+    return RedirectResponse(url="/chat")
 
 if __name__ == "__main__":
     import uvicorn
