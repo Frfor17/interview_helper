@@ -1,0 +1,2262 @@
+[
+  {
+    "option_id": 1,
+    "questions": [
+      {
+        "question_id": 1,
+        "question": "Что делает HTTP-метод GET?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Удаляет ресурс"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Отправляет данные на сервер"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Получает данные от сервера"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Обновляет существующий ресурс"
+          }
+        ],
+        "correct_answer_id": 3,
+        "hint": "Используется для запроса данных",
+        "theme": "HTTP",
+        "useful_info": [
+          "https://developer.mozilla.org/ru/docs/Web/HTTP/Methods/GET"
+        ]
+      },
+      {
+        "question_id": 2,
+        "question": "Как объявить список в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "{}"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "()"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "[]"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "<>"
+          }
+        ],
+        "correct_answer_id": 3,
+        "hint": "Использует квадратные скобки",
+        "theme": "Основы Python",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/python-list"
+        ]
+      },
+      {
+        "question_id": 3,
+        "question": "Что такое PRIMARY KEY в SQL?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Внешний ключ"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Уникальный идентификатор записи"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Индекс для ускорения поиска"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Тип данных"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Обеспечивает уникальность",
+        "theme": "Базы данных",
+        "useful_info": [
+          "https://www.w3schools.com/sql/sql_primarykey.asp"
+        ]
+      },
+      {
+        "question_id": 4,
+        "question": "Какой статус-код означает 'Не найдено'?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "200"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "404"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "500"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "302"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Связан с отсутствием ресурса",
+        "theme": "HTTP",
+        "useful_info": [
+          "https://httpstatuses.com/404"
+        ]
+      },
+      {
+        "question_id": 5,
+        "question": "Что делает команда SELECT в SQL?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Удаляет данные"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Выбирает данные из таблицы"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Создает новую таблицу"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Обновляет записи"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Начинается с буквы S",
+        "theme": "Базы данных",
+        "useful_info": [
+          "https://www.w3schools.com/sql/sql_select.asp"
+        ]
+      },
+      {
+        "question_id": 6,
+        "question": "Что такое REST API?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Протокол для передачи файлов"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Архитектурный стиль для веб-сервисов"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Язык программирования"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Система кэширования"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Использует HTTP-методы",
+        "theme": "REST API",
+        "useful_info": [
+          "https://aws.amazon.com/ru/what-is/rest-api/"
+        ]
+      },
+      {
+        "question_id": 7,
+        "question": "Какой алгоритмической сложностью обладает линейный поиск?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "O(1)"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "O(log n)"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "O(n)"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "O(n^2)"
+          }
+        ],
+        "correct_answer_id": 3,
+        "hint": "Зависит от количества элементов",
+        "theme": "Алгоритмы",
+        "useful_info": [
+          "https://proglib.io/p/slozhnost-algoritmov-i-operaciy-na-primerah-python-2020-11-03"
+        ]
+      },
+      {
+        "question_id": 8,
+        "question": "Что вернет '2 + 2 * 2' в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "8"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "6"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Ошибку"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "4"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Приоритет операций",
+        "theme": "Основы Python",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/matematicheskie-operacii-v-python"
+        ]
+      },
+      {
+        "question_id": 9,
+        "question": "Какой метод используется для отправки данных формы?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "GET"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "POST"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "PUT"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "DELETE"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Не кэшируется браузером",
+        "theme": "HTTP",
+        "useful_info": [
+          "https://developer.mozilla.org/ru/docs/Web/HTTP/Methods/POST"
+        ]
+      },
+      {
+        "question_id": 10,
+        "question": "Что такое 'mutable' объект в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Неизменяемый объект"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Изменяемый объект"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Функция"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Класс"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Пример: список",
+        "theme": "Основы Python",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/immutable-i-mutable-tipy-dannyh-v-python"
+        ]
+      },
+      {
+        "question_id": 11,
+        "question": "Как бы вы обработали ошибку 500 в REST API?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Попросить пользователя повторить запрос"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Проверить логи сервера"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Игнорировать ошибку"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Удалить базу данных"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Серверная ошибка",
+        "theme": "Кейсы",
+        "useful_info": [
+          "https://httpstatuses.com/500"
+        ]
+      },
+      {
+        "question_id": 12,
+        "question": "Какой SQL-запрос вернет всех пользователей старше 18 лет?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "SELECT * FROM users WHERE age < 18"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "SELECT * FROM users WHERE age >= 18"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "DELETE FROM users WHERE age > 18"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "UPDATE users SET age = 18"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Оператор сравнения",
+        "theme": "Кейсы",
+        "useful_info": [
+          "https://www.w3schools.com/sql/sql_where.asp"
+        ]
+      },
+      {
+        "question_id": 13,
+        "question": "Что выведет код: print('Hello, World!')?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Ошибку"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Hello, World!"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Ничего"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "World! Hello,"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Строка в кавычках",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/pervaya-programma-na-python-hello-world"
+        ]
+      },
+      {
+        "question_id": 14,
+        "question": "Как создать виртуальное окружение в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "python create venv"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "python -m venv myenv"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "pip install venv"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "virtualenv --python"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Использует модуль venv",
+        "theme": "Кейсы",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/virtualnoe-okruzhenie-python-venv"
+        ]
+      },
+      {
+        "question_id": 15,
+        "question": "Что делает команда git commit?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Отправляет изменения в репозиторий"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Фиксирует изменения в локальном репозитории"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Создает новую ветку"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Удаляет историю коммитов"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Локальное действие",
+        "theme": "Кейсы",
+        "useful_info": [
+          "https://git-scm.com/docs/git-commit"
+        ]
+      },
+      {
+        "question_id": 16,
+        "question": "Как проверить тип переменной в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "check_type(var)"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "var.type()"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "typeof(var)"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "type(var)"
+          }
+        ],
+        "correct_answer_id": 4,
+        "hint": "Встроенная функция",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/tipy-dannyh-v-python"
+        ]
+      },
+      {
+        "question_id": 17,
+        "question": "Что вернет sorted([3, 1, 2])?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "[1, 2, 3]"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "[3, 1, 2]"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "None"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Ошибку"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Функция сортировки",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/sortirovka-v-python"
+        ]
+      },
+      {
+        "question_id": 18,
+        "question": "Как объявить кортеж в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "{}"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "()"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "[]"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "<>"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Неизменяемый тип",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/kortezhi-tuple-python"
+        ]
+      },
+      {
+        "question_id": 19,
+        "question": "Что выведет len('Hello')?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "5"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "6"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Ошибку"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "4"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Количество символов",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/stroki-python"
+        ]
+      },
+      {
+        "question_id": 20,
+        "question": "Как получить последний элемент списка lst?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "lst[0]"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "lst[-1]"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "lst.end()"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "lst.last()"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Отрицательные индексы",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/spiski-python"
+        ]
+      }
+    ]
+  },
+  {
+    "option_id": 2,
+    "questions": [
+      {
+        "question_id": 1,
+        "question": "Что делает HTTP-метод POST?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Получает данные"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Удаляет ресурс"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Отправляет данные для создания ресурса"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Кэширует запрос"
+          }
+        ],
+        "correct_answer_id": 3,
+        "hint": "Используется для создания новых данных",
+        "theme": "HTTP",
+        "useful_info": [
+          "https://developer.mozilla.org/ru/docs/Web/HTTP/Methods/POST"
+        ]
+      },
+      {
+        "question_id": 2,
+        "question": "Как объявить словарь в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "{}"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "()"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "[]"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "dict()"
+          }
+        ],
+        "correct_answer_id": 4,
+        "hint": "Можно использовать функцию или фигурные скобки",
+        "theme": "Основы Python",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/slovari-python"
+        ]
+      },
+      {
+        "question_id": 3,
+        "question": "Что такое FOREIGN KEY в SQL?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Уникальный идентификатор"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Связь между таблицами"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Индекс для поиска"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Тип данных для строк"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Отношение «один ко многим»",
+        "theme": "Базы данных",
+        "useful_info": [
+          "https://www.w3schools.com/sql/sql_foreignkey.asp"
+        ]
+      },
+      {
+        "question_id": 4,
+        "question": "Какой статус-код означает 'Успешный запрос'?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "200"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "404"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "500"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "302"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Начинается с цифры 2",
+        "theme": "HTTP",
+        "useful_info": [
+          "https://httpstatuses.com/200"
+        ]
+      },
+      {
+        "question_id": 5,
+        "question": "Что делает команда INSERT в SQL?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Удаляет данные"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Добавляет новую запись"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Обновляет таблицу"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Создает базу данных"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Начинается с буквы I",
+        "theme": "Базы данных",
+        "useful_info": [
+          "https://www.w3schools.com/sql/sql_insert.asp"
+        ]
+      },
+      {
+        "question_id": 6,
+        "question": "Чем отличается SOAP от REST?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "REST требует WSDL"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "REST не использует HTTP"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "SOAP проще REST"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "SOAP использует только XML"
+          }
+        ],
+        "correct_answer_id": 4,
+        "hint": "Протокол vs архитектурный стиль",
+        "theme": "API",
+        "useful_info": [
+          "https://aws.amazon.com/ru/compare/the-difference-between-soap-rest/"
+        ]
+      },
+      {
+        "question_id": 7,
+        "question": "Какой алгоритмической сложностью обладает доступ к элементу массива по индексу?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "O(1)"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "O(log n)"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "O(n)"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "O(n^2)"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Константное время",
+        "theme": "Алгоритмы",
+        "useful_info": [
+          "https://proglib.io/p/slozhnost-algoritmov-i-operaciy-na-primerah-python-2020-11-03"
+        ]
+      },
+      {
+        "question_id": 8,
+        "question": "Как обработать исключение в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "try → except"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "if → error"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "catch → throw"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "handle → exception"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Блоки try/except",
+        "theme": "Основы Python",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/obrabotka-iskluchenij-v-python-try-except"
+        ]
+      },
+      {
+        "question_id": 9,
+        "question": "Какой метод используется для обновления ресурса?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "GET"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "POST"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "PUT"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "DELETE"
+          }
+        ],
+        "correct_answer_id": 3,
+        "hint": "Идемпотентный метод",
+        "theme": "HTTP",
+        "useful_info": [
+          "https://developer.mozilla.org/ru/docs/Web/HTTP/Methods/PUT"
+        ]
+      },
+      {
+        "question_id": 10,
+        "question": "Что такое 'immutable' объект в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Изменяемый объект"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Неизменяемый объект"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Функция-генератор"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Класс с наследованием"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Пример: кортеж",
+        "theme": "Основы Python",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/immutable-i-mutable-tipy-dannyh-v-python"
+        ]
+      },
+      {
+        "question_id": 11,
+        "question": "Как бы вы обработали ошибку 400 (Bad Request)?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Проверить валидность входных данных"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Перезагрузить сервер"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Игнорировать ошибку"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Удалить клиентский кэш"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Ошибка на стороне клиента",
+        "theme": "Кейсы",
+        "useful_info": [
+          "https://httpstatuses.com/400"
+        ]
+      },
+      {
+        "question_id": 12,
+        "question": "Какой SQL-запрос объединит таблицы users и orders?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "SELECT * FROM users CROSS JOIN orders"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "SELECT * FROM users INNER JOIN orders ON users.id = orders.user_id"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "SELECT * FROM users WHERE orders.user_id = users.id"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "MERGE users AND orders"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Использует INNER JOIN",
+        "theme": "Кейсы",
+        "useful_info": [
+          "https://www.w3schools.com/sql/sql_join_inner.asp"
+        ]
+      },
+      {
+        "question_id": 13,
+        "question": "Как создать класс Car в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "class Car:"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "def Car():"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "new class Car:"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Car = class()"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Ключевое слово class",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/klassy-v-python"
+        ]
+      },
+      {
+        "question_id": 14,
+        "question": "Как настроить CORS для веб-приложения?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Добавить заголовок Access-Control-Allow-Origin"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Использовать куки"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Отключить браузерную безопасность"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Зашифровать запросы"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Заголовки ответа сервера",
+        "theme": "Кейсы",
+        "useful_info": [
+          "https://developer.mozilla.org/ru/docs/Web/HTTP/CORS"
+        ]
+      },
+      {
+        "question_id": 15,
+        "question": "Что делает BEGIN TRANSACTION в SQL?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Создает новую таблицу"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Начинает атомарную операцию"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Удаляет данные"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Обновит индексы"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "ACID-свойства",
+        "theme": "Кейсы",
+        "useful_info": [
+          "https://www.w3schools.com/sql/sql_transaction.asp"
+        ]
+      },
+      {
+        "question_id": 16,
+        "question": "Как прочитать файл 'data.txt' в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "file.read('data.txt')"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "read file 'data.txt'"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "with open('data.txt', 'r') as f: content = f.read()"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "open('data.txt').read()"
+          }
+        ],
+        "correct_answer_id": 3,
+        "hint": "Использует менеджер контекста",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/rabota-s-fajlami-v-python"
+        ]
+      },
+      {
+        "question_id": 17,
+        "question": "Что делает lambda x: x * 2?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Умножает аргумент на 2"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Создает список"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Фильтрует данные"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Вызывает ошибку"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Анонимная функция",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/lambda-funktsii-python"
+        ]
+      },
+      {
+        "question_id": 18,
+        "question": "Как форматировать строку: 'Hello, {name}'?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "f'Hello, {name}'"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "'Hello, ' + name"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "format('Hello, %s')"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Все варианты верны"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "f-строки (Python 3.6+)",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/formatirovanie-strok-python"
+        ]
+      },
+      {
+        "question_id": 19,
+        "question": "Какой цикл переберет список [1, 2, 3]?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "foreach (i in list)"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "while i < 3:"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "loop i from 1 to 3"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "for i in [1, 2, 3]:"
+          }
+        ],
+        "correct_answer_id": 4,
+        "hint": "Ключевое слово for",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/cikly-for-i-while-v-python"
+        ]
+      },
+      {
+        "question_id": 20,
+        "question": "Что вернет {'a': 1}.get('b', 0)?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "0"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "1"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Ошибку"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "None"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Значение по умолчанию",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/slovari-python"
+        ]
+      }
+    ]
+  },
+  {
+    "option_id": 3,
+    "questions": [
+      {
+        "question_id": 1,
+        "question": "Что делает HTTP-метод DELETE?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Создает новый ресурс"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Получает данные"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Удаляет указанный ресурс"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Кэширует ответ"
+          }
+        ],
+        "correct_answer_id": 3,
+        "hint": "Используется для удаления данных",
+        "theme": "HTTP",
+        "useful_info": [
+          "https://developer.mozilla.org/ru/docs/Web/HTTP/Methods/DELETE"
+        ]
+      },
+      {
+        "question_id": 2,
+        "question": "Как объявить множество (set) в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "{}"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "set()"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "[]"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "()"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Использует функцию set() или фигурные скобки с элементами",
+        "theme": "Основы Python",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/mnozhestva-set-python"
+        ]
+      },
+      {
+        "question_id": 3,
+        "question": "Что делает команда UPDATE в SQL?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Добавляет новые записи"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Изменяет существующие записи"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Удаляет таблицу"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Создает индекс"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Используется с ключевым словом SET",
+        "theme": "Базы данных",
+        "useful_info": [
+          "https://www.w3schools.com/sql/sql_update.asp"
+        ]
+      },
+      {
+        "question_id": 4,
+        "question": "Какой статус-код означает 'Не авторизован'?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "401"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "403"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "404"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "500"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Связан с аутентификацией",
+        "theme": "HTTP",
+        "useful_info": [
+          "https://httpstatuses.com/401"
+        ]
+      },
+      {
+        "question_id": 5,
+        "question": "Что делает ключевое слово GROUP BY в SQL?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Сортирует результаты"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Группирует строки по указанному столбцу"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Фильтрует группы"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Ограничивает количество строк"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Часто используется с агрегатными функциями",
+        "theme": "Базы данных",
+        "useful_info": [
+          "https://www.w3schools.com/sql/sql_groupby.asp"
+        ]
+      },
+      {
+        "question_id": 6,
+        "question": "Какой алгоритмической сложностью обладает бинарный поиск?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "O(1)"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "O(log n)"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "O(n)"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "O(n^2)"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Работает только с отсортированными данными",
+        "theme": "Алгоритмы",
+        "useful_info": [
+          "https://proglib.io/p/slozhnost-algoritmov-i-operaciy-na-primerah-python-2020-11-03"
+        ]
+      },
+      {
+        "question_id": 7,
+        "question": "Как объявить декоратор в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "decorate(func)"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "def decorator():"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "using decorator_name"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "@decorator_name"
+          }
+        ],
+        "correct_answer_id": 4,
+        "hint": "Использует символ @",
+        "theme": "Python: Продвинутые темы",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/dekoratory-python"
+        ]
+      },
+      {
+        "question_id": 8,
+        "question": "Какой заголовок отвечает за кеширование в HTTP?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Cache-Control"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Content-Type"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Authorization"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "User-Agent"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Управляет кешем браузера и прокси",
+        "theme": "HTTP",
+        "useful_info": [
+          "https://developer.mozilla.org/ru/docs/Web/HTTP/Headers/Cache-Control"
+        ]
+      },
+      {
+        "question_id": 9,
+        "question": "Что такое JWT?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Метод сжатия данных"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Токен для аутентификации"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Протокол передачи файлов"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Тип базы данных"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Состоит из трёх частей, разделённых точками",
+        "theme": "Безопасность",
+        "useful_info": [
+          "https://jwt.io/introduction/"
+        ]
+      },
+      {
+        "question_id": 10,
+        "question": "Что выведет [x**2 for x in range(3)]?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "[0, 2, 4]"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "[1, 4, 9]"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "[0, 1, 4]"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Ошибку"
+          }
+        ],
+        "correct_answer_id": 3,
+        "hint": "Генератор списка",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/generator-spiskov-python"
+        ]
+      },
+      {
+        "question_id": 11,
+        "question": "Какой SQL-запрос подсчитает количество пользователей?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "SELECT TOTAL(*) FROM users"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "SELECT COUNT(*) FROM users"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "SELECT SUM(*) FROM users"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "SELECT LEN(*) FROM users"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Агрегатная функция",
+        "theme": "Кейсы",
+        "useful_info": [
+          "https://www.w3schools.com/sql/sql_count_avg_sum.asp"
+        ]
+      },
+      {
+        "question_id": 12,
+        "question": "Как создать пакет в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Файл __init__.py в папке"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Файл package.json"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Использовать команду pip create"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Специальный ключевое слово package"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Инициализирующий файл",
+        "theme": "Python: Модули",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/moduli-i-pakety-v-python"
+        ]
+      },
+      {
+        "question_id": 13,
+        "question": "Что такое CSRF-атака?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Подмена межсайтовых запросов"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Внедрение SQL-кода"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Кража сессионных кук"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "DDOS-атака"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Связана с выполнением действий от имени пользователя",
+        "theme": "Безопасность",
+        "useful_info": [
+          "https://portswigger.net/web-security/csrf"
+        ]
+      },
+      {
+        "question_id": 14,
+        "question": "Как преобразовать строку в целое число в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "parse_int('123')"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "str(123)"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "float('123')"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "int('123')"
+          }
+        ],
+        "correct_answer_id": 4,
+        "hint": "Использует встроенную функцию",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/preobrazovanie-tipov-dannyh-v-python"
+        ]
+      },
+      {
+        "question_id": 15,
+        "question": "Что делает команда LIMIT в SQL?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Фильтрует группы"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Ограничивает количество возвращаемых строк"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Сортирует результаты"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Объединяет таблицы"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Часто используется с OFFSET",
+        "theme": "Кейсы",
+        "useful_info": [
+          "https://www.w3schools.com/sql/sql_top.asp"
+        ]
+      },
+      {
+        "question_id": 16,
+        "question": "Как удалить элемент из списка по значению?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "list.remove(value)"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "list.pop(index)"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "del list[index]"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "list.delete(value)"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Метод remove()",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/spiski-python"
+        ]
+      },
+      {
+        "question_id": 17,
+        "question": "Какой статус-код означает 'Запрещено'?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "401"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "403"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "404"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "500"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Связан с правами доступа",
+        "theme": "HTTP",
+        "useful_info": [
+          "https://httpstatuses.com/403"
+        ]
+      },
+      {
+        "question_id": 18,
+        "question": "Что делает метод split() для строк?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Разделяет строку по разделителю"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Объединяет строки"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Удаляет пробелы"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Заменяет подстроку"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Возвращает список подстрок",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/stroki-python"
+        ]
+      },
+      {
+        "question_id": 19,
+        "question": "Как создать псевдоним для столбца в SQL?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "SELECT column AS alias"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "SELECT column alias"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "SELECT ALIAS column"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "SELECT column FROM alias"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Ключевое слово AS",
+        "theme": "Кейсы",
+        "useful_info": [
+          "https://www.w3schools.com/sql/sql_alias.asp"
+        ]
+      },
+      {
+        "question_id": 20,
+        "question": "Что выведет 'Hello'.upper()?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "HELLO"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "hello"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Hello"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Ошибку"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Метод строки",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/stroki-python"
+        ]
+      }
+    ]
+  },
+  {
+    "option_id": 4,
+    "questions": [
+      {
+        "question_id": 1,
+        "question": "Что делает HTTP-метод PATCH?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Создает новый ресурс"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Частично обновляет ресурс"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Удаляет ресурс"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Получает метаданные"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Используется для частичного обновления",
+        "theme": "HTTP",
+        "useful_info": [
+          "https://developer.mozilla.org/ru/docs/Web/HTTP/Methods/PATCH"
+        ]
+      },
+      {
+        "question_id": 2,
+        "question": "Как создать генератор в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Использовать yield"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Использовать return"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Ключевое слово generator"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Специальный синтаксис {}"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Используется в функциях",
+        "theme": "Python: Продвинутые темы",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/generatory-python"
+        ]
+      },
+      {
+        "question_id": 3,
+        "question": "Что делает команда ALTER TABLE в SQL?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Удаляет таблицу"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Изменяет структуру таблицы"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Добавляет новые данные"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Создает индекс"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Используется для модификации схемы",
+        "theme": "Базы данных",
+        "useful_info": [
+          "https://www.w3schools.com/sql/sql_alter.asp"
+        ]
+      },
+      {
+        "question_id": 4,
+        "question": "Какой статус-код означает 'Создано'?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "200"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "201"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "204"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "304"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Ответ на успешный POST-запрос",
+        "theme": "HTTP",
+        "useful_info": [
+          "https://httpstatuses.com/201"
+        ]
+      },
+      {
+        "question_id": 5,
+        "question": "Что делает ключевое слово DISTINCT в SQL?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Сортирует результаты"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Возвращает уникальные значения"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Фильтрует группы"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Ограничивает выборку"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Убирает дубликаты",
+        "theme": "Базы данных",
+        "useful_info": [
+          "https://www.w3schools.com/sql/sql_distinct.asp"
+        ]
+      },
+      {
+        "question_id": 6,
+        "question": "Что такое idempotent в контексте HTTP-методов?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Метод можно вызывать многократно без изменения результата"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Метод требует аутентификации"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Метод изменяет данные на клиенте"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Метод кэшируется браузером"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Характеристика методов GET, PUT, DELETE",
+        "theme": "HTTP",
+        "useful_info": [
+          "https://restfulapi.net/idempotent-rest-apis/"
+        ]
+      },
+      {
+        "question_id": 7,
+        "question": "Как объявить контекстный менеджер в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Декоратор @context"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Использовать try/except"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Ключевое слово context"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Использовать with"
+          }
+        ],
+        "correct_answer_id": 4,
+        "hint": "Часто используется для работы с файлами",
+        "theme": "Python: Продвинутые темы",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/kontekstnye-menedzhery-v-python"
+        ]
+      },
+      {
+        "question_id": 8,
+        "question": "Какой заголовок указывает тип содержимого?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Content-Type"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Authorization"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "User-Agent"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Accept-Language"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Например, application/json",
+        "theme": "HTTP",
+        "useful_info": [
+          "https://developer.mozilla.org/ru/docs/Web/HTTP/Headers/Content-Type"
+        ]
+      },
+      {
+        "question_id": 9,
+        "question": "Что такое SQL-инъекция?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Оптимизация запросов"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Внедрение вредоносного SQL-кода"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Создание резервной копии БД"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Тип соединения таблиц"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Уязвимость веб-приложений",
+        "theme": "Безопасность",
+        "useful_info": [
+          "https://portswigger.net/web-security/sql-injection"
+        ]
+      },
+      {
+        "question_id": 10,
+        "question": "Что выведет код: print(3 * 'a')?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "aaa"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "3a"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Ошибку"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "a3"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Операция повторения строк",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/stroki-python"
+        ]
+      },
+      {
+        "question_id": 11,
+        "question": "Какой SQL-запрос вернет записи с уникальными значениями столбца 'email'?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "SELECT UNIQUE email FROM users"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "SELECT DISTINCT email FROM users"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "SELECT email FROM users GROUP BY id"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "FILTER email UNIQUE"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Ключевое слово DISTINCT",
+        "theme": "Кейсы",
+        "useful_info": [
+          "https://www.w3schools.com/sql/sql_distinct.asp"
+        ]
+      },
+      {
+        "question_id": 12,
+        "question": "Как сериализовать объект в JSON в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "json.dumps(obj)"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "obj.to_json()"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "serialize(obj)"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "json.encode(obj)"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Используйте модуль json",
+        "theme": "Кейсы",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/json-v-python"
+        ]
+      },
+      {
+        "question_id": 13,
+        "question": "Что такое middleware в веб-фреймворках?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Промежуточный слой для обработки запросов"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "База данных"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Шаблонизатор"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Тестовая среда"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Например, аутентификация или логирование",
+        "theme": "Кейсы",
+        "useful_info": [
+          "https://djangobook.com/mdj2-middleware/"
+        ]
+      },
+      {
+        "question_id": 14,
+        "question": "Как проверить существование ключа в словаре?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "key in dict"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "dict.has(key)"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "dict.exists(key)"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "check key dict"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Используйте оператор in",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/slovari-python"
+        ]
+      },
+      {
+        "question_id": 15,
+        "question": "Что делает метод reverse() у списка?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Возвращает обратный итератор"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Изменяет порядок элементов на обратный"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Сортирует элементы"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Удаляет последний элемент"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Модифицирует список на месте",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/spiski-python"
+        ]
+      },
+      {
+        "question_id": 16,
+        "question": "Какой SQL-оператор сортирует по убыванию?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "ORDER BY DESC"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "SORT DESC"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "ORDER BY ... DESC"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "ARRANGE DESC"
+          }
+        ],
+        "correct_answer_id": 3,
+        "hint": "Используется с ORDER BY",
+        "theme": "Кейсы",
+        "useful_info": [
+          "https://www.w3schools.com/sql/sql_orderby.asp"
+        ]
+      },
+      {
+        "question_id": 17,
+        "question": "Что выведет bool('0') в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "True"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "False"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Ошибку"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "None"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Пустая строка — False, непустая — True",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/logicheskie-operacii-v-python"
+        ]
+      },
+      {
+        "question_id": 18,
+        "question": "Как получить текущую рабочую директорию в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "os.getcwd()"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "os.current_dir()"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "pathlib.cwd()"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "sys.path"
+          }
+        ],
+        "correct_answer_id": 1,
+        "hint": "Модуль os",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/rabota-s-fajlami-v-python"
+        ]
+      },
+      {
+        "question_id": 19,
+        "question": "Что делает оператор % в Python?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "Деление по модулю"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "Форматирование строк"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "Оба варианта верны"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "Возведение в степень"
+          }
+        ],
+        "correct_answer_id": 3,
+        "hint": "Зависит от контекста",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/matematicheskie-operacii-v-python"
+        ]
+      },
+      {
+        "question_id": 20,
+        "question": "Как создать копию списка с элементами в обратном порядке?",
+        "answers": [
+          {
+            "answer_id": 1,
+            "answer_text": "reversed(lst)"
+          },
+          {
+            "answer_id": 2,
+            "answer_text": "lst[::-1]"
+          },
+          {
+            "answer_id": 3,
+            "answer_text": "lst.reverse()"
+          },
+          {
+            "answer_id": 4,
+            "answer_text": "list.reverse_copy(lst)"
+          }
+        ],
+        "correct_answer_id": 2,
+        "hint": "Используйте срезы",
+        "theme": "Задачи на код",
+        "useful_info": [
+          "https://pythonchik.ru/osnovy/spiski-python"
+        ]
+      }
+    ]
+  }
+]

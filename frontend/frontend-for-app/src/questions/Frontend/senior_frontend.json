@@ -1,0 +1,2262 @@
+[
+    {
+        "option_id": 1,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Как спроектировать систему real-time обновлений для 1M+ пользователей?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "WebSocket + горизонтальное масштабирование брокеров сообщений"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Long-polling с балансировкой на Nginx"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Server-Sent Events + кэширование в Redis"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "gRPC-стриминг с автоматическим троттлингом"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Обратите внимание на устойчивость к нагрузкам",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://ably.com/blog/websockets-vs-sse-vs-long-polling"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как бы вы спроектировали A/B-тестирование для UI компонентов в масштабе?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Feature flags + CDN с персональзацией"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Клиентский роутинг с localStorage"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отдельные ветки в репозитории"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Ручное переключение через URL-параметры"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Динамическое управление конфигурациями",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://featureflags.io/architecture/"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как оптимизировать TTI (Time to Interactive) для SPA с 500+ компонентами?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Code splitting + предзагрузка критического JS"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "SSR с частичной гидратацией"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать WebAssembly для рендеринга"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Комбинированный подход",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://web.dev/tti/"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Как бы вы объяснили нетехническому руководителю необходимость рефакторинга?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Связать улучшения с бизнес-метриками (LTV, конверсия)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать технический жаргон для убедительности"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Предложить компенсировать время за счет сокращения тестов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Скрыть факт рефакторинга в рамках обычных задач"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Фокус на ценности для бизнеса",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.oreilly.com/library/view/97-things-every/9780596809515/ch08.html"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как реализовать постепенное развертывание (canary release) для фронтенда?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Feature flags + анализ метрик в реальном времени"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ручное копирование билдов на серверы"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "A/B тестирование через cookies"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Полный деплой на все CDN-ноды"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Контроль рисков",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://blog.getambassador.io/canary-deployments-101-8e0a7c5ab1d"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как обрабатывать ошибки в распределенной фронтенд-архитектуре (Micro Frontends)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Глобальный error boundary + centralized logging"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Отключить ошибки в production"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Локальная обработка в каждом модуле"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Децентрализация с общим мониторингом",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://micro-frontends.org/"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как бы вы разрешили конфликт между дизайнером и разработчиком о сроках реализации?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Провести совместный workshop для оценки сложности"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Настоять на техническом решении"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Перенести сроки релиза"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать дизайн-требования"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Коллаборативный подход",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.smashingmagazine.com/2018/02/designers-developers-communication/"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как оптимизировать LCP (Largest Contentful Paint) для медиа-портала?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Предзагрузка ключевых ресурсов + CDN для медиа"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Отложенная загрузка всех изображений"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Полный отказ от кэширования"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использование document.write()"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Приоритезация контента",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://web.dev/optimize-lcp/"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как проектировать API для постепенной деградации функционала при сбоях бэкенда?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Circuit Breaker + кэширование критических данных"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Полностью блокировать интерфейс"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать ошибки бэкенда"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Показывать технические детали ошибок пользователям"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Устойчивость к failures",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как мотивировать команду на внедрение новых практик (например, TDD)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Демонстрация долгосрочных выгод через пилотные проекты"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Жесткое требование через техлидство"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать сопротивление"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Внедрять скрытно через CI/CD"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Эмпирический подход",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.industriallogic.com/blog/why-tdd/"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как обрабатывать 10,000+ WebSocket соединений на одном сервере?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать cluster mode в Node.js + оптимизировать память"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Увеличить таймауты соединений"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Перейти на синхронный IO"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Ограничить максимальное число подключений"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Вертикальное масштабирование",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://blog.jayway.com/2015/04/13/600k-concurrent-websocket-connections-on-aws-using-node-js/"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как бы вы провели аудит безопасности SPA с чувствительными данными?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Пентест + анализ OWASP Top 10 + CSP внедрение"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Проверить только XSS"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Полностью довериться фреймворку"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать только HTTPS"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Комплексный подход",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://owasp.org/www-project-top-ten/"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как согласовать технический долг с roadmap продукта?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Ввести «долговые спринты» с KPI для бизнеса"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Полностью остановить фиче-разработку"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать до критических сбоев"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Перенести ответственность на QA"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Баланс между новым функционалом и стабильностью",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.atlassian.com/agile/software-development/technical-debt"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как реализовать оффлайн-работу для PWA с большими данными?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "IndexedDB + background sync + кэширование стратегий"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Reload при восстановлении связи"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Хранить всё в localStorage"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Блокировать интерфейс оффлайн"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Синхронизация данных",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://web.dev/offline-cookbook/"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как бы вы делегировали задачи в команде с разным уровнем экспертизы?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Парное программирование + постепенное усложнение задач"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Давать всем одинаково сложные задачи"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Автоматически назначать по стажу"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Полностью централизовать распределение"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Менторство и рост",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.managementstudyguide.com/delegation-of-authority.htm"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Как снизить влияние Third-Party скриптов на FCP?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Асинхронная загрузка + resource hints (preconnect, dns-prefetch)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Разместить всё в head"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать синхронные вызовы"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Отказаться от аналитики"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Приоритезация основного контента",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://developers.google.com/web/fundamentals/performance/resource-prioritization"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как проектировать архитектуру для мультитенантного SPA?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Динамическая конфигурация сборки + изолированные модули"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Отдельные приложения для каждого клиента"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Условные операторы во всех компонентах"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Полная кастомизация через CSS-переменные"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Баланс между гибкостью и поддержкой",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://www.microtica.com/blog/multi-tenant-architecture/"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как обрабатывать 500-гигабайтный лог клиентских ошибок?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "ELK-стек + машинное обучение для кластеризации"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ручной анализ выборок"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать старые логи"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Хранить логи в localStorage"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Автоматизация анализа",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://www.elastic.co/what-is/elk-stack"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как бы вы провели code review для критически важного модуля?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Совместная сессия с архитектором + статический анализ"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Формальное одобрение без проверки"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Полностью автоматизировать процесс"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Довериться автору кода"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Глубокий анализ рисков",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://google.github.io/eng-practices/review/"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как принимать решения при отсутствии полных данных?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать принцип обратимости + быстрые эксперименты"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ждать полной информации"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Действовать на основе интуиции"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Делегировать решение команде"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Итеративный подход",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://hbr.org/2020/06/how-to-make-great-decisions-quickly"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 2,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Как спроектировать систему для обработки 100K одновременных SSE (Server-Sent Events) соединений?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать Node.js с кластеризацией + Redis для управления подписками"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Хранить соединения в памяти одного сервера"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Перейти на long-polling для упрощения архитектуры"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Ограничить число соединений фаерволом"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Горизонтальное масштабирование и брокеры сообщений",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://www.smashingmagazine.com/2018/02/sse-websockets-data-flow-http2/"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как бы вы спроектировали автозаполнение поиска с задержкой 10ms для 10M+ пользователей?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Кэширование запросов + trie-структура на бэкенде + дебаунс на клиенте"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Полный перебор данных на клиенте"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отправлять запрос при каждом изменении input"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать localStorage для хранения всех вариантов"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Оптимизация алгоритмов и сетевых запросов",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://blog.bitsrc.io/how-to-build-a-scalable-autocomplete-search-feature-427b1407762c"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как бы вы объяснили необходимость миграции с REST на GraphQL продукт-менеджеру?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Снижение числа запросов + гибкость данных для новых фич"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Потому что это модно"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Чтобы усложнить бэкенд"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Для уменьшения нагрузки на фронтенд"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Фокус на бизнес-ценности",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.apollographql.com/blog/graphql/basics/why-use-graphql/"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Как обрабатывать 1GB данных в браузере без падения производительности?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Web Workers + потоковая обработка + виртуализация рендеринга"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Загружать всё в основной поток"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать document.write()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Блокировать интерфейс до завершения обработки"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Многопоточность и чанкинг",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://web.dev/optimize-long-tasks/"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как проектировать систему для offline-first PWA с синхронизацией данных?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "CRDT + Service Worker + фоновые синхронизации"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Reload при восстановлении сети"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Хранить данные только в sessionStorage"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Полностью отказаться от оффлайн-режима"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Конфликт-фри структуры данных",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://www.youtube.com/watch?v=WQt28hHkZ1Y"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как бы вы разрешили спор между командой за код-стайл (Prettier vs ESLint)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Провести голосование + автоматизировать оба инструмента"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Навязать свой выбор"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать проблему"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Запретить любые линтеры"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Консенсус и автоматизация",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://prettier.io/docs/en/why-prettier.html"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как реализовать плавный скролл для 100K элементов списка?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Виртуализация + requestAnimationFrame + CSS contain"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Рендерить все элементы сразу"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать display: none для невидимых элементов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Увеличить z-index элементов"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Оптимизация рендер-цикла",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://web.dev/virtualize-long-lists-react-window/"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как проектировать систему для роллбэка 1M+ устройств после неудачного обновления?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Canary releases + feature toggles + мониторинг метрик"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ручной откат через поддержку"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать проблему"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Отправить push-уведомление пользователям"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Постепенное развертывание",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://learn.microsoft.com/en-us/azure/architecture/patterns/feature-toggles"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как уменьшить FID (First Input Delay) для тяжелого SPA?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Code splitting + оптимизация main thread + предзагрузка"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Блокировать пользовательский ввод"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Увеличить таймауты обработки"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать синхронные запросы"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Разделение задач на микротаски",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://web.dev/optimize-fid/"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как бы вы мотивировали команду на рефакторинг legacy-кода под давлением сроков?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Доказать ROI через снижение инцидентов + выделить время в спринтах"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Заставить работать сверхурочно"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Пообещать премии за скорость"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Скрыть изменения от менеджмента"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Долгосрочные преимущества",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://refactoring.com/"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как реализовать real-time collaborative редактор (типа Google Docs)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Operational Transform + WebSocket + конфликт-разрешение"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Polling каждые 5 секунд"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Локальное сохранение в IndexedDB"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Полная блокировка интерфейса при редактировании"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Алгоритмы синхронизации",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://www.youtube.com/watch?v=1QVLbwKf4B4"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как проектировать систему для кросс-доменных виджетов с изоляцией стилей?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Web Components + Shadow DOM + Custom Elements"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Глобальные CSS-переменные"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "iframe с разными origin"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Изоляция окружения",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://developer.mozilla.org/en-US/docs/Web/Web_Components"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как бы вы провели ретроспективу после проваленного релиза?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Анализ root cause + action items без поиска виноватых"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Наказать ответственных"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Скрыть факт провала"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Обвинить бэкенд-команду"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Культура непрерывного улучшения",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.atlassian.com/team-playbook/plays/retrospective"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как обработать 100MB CSV в браузере без утечек памяти?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Стриминг через File API + Web Workers + typed arrays"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "JSON.parse() всего файла"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Хранить всё в строке"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать eval() для парсинга"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Потоковая обработка",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://web.dev/read-files/"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как бы вы убедили бизнес инвестировать в улучшение Core Web Vitals?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Корреляция с SEO и конверсией через case studies"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ссылаться на мнение Google"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Запугать потерей пользователей"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Сказать, что это бесполезно"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Данные и метрики",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.smashingmagazine.com/2021/04/core-web-vitals-case-study/"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Как реализовать синхронизацию вкладок браузера в реальном времени?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Broadcast Channel API + SharedWorker + localStorage events"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Polling каждую секунду"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Копировать данные в буфер обмена"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать document.cookie"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Межвкладочная коммуникация",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как проектировать систему для мгновенного поиска по 10M+ документам?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Elasticsearch + n-gram токенизация + кэширование запросов"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Полный scan БД при каждом запросе"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Хранить данные в localStorage"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать LIKE в SQL"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Инвертированные индексы",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://www.elastic.co/guide/en/elasticsearch/guide/current/inverted-index.html"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как обрабатывать 1000RPS для GraphQL API с глубокими вложенностями?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Persisted queries + depth limiting + Dataloader + Redis кэш"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Разрешить любые запросы"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отключить валидацию схемы"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать XML вместо JSON"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Защита от сложных запросов",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://www.apollographql.com/blog/backend/performance/graphql-performance-tips/"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как бы вы делегировали задачу junior-разработчику с риском провала дедлайна?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Парное программирование + четкие критерии + контрольные точки"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Дать полную свободу"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Выполнить задачу самостоятельно"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать риски"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Баланс между доверием и контролем",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.mindtools.com/a3w28fp/delegation-checklist"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как оптимизировать LCP для страницы с 50+ тяжелыми изображениями?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Prioritize LCP image + lazy-load остальных + CDN + AVIF/WEBP"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Загружать все сразу в максимальном качестве"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать base64 inline-изображения"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Отключить кэширование"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Приоритизация и современные форматы",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://web.dev/optimize-lcp/"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 4,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Как спроектировать систему для глобального кэширования статики с учетом GDPR?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "CDN с гео-фильтрацией + шифрование персональных данных"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Хранить всё в одном дата-центре"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать региональные ограничения"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать localStorage клиентов"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Юридические и технические ограничения",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://www.gdpr.eu/data-encryption/"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как реализовать защиту от DDoS-атак для SPA с GraphQL API?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "WAF + rate limiting + persisted queries"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Отключить CORS"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Хранить токены в cookies"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Увеличить timeout запросов"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Многоуровневая защита",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://www.cloudflare.com/learning/ddos/ddos-protection/"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как бы вы объяснили команде необходимость перехода на TypeScript?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Снижение runtime-ошибок + улучшение collaboration"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Потому что JavaScript устарел"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Чтобы усложнить процесс разработки"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Для увеличения нагрузки на сборку"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Фокус на качестве кода",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.typescriptlang.org/why"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Как обрабатывать 100K+ WebGL-объектов с плавным рендерингом?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Instanced rendering + LOD + Web Workers"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Рендерить все объекты каждый кадр"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать setInterval вместо requestAnimationFrame"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Уменьшить разрешение canvas"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Оптимизация GPU-памяти",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://webglfundamentals.org/webgl/lessons/webgl-instanced-rendering.html"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как проектировать архитектуру для multi-region SPA с нулевым downtime?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Global CDN + blue-green deployments + health checks"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ручной деплой по ночам"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Один сервер в случайном регионе"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать failover"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Геораспределенная инфраструктура",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://aws.amazon.com/ru/blogs/infrastructure-and-automation/implementing-blue-green-deployments-with-aws/"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как бы вы урегулировали конфликт между дизайнером и QA из-за нереализуемого требования?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Провести совместный анализ feasibility + предложить альтернативу"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Встать на чью-то одну сторону"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Перенести задачу в бэклог"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Увеличить сроки проекта"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Медиация интересов",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.projectmanagement.com/articles/539450/Conflict-Resolution-Strategies-for-Projects"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как оптимизировать FPS для сложной Canvas-анимации?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "OffscreenCanvas + WebAssembly + дебаунс событий"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать setTimeout вместо rAF"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Увеличить частоту перерисовок"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Добавить сложные фильтры CSS"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Вынос вычислений из main thread",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://developer.chrome.com/blog/offscreencanvas/"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как проектировать систему для 10K RPS аналитики с клиентов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Kafka + колончатые БД + сэмплирование"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "SQLite на клиентских устройствах"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отправлять данные каждую минуту"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Хранить всё в sessionStorage"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Обработка потоковых данных",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://kafka.apache.org/documentation/"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как уменьшить время сборки проекта с 500+ компонентами?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Module federation + incremental builds + кэширование"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Увеличить мощность CI/CD серверов"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отключить линтеры"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Собирать всё в один бандл"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Распределенная сборка",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://webpack.js.org/concepts/module-federation/"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как мотивировать команду на написание документации?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Интегрировать в Definition of Done + показать примеры ROI"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Штрафовать за отсутствие"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Нанять технического писателя"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать документацию"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Культура качества",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://documentation.divio.com/"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как реализовать синхронизацию данных между PWA и нативными приложениями?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "CRDT + WebSocket + бэкенд-синхронизатор"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Polling каждые 5 секунд"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Копировать данные через буфер обмена"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать только localStorage"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Консистентность в реальном времени",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://crdt.tech/"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как проектировать систему для динамического темизирования 1M+ пользователей?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "CSS Variables + CDN edge functions + atomic CSS"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Инлайн-стили для каждого элемента"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отдельные CSS-файлы для каждой темы"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать !important везде"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Производительность кастомизации",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://web.dev/learn/css/variables/"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как бы вы провели демо проекта для нетехнических стейкхолдеров?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Фокус на user journey + бизнес-метрики + визуализации"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Показать raw-логи системы"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Объяснить архитектуру на UML"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать технический жаргон"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Адаптация под аудиторию",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://hbr.org/2020/07/how-to-present-to-a-non-technical-audience"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как обрабатывать 10K событий/сек в реальном времени?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "WebSocket + RxJS + виртуализация UI"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "setInterval с высокой частотой"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Рендерить все события сразу"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать document.write"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Реактивное программирование",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://rxjs.dev/guide/overview"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как бы вы управляли техническим долгом при смене фреймворка?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Постепенная миграция + стратификация рисков + метрики"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Полный рефакторинг за один спринт"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать существующий код"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Запретить любые изменения"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Инкрементальный подход",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://martinfowler.com/bliki/StranglerFigApplication.html"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Как реализовать географическую кластеризацию 100K маркеров на карте?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "QuadTree + WebGL + динамический зум"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Рендерить все маркеры всегда"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать статические изображения"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Ограничить максимальный масштаб"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Алгоритмы пространственного разбиения",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://developers.google.com/maps/documentation/javascript/marker-clustering"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как проектировать систему для AB-тестов с 50+ параллельными экспериментами?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Feature flags с сегментацией + статистический engine"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ручное переключение через URL"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отдельные ветки репозитория"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "A/B тесты только для новых пользователей"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Масштабируемость экспериментов",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://featureflags.io/"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как обработать 1GB данных CSV в фоновом режиме PWA?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "File System Access API + Web Workers + потоковый парсинг"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Чтение всего файла в память"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Блокировать UI на время обработки"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать XML вместо CSV"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Фоновые процессы",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://web.dev/file-system-access/"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как бы вы поступили при обнаружении уязвимости в legacy-коде перед релизом?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Экстренный патч + постмортем + обновление зависимостей"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Проигнорировать ради сроков"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Скрыть проблему"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Обвинить предыдущую команду"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Ответственное раскрытие",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://owasp.org/www-project-top-ten/"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как оптимизировать CLS (Cumulative Layout Shift) для медиа-контента?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Резервирование места + aspect-ratio + preload"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Динамические размеры без ограничений"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отложенная загрузка всех изображений"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать document.write()"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Стабильность макета",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://web.dev/optimize-cls/"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 11,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Как спроектировать систему для обработки 500K одновременных SSE-соединений с гарантией доставки?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Kafka + WebSocket fallback + кворумная запись"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Один Node.js сервер с максимальным ulimit"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Локальное хранилище в IndexedDB"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Long-polling с ретраями каждые 5 сек"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Распределенная система очередей",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://www.confluent.io/blog/apache-kafka-for-event-driven-architectures/"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как реализовать синхронизацию данных между 10K оффлайн-устройств?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "CRDT + конфликтные стратегии + компрессия дельт"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Локальные транзакции с последующим merge"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Полная блокировка интерфейса при конфликтах"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать расхождения данных"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Бесконфликтная репликация",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://crdt.tech/"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как убедить менеджмент выделить 3 спринта на миграцию с AngularJS?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "TCO-анализ + security risks + рост конверсии"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Угрожать массовым увольнением"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Скрыть реальные сроки"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Пообещать фичи без оценки"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Финансовая аргументация",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://angular.io/guide/upgrade"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Как обрабатывать 1M WebGL-примитивов с 60 FPS?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Instanced arrays + GPU culling + compute shaders"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Рендерить все объекты каждый кадр"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Уменьшить разрешение до 240p"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать CSS transforms"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Оптимизация draw calls",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://webgl2fundamentals.org/"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как проектировать систему для 99.999% uptime глобального SPA?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Multi-CDN + геораспределенный health checking"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Единый сервер в дата-центре"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Ручной failover по email"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать SLA"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Пять девяток доступности",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://www.cloudflare.com/learning/cdn/glossary/anycast-network/"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как бы вы провели рефакторинг 500-компонентной codebase без остановки фич?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Стратегия параллельных импортов + feature toggles"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Полный реврайт за один релиз"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Запретить любые изменения в старом коде"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Нанять 100 разработчиков на месяц"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Постепенная миграция",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://martinfowler.com/bliki/ParallelChange.html"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как мотивировать команду на code review в условиях цейтнота?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Внедрить rotation лидов + показать примеры багов"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Отменить все ревью"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Автоматически апрувить всё"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Штрафовать за пропуск"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Культура качества",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://google.github.io/eng-practices/review/"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как проектировать защиту от XSS в legacy jQuery-коде?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "CSP + автоматизация санитайзинга + статический анализ"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ручной код-ревью всех скриптов"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отключить Content-Security-Policy"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать eval() для динамики"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Многоуровневая защита",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как уменьшить TTI для SPA с 10MB начального бандла?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Module federation + streaming hydration + preload hints"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Включить все зависимости в один файл"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отключить code splitting"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать document.write"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Прогрессивная загрузка",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://web.dev/tti/"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как бы вы делегировали задачу junior'у с высоким риском переоценки сроков?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Парное программирование + четкие критерии Done"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Полная автономия без проверок"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Выполнить задачу самостоятельно"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать риски"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Баланс доверия и контроля",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.atlassian.com/agile/project-management/user-stories"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как реализовать real-time визуализацию 100K IoT-датчиков?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "WebSocket + WASM + canvas batching"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Polling каждую секунду"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "SVG-анимации для всех точек"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Блокировать UI при обновлениях"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Оптимизация рендеринга",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://webassembly.org/"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как проектировать систему для кросс-браузерного WebRTC с 1% loss?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "STUN/TURN кластер + FEC + адаптивный битрейт"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Полностью отказаться от fallback"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать только UDP"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Лимитировать подключения"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Сетевые компенсации",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://webrtc.org/"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как бы вы объяснили CEO необходимость инвестиций в WebAssembly?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Снижение CPU usage на 40% + новые use cases"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Потому что это модно"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Чтобы усложнить разработку"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Для увеличения нагрузки на клиент"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Бизнес-метрики",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://web.dev/articles/wasm"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как обработать 10K RPS для GraphQL с глубокими вложенностями?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Persisted queries + query whitelisting + Redis cache"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Разрешить любые произвольные запросы"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отключить валидацию схемы"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать XML вместо JSON"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Защита от сложных запросов",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://www.apollographql.com/blog/backend/performance/optimizing-graphql-performance/"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как проектировать систему для 50+ A/B-тестов с перекрывающимися аудиториями?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Feature flags с приоритетами + статистическая значимость"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ручное переключение через куки"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Тестировать всё на 1% трафика"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать пересечения"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Ортогональность экспериментов",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://featureflags.io/"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Как реализовать интерактивную карту с 1M+ маркеров?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "WebGL-рендеринг + spatial indexing + динамический LOD"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Рендерить все маркеры через DOM"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать статические тайлы"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Ограничить зум уровнями"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Геопространственная оптимизация",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://deck.gl/"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как бы вы провели архитектурный ревью для распределенной команды?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Асинхронная документация + синхронные сессии + ADR"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ежедневные 4-часовые митинги"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Полностью отказаться от документации"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Довериться senior-инженерам"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Баланс синхронности",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://adr.github.io/"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как обработать 10GB данных в фоновом режиме PWA?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "File System Access API + WebAssembly + IndexedDB"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Хранить всё в localStorage"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Блокировать UI поток"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать синхронные XHR"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Фоновая обработка",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://web.dev/file-system-access/"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как проектировать систему для GDPR-совместимой аналитики?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Анонимизация + consent management + гео-фильтрация"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Хранить всё в открытом виде"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать регуляторику"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать сторонние куки"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Юридические требования",
+                "theme": "System Design",
+                "useful_info": [
+                    "https://gdpr-info.eu/"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как оптимизировать INP (Interaction to Next Paint) для тяжелых форм?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Web Workers + дебаунс + оптимизация layout thrashing"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Блокировать ввод пользователя"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать синхронные валидации"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Увеличить задержки анимаций"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Приоритизация взаимодействий",
+                "theme": "Advanced Cases",
+                "useful_info": [
+                    "https://web.dev/inp/"
+                ]
+            }
+        ]
+    }
+]

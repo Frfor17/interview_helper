@@ -1,0 +1,2262 @@
+[
+    {
+        "option_id": 1,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Какой метод лучше всего подходит для оптимизации гиперпараметров в условиях ограниченных вычислительных ресурсов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Сеточный поиск (GridSearch)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Случайный поиск (RandomizedSearch)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Байесовская оптимизация"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Ручная настройка"
+                    }
+                ],
+                "correct_answer_id": 3,
+                "hint": "Эффективный поиск в высокоразмерном пространстве",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://arxiv.org/abs/1807.02811"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как бороться с исчезающими градиентами в глубоких нейросетях?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать ReLU активацию"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Применить Batch Normalization"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Инициализация весов He/Kaiming"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все перечисленные методы"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Комбинированный подход",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://towardsdatascience.com/understanding-gradient-problems-in-neural-networks-af814c1bd9cd"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Какой алгоритм ансамблирования дает лучший результат на несбалансированных данных?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Bagging"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Boosting"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Stacking"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Voting"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Последовательное исправление ошибок",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://www.sciencedirect.com/science/article/pii/S1566253521000241"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Какой подход использовать для обработки текста и изображений в одной модели?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Мультимодальные трансформеры"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Отдельные модели для каждой модальности"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Конкатенация эмбеддингов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Только NLP-модель"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Единая архитектура для разных типов данных",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://arxiv.org/abs/2103.14897"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как интерпретировать attention-веса в трансформерах?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Анализировать важность токенов"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Игнорировать как черный ящик"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Визуализировать матрицу внимания"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Ответы 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Explainability для трансформеров",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://arxiv.org/abs/2009.06732"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как ускорить инференс модели на CPU?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Квантзация модели"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Оптимизация графа вычислений"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использование ONNX Runtime"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Аппаратно-независимые оптимизации",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://www.tensorflow.org/lite/performance/post_training_quantization"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как выбрать оптимальный размер батча для GPU?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Максимально возможный, не вызывающий OOM"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Фиксированный размер 32"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Автоматический подбор через профилирование"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Минимальный размер для стабильности"
+                    }
+                ],
+                "correct_answer_id": 3,
+                "hint": "Баланс между памятью и скоростью",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://medium.com/deep-learning-turkey/google-brain-batch-size-in-neural-networks-5545d3cde42b"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как реализовать раннюю остановку (early stopping) в PyTorch?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Через callback-функции"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Мониторинг loss на валидации"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать torch.optim.lr_scheduler"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Ответы 1 и 2"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Интеграция с циклами обучения",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://pytorch.org/docs/stable/optim.html"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Какой подход использовать для детекции аномалий во временных рядах?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Autoencoders с реконструкцией"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "LSTM/GRU сети"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Isolation Forest"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Зависит от природы данных",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1901.03407"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как уменьшить размер модели BERT без значительной потери качества?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Knowledge Distillation"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Pruning"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать DistilBERT"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Компрессия больших языковых моделей",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://arxiv.org/abs/1910.01108"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как бороться с переобучением в нейросетях?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Добавить Dropout-слои"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать L2-регуляризацию"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Аугментация данных"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Комбинированные методы",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как реализовать распределенное обучение на 4 GPU?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "DataParallel в PyTorch"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "DistributedDataParallel"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать Horovod"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 2 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Эффективное распределение нагрузки",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://pytorch.org/tutorials/intermediate/ddp_tutorial.html"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как выбрать оптимизатор для задачи с шумными градиентами?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Adam"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "SGD с моментом"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "RMSprop"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Любой из перечисленных"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Устойчивость к шуму",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://ruder.io/optimizing-gradient-descent/"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как улучшить качество сегментации изображений?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать U-Net с skip-connections"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Применить Dice Loss"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Аугментация данных"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Комплексный подход",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://arxiv.org/abs/1505.04597"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как обработать категориальные признаки с большим количеством уникальных значений?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Target Encoding"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Embedding-слой"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Хэширование признаков"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Любой из перечисленных"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Зависит от контекста задачи",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://maxhalford.github.io/blog/target-encoding/"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Какой метод использовать для интерпретации предсказаний XGBoost?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "SHAP-значения"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Feature Importance"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Partial Dependence Plots"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Комплексная интерпретируемость",
+                "theme": "MLOps",
+                "useful_info": [
+                    "https://shap.readthedocs.io/en/latest/"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как организовать A/B-тестирование ML-моделей?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Canary-релизы с постепенным rollout"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Случайное разделение трафика"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Мониторинг бизнес-метрик"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Контролируемое внедрение",
+                "theme": "MLOps",
+                "useful_info": [
+                    "https://netflixtechblog.com/"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как обеспечить воспроизводимость экспериментов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Фиксация сидов для RNG"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Версионирование данных и кода"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использование Docker"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Полная документация окружения",
+                "theme": "MLOps",
+                "useful_info": [
+                    "https://www.pytorchlightning.ai/"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Какой алгоритм использовать для рекомендаций с учетом контекста?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Contextual Bandits"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Matrix Factorization"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "DeepFM"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Любой из перечисленных"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Зависит от типа данных",
+                "theme": "Рекомендательные системы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1802.06501"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как защитить модель от adversarial-атак?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Adversarial Training"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Input Preprocessing"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать Robust-архитектуры"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Многоуровневая защита",
+                "theme": "Безопасность ML",
+                "useful_info": [
+                    "https://openai.com/research/robust-adversarial-inputs"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 2,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Какой метод эффективен для оптимизации памяти при работе с большими датасетами в Pandas?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использование категориальных типов (category)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Конвертация всех данных в float64"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Удаление случайных строк"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Сохранение данных в формате CSV"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Снижение размера через типизацию",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://pandas.pydata.org/pandas-docs/stable/user_guide/categorical.html"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как выбрать функцию потерь для задачи сегментации с дисбалансом классов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Dice Loss"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "MSE"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "MAE"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Huber Loss"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Учет пересечения регионов",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://arxiv.org/abs/2006.14822"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как реализовать балансировку нагрузки при распределенном обучении на 8 GPU?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использование DistributedDataParallel в PyTorch"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Увеличение размера батча в 8 раз"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Ручное распределение данных"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать проблему балансировки"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Автоматическое распределение градиентов",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://pytorch.org/tutorials/intermediate/ddp_tutorial.html"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Какой подход использовать для кэширования предобработанных данных?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использование @lru_cache"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Сохранение в .npy файлы"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использование DatasetPipeline в Ray"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Многоуровневое кэширование",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://docs.ray.io/en/latest/data/dataset.html"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как улучшить производительность Pandas при обработке 10 млн строк?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использование Modin/Dask"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Применение vectorized операций"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отказ от циклов for"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Параллелизация и оптимизация",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://modin.readthedocs.io/"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Какой метод эффективен для обработки временных рядов с пропусками?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Интерполяция + LSTM"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Удаление всех пропусков"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Заполнение нулями"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Случайные значения"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Учет временных зависимостей",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1901.09600"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Какой алгоритм использовать для детектирования аномалий в графовых данных?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Graph Neural Networks (GNN)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Линейная регрессия"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "K-Means"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Случайный лес"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Учет структуры графа",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://arxiv.org/abs/2006.10690"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как выбрать метрику для многоклассовой классификации с дисбалансом?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Macro F1-score"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Accuracy"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "ROC-AUC"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "R²"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Учет всех классов равноправно",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://scikit-learn.org/stable/modules/model_evaluation.html"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как ускорить обучение модели с помощью кэша процессора?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использование memory mapping"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Уменьшение размера батча"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Оптимизация порядка операций"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Локализация данных",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://software.intel.com/content/www/us/en/develop/articles/memory-layout-transformations.html"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Какой подход использовать для оптимизации SQL-запросов к большим данным?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Партиционирование таблиц"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использование индексов"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Materialized Views"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Сокращение времени выполнения",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://use-the-index-luke.com/"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Какой метод использовать для генерации синтетических данных?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "GAN (Generative Adversarial Networks)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "SMOTE"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "VAE (Variational Autoencoders)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Разные подходы для разных задач",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1701.00160"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как бороться с переобучением в трансформерах?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Stochastic Depth"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Dropout в attention-слоях"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Weight Decay"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Регуляризация архитектуры",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://arxiv.org/abs/2103.14636"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Какой инструмент использовать для мониторинга дрифта данных?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Evidently AI"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "TensorBoard"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "MLflow"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Специализированные библиотеки",
+                "theme": "MLOps",
+                "useful_info": [
+                    "https://evidentlyai.com/"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как реализовать динамическое увеличение сложности GAN?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Progressive Growing of GANs"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Увеличение числа слоев"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Случайная инициализация"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использование VAE"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Постепенное обучение",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://arxiv.org/abs/1710.10196"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как выбрать коэффициент обучения (learning rate) для трансферного обучения?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать меньший LR для предобученных слоев"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Одинаковый LR для всех слоев"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Циклический LR"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Случайный поиск"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Fine-tuning подход",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://cs231n.github.io/transfer-learning/"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Как обработать мультиязычный текст в одной модели?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Multilingual BERT"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Отдельные эмбеддинги для каждого языка"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Машинный перевод на один язык"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Зависит от ресурсов и задачи",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1810.04805"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Какой метод использовать для интерпретации временных рядов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "SHAP + временные особенности"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Feature Importance из XGBoost"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Attention-карты в LSTM"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Контекстно-зависимый анализ",
+                "theme": "Интерпретируемость",
+                "useful_info": [
+                    "https://shap.readthedocs.io/"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как обеспечить воспроизводимость в RL-экспериментах?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Фиксация сидов для всех RNG"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использование Docker"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Версионирование среды"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Полная детерминированность",
+                "theme": "RL",
+                "useful_info": [
+                    "https://openai.com/research/reproducibility-requests"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Какой алгоритм использовать для оптимизации в RL с непрерывным пространством действий?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "PPO (Proximal Policy Optimization)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "DQN"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "A3C"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Q-Learning"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Поддержка непрерывных действий",
+                "theme": "RL",
+                "useful_info": [
+                    "https://arxiv.org/abs/1707.06347"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как снизить этические риски при развертывании ML-моделей?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Bias-анализ датасетов"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Человеческий надзор (human-in-the-loop)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Прозрачность алгоритмов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Комплексный подход",
+                "theme": "Этика ИИ",
+                "useful_info": [
+                    "https://www.microsoft.com/en-us/ai/responsible-ai"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 3,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Какой метод лучше всего подходит для оптимизации гиперпараметров с учетом ограничений на GPU?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Population Based Training (PBT)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Полный перебор (GridSearch)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Ручная настройка"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Случайный поиск с ранней остановкой"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Динамическая адаптация параметров в реальном времени",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://arxiv.org/abs/1711.09846"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как улучшить сходимость GAN при модальном коллапсе?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Wasserstein GAN с gradient penalty"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Увеличение размера батча"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использование Adam вместо SGD"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Добавление шума на вход генератора"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Стабилизация обучения через контроль градиентов",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://arxiv.org/abs/1704.00028"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Какой подход использовать для обработки временных рядов с переменной длиной?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Transformer с positional encoding"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Masking + RNN"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Фиксированное окно из последних N точек"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Зависит от задачи и ресурсов",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://arxiv.org/abs/2004.05150"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Как ускорить инференс модели на мобильных устройствах?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Квантзация до 8-bit"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Призматическая дистилляция"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использование CoreML/TFLite"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Аппаратно-ориентированные оптимизации",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://www.tensorflow.org/lite/performance/post_training_quantization"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как бороться с переобучением в self-supervised learning?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Контрастивный лосс"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Dropout в проекционных слоях"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Аугментация данных"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Регуляризация на разных этапах",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://arxiv.org/abs/2002.05709"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Какой метод использовать для интерпретации прогнозов временных рядов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "LIME с временными окнами"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Attention-карты в Transformer"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "SHAP для последовательностей"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Контекстно-зависимый анализ",
+                "theme": "Интерпретируемость",
+                "useful_info": [
+                    "https://shap.readthedocs.io/en/latest/"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как реализовать мультимодальное обучение (текст + изображения)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "CLIP-подобная архитектура"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Late fusion с отдельными моделями"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Cross-modal attention"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Зависит от доступных данных",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://arxiv.org/abs/2103.00020"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как оптимизировать memory usage при обработке больших CSV?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использование Dask/Modin"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Чтение данных порциями (chunks)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Конвертация в паркет-файлы"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Распределенная обработка",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://docs.dask.org/"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Какой подход использовать для детектирования аномалий в потоковых данных?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Автоэнкодеры с скользящим окном"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Isolation Forest онлайн-версия"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Адаптивные статистические пороги"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Зависит от скорости потока",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://arxiv.org/abs/2004.11542"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как уменьшить размер модели NLP без потери качества?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Knowledge Distillation"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Pruning + квантизация"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использование DistilBERT"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Комбинация методов сжатия",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://arxiv.org/abs/1910.01108"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Какой метод использовать для сегментации медицинских изображений?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "U-Net с skip-connections"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Mask R-CNN"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Vision Transformer"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Зависит от типа данных",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://arxiv.org/abs/1505.04597"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как бороться с leakage при работе с временными данными?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Time-based split с запретом future data"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использование expanding window"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Рандомизация порядка данных"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Строгий временной порядок",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://otexts.com/fpp3/"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как выбрать архитектуру для edge-устройств?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "MobileNetV3"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "EfficientNet-Lite"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Квантизованный TinyBERT"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Оптимизация под ограниченные ресурсы",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://arxiv.org/abs/1905.02244"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Какой метод использовать для обработки графов с 1M+ узлов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "GraphSAGE с neighborhood sampling"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Full-batch обучение"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Методы на основе матричной факторизации"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Масштабируемые подходы",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1706.02216"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как реализовать мультитенантность в MLaaS?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Изолированные namespaces"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ресурсные квоты"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Шардирование моделей"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Безопасность и производительность",
+                "theme": "MLOps",
+                "useful_info": [
+                    "https://www.kubeflow.org/"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Какой алгоритм использовать для рекомендаций с холодным стартом?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Content-based фильтрация"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Гибридные модели"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Случайные рекомендации"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Комбинация методов",
+                "theme": "Рекомендательные системы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1802.05814"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как детектировать adversarial примеры?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Анализ статистик активаций"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Defensive distillation"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "GAN-based детекторы"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Многоуровневая защита",
+                "theme": "Безопасность",
+                "useful_info": [
+                    "https://arxiv.org/abs/1702.06280"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как визуализировать feature importance для ансамбля моделей?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "SHAP Beeswarm plot"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Permutation importance"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Partial dependence plots"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Мультимодальный анализ",
+                "theme": "Интерпретируемость",
+                "useful_info": [
+                    "https://christophm.github.io/interpretable-ml-book/"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как уменьшить углеродный след при обучении моделей?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использование энергоэффективных архитектур"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Оптимизация гиперпараметров через ранние остановки"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Облачные провайдеры с зеленой энергией"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Экологичный AI",
+                "theme": "Этика ИИ",
+                "useful_info": [
+                    "https://www.acm.org/sustainable-computing"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Какой фреймворк использовать для воспроизводимых экспериментов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "MLflow"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Weights & Biases"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "DVC"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Интеграция с MLOps-пайплайнами",
+                "theme": "MLOps",
+                "useful_info": [
+                    "https://mlflow.org/"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 4,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Какой метод эффективен для борьбы с дисбалансом классов в семантической сегментации?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Weighted Cross-Entropy"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Focal Loss"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Dice Loss с классными весами"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все перечисленные"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Комбинированный подход для редких классов",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://arxiv.org/abs/2006.14822"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как ускорить инференс модели ViT (Vision Transformer) на CPU?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Применение FlashAttention"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Квантизация до int8"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Оптимизация патчей через Pruning"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Аппаратно-независимые оптимизации",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://arxiv.org/abs/2205.14135"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Какой подход использовать для обучения на графах с динамической структурой?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Temporal Graph Networks"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "GNN с обновлением ребер онлайн"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Метрическое обучение"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Учет временной эволюции графа",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://arxiv.org/abs/2006.10637"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Как интерпретировать важность фич в ансамбле Gradient Boosting?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Permutation Importance"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "SHAP-значения"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Встроенная feature_importances_"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Мультимодальный анализ",
+                "theme": "Интерпретируемость",
+                "useful_info": [
+                    "https://shap.readthedocs.io/"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как реализовать мультиязычный BERT для low-resource языков?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Adapter-based Fine-Tuning"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Маскированное языковое моделирование"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использование mBERT с трансфером"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Эффективное использование предобучения",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://arxiv.org/abs/2003.08271"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как снизить углеродный след при обучении LLM?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использование sparse активаций"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Обучение на зеленых датацентрах"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Применение прогрессивного обучения"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Экологичный AI",
+                "theme": "Этика",
+                "useful_info": [
+                    "https://www.acm.org/sustainable-computing"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Какой метод использовать для RL в частично наблюдаемых средах?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Recurrent DQN"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "PPO с LSTM-слоями"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "World Models"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Учет временных зависимостей",
+                "theme": "RL",
+                "useful_info": [
+                    "https://arxiv.org/abs/1803.10122"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как оптимизировать Pandas для датасетов >100GB?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использование Dask/Modin"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Конвертация в Parquet"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Фильтрация столбцов на чтении"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Распределенная обработка",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://docs.dask.org/"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как бороться с noisy labels в классификации изображений?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Co-teaching (обучение двух моделей)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Label Smoothing"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Аугментация с MixUp"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Комбинированная устойчивость",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1905.05040"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Какой инструмент использовать для мониторинга дрифта данных?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Evidently AI"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Amazon SageMaker Model Monitor"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Пользовательские статистические тесты"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Автоматизация контроля",
+                "theme": "MLOps",
+                "useful_info": [
+                    "https://evidentlyai.com/"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как реализовать дифференцируемое увеличение данных (Differentiable Augmentation)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использование GAN-трюков в стиле StyleGAN"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Интеграция в цикл обучения через AutoAugment"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Применение DiffAugment для GAN"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Аугментация как часть графа вычислений",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://arxiv.org/abs/2006.10738"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как выбрать метрику для оценки качества кластеризации текстов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Silhouette Score на эмбеддингах"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Topic Coherence для тематических моделей"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Adjusted Rand Index (при наличии эталонов)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Комплексная оценка",
+                "theme": "NLP",
+                "useful_info": [
+                    "https://scikit-learn.org/stable/modules/clustering.html"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как уменьшить размер ONNX-модели для edge-устройств?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Квантизация с ONNX Runtime"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Оптимизация графа через ONNX Optimizer"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Применение операторов MobileNetV2"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Аппаратно-ориентированные преобразования",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://onnxruntime.ai/"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Какой подход использовать для RL с непрерывным пространством действий?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "PPO (Proximal Policy Optimization)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "SAC (Soft Actor-Critic)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "DDPG (Deep Deterministic Policy Gradient)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Алгоритмы для непрерывных задач",
+                "theme": "RL",
+                "useful_info": [
+                    "https://spinningup.openai.com/"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как реализовать мультимодальный fusion для видео (аудио + изображения)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Cross-modal attention"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Поздний fusion через конкатенацию"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Transformer с модальными эмбеддингами"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Зависит от задачи",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://arxiv.org/abs/2106.09784"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Как бороться с over-smoothing в GNN?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Добавление residual connections"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использование Jumping Knowledge Networks"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Применение Graph Attention (GAT)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Сохранение локальных признаков",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://arxiv.org/abs/2006.07739"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Какой метод использовать для обработки временных рядов с пропусками >50%?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "SAITS (Self-Attention Imputation)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "BRITS (Bidirectional RNN)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "GAN-based импутация"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Гибридные подходы",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://arxiv.org/abs/2202.00951"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Какой фреймворк использовать для обучения моделей на TPU?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "JAX"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "PyTorch/XLA"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "TensorFlow с tf.distribute"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Поддержка аппаратного ускорения",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://jax.readthedocs.io/"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как детектировать bias в датасете?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Анализ распределений признаков по подгруппам"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "SHAP-анализ чувствительности модели"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Fairness-метрики (Disparate Impact Ratio)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Комплексный аудит",
+                "theme": "Этика",
+                "useful_info": [
+                    "https://fairlearn.org/"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Какой подход использовать для online-обучения с дрифтом данных?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Adaptive Window Ensemble"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "River ML framework"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Динамическое обновление весов модели"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Инкрементальное обучение",
+                "theme": "MLOps",
+                "useful_info": [
+                    "https://riverml.xyz/"
+                ]
+            }
+        ]
+    }
+]

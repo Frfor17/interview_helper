@@ -1,0 +1,47 @@
+.headerBlock {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(99, 99, 252);
+}
+
+.headerBlock-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.headerBlock-container-name {
+    display: flex;
+    align-items: center;
+}
+
+.headerBlock-container-name h1 {
+    margin: 0px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.headerBlock-container-profile {
+    display: flex;
+    align-items: center;
+}
+
+/* Стили для будущей кнопки профиля */
+.profile-button {
+    background-color: white;
+    color: rgb(99, 99, 252);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.profile-button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}

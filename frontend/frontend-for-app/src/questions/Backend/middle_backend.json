@@ -1,0 +1,2262 @@
+[
+    {
+        "option_id": 1,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Какой алгоритмической сложностью обладает поиск в сбалансированном бинарном дереве?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "O(1)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "O(n)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "O(log n)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "O(n log n)"
+                    }
+                ],
+                "correct_answer_id": 3,
+                "hint": "Зависит от высоты дерева",
+                "theme": "Алгоритмы",
+                "useful_info": [
+                    "https://proglib.io/p/slozhnost-algoritmov-i-operaciy-na-primerah-python-2020-11-03"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Что такое Circuit Breaker в микросервисной архитектуре?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Механизм балансировки нагрузки"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Шаблон для обработки повторных запросов"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Защита от каскадных отказов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Инструмент для мониторинга"
+                    }
+                ],
+                "correct_answer_id": 3,
+                "hint": "Реализован в библиотеках Hystrix, Resilience4j",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://microservices.io/patterns/reliability/circuit-breaker.html"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Какой тип индекса лучше подходит для поиска по диапазону в PostgreSQL?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Hash"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "B-tree"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "GIN"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "GiST"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Стандартный индекс по умолчанию",
+                "theme": "Базы данных",
+                "useful_info": [
+                    "https://www.postgresql.org/docs/current/indexes-types.html"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Что делает команда EXPLAIN ANALYZE в PostgreSQL?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Показывает план выполнения запроса"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Экспортирует данные в CSV"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Создает резервную копию"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Реконструирует индексы"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Используется для оптимизации запросов",
+                "theme": "Базы данных",
+                "useful_info": [
+                    "https://www.postgresqltutorial.com/postgresql-explain/"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как реализовать rate limiting в REST API?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Через заголовок X-RateLimit-Limit"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Используя Redis для подсчета запросов"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Настройкой веб-сервера Nginx"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Множество подходов к реализации",
+                "theme": "Безопасность",
+                "useful_info": [
+                    "https://cloud.google.com/architecture/rate-limiting-strategies-techniques"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Что такое eventual consistency?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Мгновенная синхронизация данных"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Гарантия согласованности через время"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Метод шифрования данных"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Тип транзакции в SQL"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Характерно для распределенных систем",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://www.educative.io/answers/what-is-eventual-consistency"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Какой паттерн используется для обработки асинхронных задач?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Producer-Consumer"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Singleton"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Decorator"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Factory Method"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Часто реализуется через брокеры сообщений",
+                "theme": "Паттерны проектирования",
+                "useful_info": [
+                    "https://docs.celeryq.dev/en/stable/getting-started/introduction.html"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Что измеряет метрика Apdex?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использование CPU"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Удовлетворенность пользователей производительностью"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Количество ошибок в логах"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Скорость сети"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Рассчитывается на основе времени ответа",
+                "theme": "Мониторинг",
+                "useful_info": [
+                    "https://www.apdex.org/overview.html"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как работает Consistent Hashing?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Распределяет данные по случайным узлам"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Минимизирует перемещение данных при изменении числа узлов"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использует только один хеш-сервер"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Требует полную репликацию данных"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Используется в Cassandra, DynamoDB",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://www.toptal.com/big-data/consistent-hashing"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Что такое backpressure в системах потоковой обработки?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Механизм контроля скорости обработки"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Тип шифрования данных"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Метод сжатия логов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Стратегия балансировки нагрузки"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Защита от перегрузки потребителя",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://medium.com/@jayphelps/backpressure-explained-the-flow-of-data-through-software-2350b3e77ce7"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Какой SQL запрос создает покрывающий индекс (covering index)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "CREATE INDEX idx ON table (a) INCLUDE (b)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "CREATE INDEX idx ON table (a, b)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "ALTER TABLE ADD INDEX idx (a)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "CREATE FULLTEXT INDEX idx ON table (a)"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Позволяет выполнять index-only scan",
+                "theme": "Базы данных",
+                "useful_info": [
+                    "https://use-the-index-luke.com/sql/clustering/index-only-scan-covering-index"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как реализовать retry логику для неустойчивого API?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Экспоненциальная задержка между попытками"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Повторять запросы мгновенно"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отправлять запросы в случайные промежутки"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Паттерн Exponential Backoff",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://aws.amazon.com/ru/blogs/architecture/exponential-backoff-and-jitter/"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Что выведет SELECT COALESCE(NULL, 'default')?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "NULL"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "default"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Ошибку"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Пустую строку"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Функция возвращает первый не-NULL аргумент",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://www.postgresqltutorial.com/postgresql-coalesce/"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как сериализовать datetime в JSON в Python?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать default=datetime.isoformat"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Наследовать JSONEncoder"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Преобразовать в строку перед сериализацией"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Множество подходов",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://pynative.com/python-serialize-datetime-into-json/"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как оптимизировать N+1 запрос в ORM?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать select_related/prefetch_related"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Увеличить размер connection pool"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отключить кэширование"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Перейти на NoSQL"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Проблема связана с ленивой загрузкой",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://docs.djangoproject.com/en/4.2/ref/models/querysets/#prefetch-related"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Реализуйте декоратор для кэширования с TTL:",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать lru_cache"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Написать кастомный декоратор с Redis"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать @cache из django"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 2 и 3 верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Зависит от стека технологий",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://redislabs.com/redis-best-practices/caching-patterns/"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как обработать deadlock в PostgreSQL?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Увеличить timeout"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать SELECT FOR UPDATE NOWAIT"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Ретри логика на стороне приложения"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Комбинация подходов",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://www.postgresql.org/docs/current/explicit-locking.html"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Что делает @asyncio.coroutine?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Помечает функцию как генератор"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Создает асинхронную корутину"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Устаревший способ (используйте async/await)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 2 и 3 верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Актуально для Python 3.4+",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://docs.python.org/3/library/asyncio-task.html"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как найти утечку памяти в Python?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать tracemalloc"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Профилировать через memory_profiler"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Анализировать через objgraph"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Множество инструментов",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://stackoverflow.com/questions/110259/which-python-memory-profiler-is-recommended"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Что такое canary deployment?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Постепенный rollout новой версии"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Тестирование на реальном трафике"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Стратегия A/B тестирования"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Названо в честь канареек в шахтах",
+                "theme": "DevOps",
+                "useful_info": [
+                    "https://martinfowler.com/bliki/CanaryRelease.html"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 2,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Что такое Saga Pattern?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Метод шифрования данных"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Стратегия обработки распределенных транзакций"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Инструмент для генерации документации"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Тип индекса в NoSQL"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Компенсирующие транзакции для отката изменений",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://microservices.io/patterns/data/saga.html"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Какой HTTP-код соответствует 'Conflict'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "400"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "409"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "404"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "503"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Возникает при несовместимых изменениях",
+                "theme": "HTTP",
+                "useful_info": [
+                    "https://httpstatuses.com/409"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Для чего используется паттерн CQRS?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Оптимизация чтения и записи данных"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Кэширование запросов"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Балансировка нагрузки"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Шифрование соединений"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Разделение моделей для Command и Query",
+                "theme": "Паттерны проектирования",
+                "useful_info": [
+                    "https://martinfowler.com/bliki/CQRS.html"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Какой алгоритм консенсуса использует etcd?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Paxos"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Raft"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Gossip Protocol"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Two-Phase Commit"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Реализован в Kubernetes для координации",
+                "theme": "Распределенные системы",
+                "useful_info": [
+                    "https://etcd.io/docs/v3.5/learning/why/"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Что измеряет метрика 'p99 latency'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Среднее время ответа"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Максимальное время ответа"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Время, ниже которого находятся 99% запросов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Количество ошибок в минуту"
+                    }
+                ],
+                "correct_answer_id": 3,
+                "hint": "Перцентиль для анализа «худших» случаев",
+                "theme": "Мониторинг",
+                "useful_info": [
+                    "https://www.datadoghq.com/blog/engineering/percentiles-in-datadog/"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как реализовать версионирование API?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Через URL: /api/v1/resource"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Заголовок Accept-Version"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Query-параметр: ?version=1"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Зависит от требований и стандартов",
+                "theme": "API Design",
+                "useful_info": [
+                    "https://restfulapi.net/versioning/"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Что такое 'триггер' в PostgreSQL?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Событие, вызывающее функцию при изменении данных"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Индекс для ускорения запросов"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Тип транзакции"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Механизм репликации"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Используется для аудита или каскадных изменений",
+                "theme": "Базы данных",
+                "useful_info": [
+                    "https://www.postgresql.org/docs/current/triggers.html"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Какой подход НЕ подходит для деплоя миграций БД?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Flyway"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ручное выполнение SQL скриптов"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Миграции в коде приложения"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Генерация миграций через ORM"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Потенциально рискованный метод",
+                "theme": "DevOps",
+                "useful_info": [
+                    "https://flywaydb.org/documentation/concepts/migrations"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Что такое 'idempotency key' в API?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Ключ для шифрования данных"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Уникальный идентификатор для предотвращения дублирования операций"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Параметр сортировки"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Хеш содержимого запроса"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Полезно для повторных POST-запросов",
+                "theme": "API Design",
+                "useful_info": [
+                    "https://stripe.com/blog/idempotency"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как оптимизировать запрос с JOIN больших таблиц?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Денормализация данных"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использование индексов на ключах JOIN"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Партиционирование таблиц"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Комбинированный подход",
+                "theme": "Базы данных",
+                "useful_info": [
+                    "https://use-the-index-luke.com/sql/join"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как работает 'blue-green deployment'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Постепенное обновление через canary"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Два идентичных окружения с переключением трафика"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Откат к предыдущей версии при ошибках"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Резервное копирование перед деплоем"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Минимизирует downtime",
+                "theme": "DevOps",
+                "useful_info": [
+                    "https://martinfowler.com/bliki/BlueGreenDeployment.html"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Что такое 'температурный ключ' в PostgreSQL?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Ключ для шифрования данных"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Индекс, учитывающий частоту обновления данных"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Тип данных для хранения температур"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Метод сжатия таблиц"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Связано с оптимизацией индексов",
+                "theme": "Базы данных",
+                "useful_info": [
+                    "https://www.cybertec-postgresql.com/en/hot-indexes-and-temperature/"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Какой инструмент НЕ используется для контейнеризации?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Docker"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Kubernetes"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Jenkins"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Podman"
+                    }
+                ],
+                "correct_answer_id": 3,
+                "hint": "Это CI/CD инструмент",
+                "theme": "DevOps",
+                "useful_info": [
+                    "https://www.docker.com/resources/what-container/"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Что такое 'запах кода' (code smell)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Синтаксическая ошибка"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Потенциальная проблема в дизайне кода"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Несоответствие стилю кодирования"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Зависимость с уязвимостью"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Требует рефакторинга",
+                "theme": "Code Quality",
+                "useful_info": [
+                    "https://refactoring.guru/refactoring/smells"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как обработать 'Partial Failure' в микросервисах?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Retry с экспоненциальной задержкой"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Circuit Breaker"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Dead Letter Queue"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Комбинация стратегий",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Какой тип данных JSONB в PostgreSQL?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Бинарное представление JSON"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Текстовое представление JSON"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Устаревший аналог XML"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Тип для геоданных"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Поддерживает индексацию и операции",
+                "theme": "Базы данных",
+                "useful_info": [
+                    "https://www.postgresql.org/docs/current/datatype-json.html"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как реализовать Pub/Sub в RabbitMQ?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Через exchanges типа fanout"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Используя routing keys"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Создавая очереди с TTL"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Через RPC-вызовы"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Широковещательная рассылка",
+                "theme": "Message Brokers",
+                "useful_info": [
+                    "https://www.rabbitmq.com/tutorials/tutorial-three-python.html"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Что такое 'Шардирование'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Разделение данных на части по ключу"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Резервное копирование БД"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Шифрование данных"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Сжатие логов"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Горизонтальное масштабирование",
+                "theme": "Базы данных",
+                "useful_info": [
+                    "https://www.digitalocean.com/community/tutorials/understanding-database-sharding"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Какой HTTP-метод идемпотентен?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "GET"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "POST"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "PATCH"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Не изменяет состояние сервера",
+                "theme": "HTTP",
+                "useful_info": [
+                    "https://restfulapi.net/idempotent-rest-apis/"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как избежать 'SELECT N+1' в Hibernate?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать JOIN FETCH"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Настроить batch fetching"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Писать нативный SQL"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2 верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Проблема ленивой загрузки",
+                "theme": "ORM",
+                "useful_info": [
+                    "https://vladmihalcea.com/n-plus-1-query-problem/"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 3,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Что такое 'Event Sourcing'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Сбор логов для аналитики"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Сохранение изменений состояния как последовательности событий"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Синхронизация времени между серверами"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Метод шифрования данных"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Используется в системах с аудитом и восстановлением состояния",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://martinfowler.com/eaaDev/EventSourcing.html"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Какой алгоритм консенсуса использует Kafka?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Raft"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Paxos"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "ZooKeeper Atomic Broadcast (ZAB)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Gossip Protocol"
+                    }
+                ],
+                "correct_answer_id": 3,
+                "hint": "Зависит от Apache ZooKeeper",
+                "theme": "Распределенные системы",
+                "useful_info": [
+                    "https://kafka.apache.org/documentation/#design_impl"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Что такое 'Lateral Join' в PostgreSQL?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Объединение таблиц по условию"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Вызов функции для каждой строки с доступом к предыдущим строкам"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Тип индекса для JSONB"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Механизм репликации"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Полезно для обработки вложенных данных",
+                "theme": "Базы данных",
+                "useful_info": [
+                    "https://www.postgresql.org/docs/current/queries-table-expressions.html"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Какой инструмент используется для трейсинга в распределенных системах?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Prometheus"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Jaeger"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Grafana"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Elasticsearch"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Реализует OpenTracing",
+                "theme": "Мониторинг",
+                "useful_info": [
+                    "https://www.jaegertracing.io/"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Что такое 'Backpressure' в реактивных системах?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Механизм балансировки нагрузки"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Контроль скорости обработки данных для избежания перегрузки"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Шифрование трафика между микросервисами"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Стратегия кэширования"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Используется в Project Reactor и Akka",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.lightbend.com/blog/2017-07-20-reactive-back-pressure/"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Какой HTTP-код соответствует 'Too Many Requests'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "429"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "503"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "401"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "422"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Связан с ограничением скорости (rate limiting)",
+                "theme": "HTTP",
+                "useful_info": [
+                    "https://httpstatuses.com/429"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Что такое 'Materialized View'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Кэшированная копия данных с периодическим обновлением"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Динамическое представление данных"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Тип индекса для полнотекстового поиска"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Способ репликации таблиц"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Используется для оптимизации сложных запросов",
+                "theme": "Базы данных",
+                "useful_info": [
+                    "https://www.postgresql.org/docs/current/rules-materializedviews.html"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Для чего используется паттерн 'Bulkhead'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Изоляция ресурсов для предотвращения каскадных отказов"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Объединение нескольких запросов в один"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Шифрование данных в REST API"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Оптимизация работы с памятью"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Назван в честь переборок на корабле",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Какой тип данных лучше подходит для хранения дерева в PostgreSQL?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "ltree"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "jsonb"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "array"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "hstore"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Поддерживает операции с иерархическими структурами",
+                "theme": "Базы данных",
+                "useful_info": [
+                    "https://www.postgresql.org/docs/current/ltree.html"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Что такое 'Shadow Deployment'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Деплой в изолированное окружение для тестирования"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Запуск новой версии параллельно со старой без переключения трафика"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Создание резервной копии перед обновлением"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Стратегия A/B тестирования"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Позволяет сравнить поведение версий на реальном трафике",
+                "theme": "DevOps",
+                "useful_info": [
+                    "https://www.gremlin.com/blog/shadow-deployment/"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Какой алгоритм используется для поиска кратчайшего пути в графе?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "A*"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Dijkstra"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "BFS"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Зависит от условий задачи",
+                "theme": "Алгоритмы",
+                "useful_info": [
+                    "https://www.geeksforgeeks.org/shortest-path-algorithms/"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Что такое 'TTFB' (Time to First Byte)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Время от отправки запроса до получения первого байта ответа"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Время загрузки всей страницы"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Время обработки запроса на сервере"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Метрика для измерения использования CPU"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Важный показатель производительности веб-приложений",
+                "theme": "Мониторинг",
+                "useful_info": [
+                    "https://web.dev/ttfb/"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как предотвратить SQL-инъекции?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать ORM"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Экранировать пользовательский ввод"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Применять prepared statements"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "OWASP рекомендует несколько подходов",
+                "theme": "Безопасность",
+                "useful_info": [
+                    "https://owasp.org/www-community/attacks/SQL_Injection"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Что такое 'Reactive Programming'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Программирование с использованием потоков данных и асинхронных операций"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Методология тестирования"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Синхронная обработка запросов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Шаблон для работы с базами данных"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Используется в RxJS, Project Reactor",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://www.reactivemanifesto.org/"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Какой тип индекса лучше для полнотекстового поиска в PostgreSQL?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "GIN"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "B-tree"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Hash"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "GiST"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Оптимизирован для составных запросов",
+                "theme": "Базы данных",
+                "useful_info": [
+                    "https://www.postgresql.org/docs/current/textsearch-indexes.html"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Что такое 'Canary Analysis'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Анализ производительности новой версии на части трафика"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Поиск уязвимостей в коде"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Тестирование отказоустойчивости системы"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Оптимизация SQL-запросов"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Связано с постепенным rollout",
+                "theme": "DevOps",
+                "useful_info": [
+                    "https://cloud.google.com/architecture/running-a-canary-analysis"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Какой протокол использует gRPC по умолчанию?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "HTTP/1.1"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "HTTP/2"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "WebSocket"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "TCP"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Поддерживает двунаправленные потоки",
+                "theme": "API",
+                "useful_info": [
+                    "https://grpc.io/"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Что такое 'Проблема византийских генералов'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Задача достижения консенсуса в распределенных системах с ненадежными компонентами"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Оптимизация сетевых запросов"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Метод балансировки нагрузки"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Способ шифрования трафика"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Решается алгоритмами вроде PBFT",
+                "theme": "Распределенные системы",
+                "useful_info": [
+                    "https://en.wikipedia.org/wiki/Byzantine_fault"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Какой инструмент используется для управления секретами?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Vault"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Kibana"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Prometheus"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Grafana"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Разработан HashiCorp",
+                "theme": "DevOps",
+                "useful_info": [
+                    "https://www.vaultproject.io/"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Что такое 'Cold Start' в serverless-архитектуре?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Задержка при первом запуске функции после периода бездействия"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Остановка неиспользуемых инстансов"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Инициализация базы данных"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Загрузка кэша при старте приложения"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Актуально для AWS Lambda и аналогичных сервисов",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://aws.amazon.com/ru/blogs/compute/operating-lambda-performance-optimization-part-1/"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 4,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Что такое 'Dead Letter Queue'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Очередь для хранения успешно обработанных сообщений"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Очередь для сообщений, которые не удалось обработать"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Механизм приоритезации задач"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Инструмент для сжатия данных"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Используется для изоляции проблемных сообщений",
+                "theme": "Message Brokers",
+                "useful_info": [
+                    "https://www.rabbitmq.com/dlx.html"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Какой алгоритм используется в Consistent Hashing для распределения данных?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Round Robin"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Кольцевое хеширование с виртуальными узлами"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Случайное распределение"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Линейный поиск"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Минимизирует перемещение данных при изменении числа узлов",
+                "theme": "Распределенные системы",
+                "useful_info": [
+                    "https://www.toptal.com/big-data/consistent-hashing"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Что измеряет метрика 'Error Budget'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Количество доступных серверов"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Допустимое количество ошибок за период"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Скорость обработки запросов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Объем свободной памяти"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Связано с SLA/SLO",
+                "theme": "Мониторинг",
+                "useful_info": [
+                    "https://sre.google/sre-book/error-budgets/"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Как реализовать 'Feature Toggle'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Через условные проверки в коде"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Используя внешние конфигурации"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "С помощью A/B тестирования"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Позволяет включать/выключать функциональность без деплоя",
+                "theme": "DevOps",
+                "useful_info": [
+                    "https://martinfowler.com/articles/feature-toggles.html"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Что такое 'Write-Ahead Log' (WAL)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Кэш для ускорения записи"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Журнал для восстановления данных после сбоя"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Индекс для полнотекстового поиска"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Механизм репликации"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Используется в PostgreSQL и Kafka",
+                "theme": "Базы данных",
+                "useful_info": [
+                    "https://www.postgresql.org/docs/current/wal.html"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Какой протокол использует etcd для обмена данными между нодами?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "HTTP/2"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "gRPC"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "WebSocket"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "UDP"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Основан на RPC-коммуникации",
+                "theme": "Распределенные системы",
+                "useful_info": [
+                    "https://etcd.io/docs/v3.5/learning/why/"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Для чего используется 'Exponential Backoff'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Оптимизация SQL-запросов"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Повтор запросов с увеличивающейся задержкой"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Шифрование сетевого трафика"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Балансировка нагрузки"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Снижает нагрузку при временных сбоях",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://aws.amazon.com/ru/blogs/architecture/exponential-backoff-and-jitter/"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Что такое 'Canary Release'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Полный деплой новой версии"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Постепенное внедрение изменений для части пользователей"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Откат к предыдущей версии"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Тестирование в изолированном окружении"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Названо в честь канареек в шахтах",
+                "theme": "DevOps",
+                "useful_info": [
+                    "https://martinfowler.com/bliki/CanaryRelease.html"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Какой тип блокировки в PostgreSQL предотвращает 'Lost Update'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "FOR UPDATE"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "FOR SHARE"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "ACCESS EXCLUSIVE"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Используется в конкурентных транзакциях",
+                "theme": "Базы данных",
+                "useful_info": [
+                    "https://www.postgresql.org/docs/current/explicit-locking.html"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Что такое 'Health Check' в Kubernetes?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Проверка доступности ноды"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Тест работоспособности контейнера"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Мониторинг использования CPU"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Анализ логов приложения"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Liveness и Readiness пробы",
+                "theme": "DevOps",
+                "useful_info": [
+                    "https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как реализовать 'Rate Limiting' на уровне приложения?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать Redis для подсчета запросов"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Настроить Nginx"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Применить алгоритм Token Bucket"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Зависит от архитектуры системы",
+                "theme": "Безопасность",
+                "useful_info": [
+                    "https://cloud.google.com/architecture/rate-limiting-strategies-techniques"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Что такое 'Idempotency Key'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Ключ для шифрования данных"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Уникальный идентификатор для предотвращения дублирования операций"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Параметр сортировки результатов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Хеш содержимого запроса"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Полезно для повторных POST-запросов",
+                "theme": "API Design",
+                "useful_info": [
+                    "https://stripe.com/blog/idempotency"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Какой алгоритм используется в Bloom Filter?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Хеширование с вероятностной проверкой"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Бинарный поиск"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Сортировка слиянием"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Поиск в ширину"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Возможны ложноположительные срабатывания",
+                "theme": "Алгоритмы",
+                "useful_info": [
+                    "https://en.wikipedia.org/wiki/Bloom_filter"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Что такое 'Service Mesh'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Инфраструктурный слой для управления коммуникацией микросервисов"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "База данных для хранения конфигов"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Инструмент для деплоя контейнеров"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Система кэширования"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Примеры: Istio, Linkerd",
+                "theme": "Микросервисы",
+                "useful_info": [
+                    "https://istio.io/latest/docs/concepts/what-is-istio/"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Какой индекс лучше для поиска по префиксу строки?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "B-tree"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Hash"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "GIN"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "GiST"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Стандартный выбор для LIKE 'prefix%'",
+                "theme": "Базы данных",
+                "useful_info": [
+                    "https://use-the-index-luke.com/sql/where-clause/searching-for-ranges/like-performance-tuning"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Что такое 'Zombie Process'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Завершенный процесс, ожидающий статуса родителем"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Процесс с утечкой памяти"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Зависший сетевой запрос"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Незавершенная транзакция"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Отображается в ps с статусом 'Z'",
+                "theme": "Операционные системы",
+                "useful_info": [
+                    "https://en.wikipedia.org/wiki/Zombie_process"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Какой паттерн НЕ относится к реактивному программированию?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Observer"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Iterator"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Publisher-Subscriber"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Circuit Breaker"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Используется для последовательного доступа к элементам",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://projectreactor.io/docs/core/release/reference/"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Что такое 'Chaos Engineering'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Тестирование системы в условиях сбоев"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Метод взлома защиты"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Оптимизация алгоритмов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Сбор мусора в памяти"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Популяризировано Netflix",
+                "theme": "Тестирование",
+                "useful_info": [
+                    "https://principlesofchaos.org/"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Какой алгоритм использует Git для хранения данных?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "SHA-1"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "MD5"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "CRC32"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "SHA-256"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Переход на SHA-256 в процессе",
+                "theme": "Version Control",
+                "useful_info": [
+                    "https://git-scm.com/book/en/v2/Git-Internals-Git-Objects"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Что такое 'Data Locality' в контексте Big Data?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Хранение данных близко к месту обработки"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Шифрование локальных данных"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Оптимизация запросов JOIN"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Репликация между дата-центрами"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Важно в Hadoop и Spark",
+                "theme": "Big Data",
+                "useful_info": [
+                    "https://www.oreilly.com/library/view/hadoop-the-definitive/9781491901687/"
+                ]
+            }
+        ]
+    }
+]
