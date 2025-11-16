@@ -63,8 +63,13 @@ const Main = () => {
     const [messages, setMessages] = useState([]);
     const [questionIndex, setQuestionIndex] = useState(0);
 
+    const [isInterviewFinished, setIsInterviewFinished] = useState(false);
+
     // --- Этап 1 ---
-    const startInterview = () => setStage("direction");
+    const startInterview = () => {
+        setStage("direction");
+        setIsInterviewFinished(false); // Сбрасываем флаг завершения
+    };
 
     // --- Этап 2 ---
     const chooseDirection = (dir) => {
@@ -118,7 +123,7 @@ const Main = () => {
                 ]);
 
                 // <<< добавляем
-                setStage("finished");
+                setIsInterviewFinished(true);
             }, 500);
         }
     };
@@ -129,33 +134,50 @@ const Main = () => {
 
         const data = JSON.parse(saved);
 
-        if (data.stage === "finished") {
+        // Если интервью было завершено, показываем завершенный чат
+        if (data.isInterviewFinished) {
+            setStage("interview");
+            setDirection(data.direction);
+            setLevel(data.level);
+            setMessages(data.messages);
+            setQuestionIndex(data.questionIndex);
+            setIsInterviewFinished(true);
+        } else if (data.stage === "finished") {
+            // Для обратной совместимости со старыми данными
             setStage("intro");
-            setDirection(null);
-            setLevel(null);
-            setMessages([]);
-            setQuestionIndex(0);
-            return;
+        } else {
+            // Обычная загрузка состояния
+            setStage(data.stage ?? "intro");
+            setDirection(data.direction ?? null);
+            setLevel(data.level ?? null);
+            setQuestionIndex(data.questionIndex ?? 0);
+            setMessages(data.messages ?? []);
+            setIsInterviewFinished(data.isInterviewFinished ?? false);
         }
-
-        setStage(data.stage ?? "intro");
-        setDirection(data.direction ?? null);
-        setLevel(data.level ?? null);
-        setQuestionIndex(data.questionIndex ?? 0);
-        setMessages(data.messages ?? []);
     }, []);
 
     useEffect(() => {
         const save = {
-            stage,
+            stage: isInterviewFinished ? "interview" : stage, // Сохраняем stage как interview если завершено
             direction,
             level,
             questionIndex,
             messages,
+            isInterviewFinished // Сохраняем флаг завершения
         };
 
         localStorage.setItem("interviewState", JSON.stringify(save));
-    }, [stage, direction, level, questionIndex, messages]);
+    }, [stage, direction, level, questionIndex, messages, isInterviewFinished]);
+
+    const restartInterview = () => {
+        setStage("intro");
+        setDirection(null);
+        setLevel(null);
+        setMessages([]);
+        setQuestionIndex(0);
+        setIsInterviewFinished(false);
+        localStorage.removeItem("interviewState");
+    };
 
     return (
         <div className="background">
@@ -211,11 +233,14 @@ const Main = () => {
             )}
 
             {/* --- ЭКРАН 4: Чат --- */}
-            {stage === "interview" && (
+            {(stage === "interview") && (
                 <div className="chat-container">
-                    <h1 className="chat-title">
-                        Собеседование ({direction}, {level})
-                    </h1>
+                    <div className="chat-header">
+                        <h1 className="chat-title">
+                            Собеседование ({direction}, {level})
+                            {isInterviewFinished && " - Завершено"}
+                        </h1>
+                    </div>
 
                     <div className="messages-wrapper">
                         {messages.map((m) => (
@@ -229,8 +254,8 @@ const Main = () => {
                         ))}
                     </div>
 
-                    {/* Ответы */}
-                    {questions[direction][level][questionIndex] && (
+                    {/* Ответы показываем только если интервью не завершено */}
+                    {!isInterviewFinished && questions[direction]?.[level]?.[questionIndex] && (
                         <div className="answers">
                             {questions[direction][level][questionIndex].options.map((opt) => (
                                 <button
@@ -243,16 +268,20 @@ const Main = () => {
                             ))}
                         </div>
                     )}
+
+                    {/* Сообщение о завершении */}
+                    {isInterviewFinished && (
+                        <div className="completion-message">
+                            <p>Собеседование завершено. Вы можете просмотреть историю диалога или начать заново.</p>
+                            {isInterviewFinished && (
+                            <button className="restart-button" onClick={restartInterview}>
+                                Начать заново
+                            </button>
+                        )}
+                        </div>
+                    )}
                 </div>
             )}
-
-            {/* --- ЭКРАН 5: Завершено --- */}
-            {/* {stage === "finished" && (
-                <div className="fullscreen">
-                    <h2>Собеседование завершено!</h2>
-                    <p>Перезагрузите страницу, чтобы начать заново.</p>
-                </div>
-            )} */}
         </div>
     );
 };
