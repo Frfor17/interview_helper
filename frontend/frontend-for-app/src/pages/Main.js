@@ -190,7 +190,7 @@ const Main = () => {
                     </div>
                 </div>
             )}
-
+            backend junior
             {/* --- ЭКРАН 3: Уровень --- */}
             {stage === "level" && (
                 <div className="fullscreen">
