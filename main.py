@@ -113,6 +113,11 @@ async def health_check():
     """
     return {"status": "healthy", "service": "OpenRouter Chat API"}
 
+@app.get("/")
+async def welcome():
+    return {"message": "Добро пожаловать", "next_endpoint": "/start-interview"}
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
+
