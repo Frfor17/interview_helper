@@ -13,7 +13,7 @@ const ChatPage = ({ onBack }) => {
     useEffect(() => {
         const welcomeMessage = {
             id: Date.now(),
-            text: "Привет! Давайте начнем интервью. Задавайте ваш вопрос.",
+            text: "Привет! Давайте начнем интервью.",
             isUser: false
         };
         setMessages([welcomeMessage]);
