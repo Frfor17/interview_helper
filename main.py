@@ -192,16 +192,25 @@ async def start_interview():
 
 @app.post("/sendmessage")
 async def send_message(request: MessageRequest):
-    # Выбираем случайное направление
+    user_message = request.message.lower().strip()
+    
+    # Если это первое сообщение или приветствие
+    if any(word in user_message for word in ["привет", "начать", "start", "hello", "hi"]):
+        welcome_text = "Привет! Я готов провести собеседование по Backend разработке. Давайте начнем!"
+        
+        # Добавляем первый вопрос
+        direction = "backend"
+        level = "middle"
+        question_data = random.choice(questions[direction][level])
+        first_question = f"\n\n🎯 Первый вопрос:\n{question_data['question']}\n\nВарианты: {', '.join(question_data['options'])}"
+        
+        return {"answer": welcome_text + first_question}
+    
+    # Для остальных сообщений - случайный вопрос
     direction = "backend"
-    
-    # Выбираем случайный уровень для этого направления
     level = "middle"
-    
-    # Выбираем случайный вопрос для этого направления и уровня
     question_data = random.choice(questions[direction][level])
     
-    # Формируем ответ
     answer = f"🎯 Вопрос из {direction} ({level}):\n\n{question_data['question']}\n\nВарианты: {', '.join(question_data['options'])}"
     
     return {"answer": answer}

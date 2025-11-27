@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import HeaderBlock from "../components/HeaderBlock";
 import "./ChatPage.css";
 
@@ -6,6 +6,18 @@ const ChatPage = ({ onBack }) => {
     const [messages, setMessages] = useState([]);
     const [inputValue, setInputValue] = useState("");
     const [loading, setLoading] = useState(false);
+
+
+
+        // Добавляем приветственное сообщение при загрузке
+    useEffect(() => {
+        const welcomeMessage = {
+            id: Date.now(),
+            text: "Привет! Давайте начнем интервью. Задавайте ваш вопрос.",
+            isUser: false
+        };
+        setMessages([welcomeMessage]);
+    }, []);
 
     const sendMessage = async () => {
         if (!inputValue.trim()) return;
