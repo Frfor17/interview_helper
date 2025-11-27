@@ -2,63 +2,12 @@ import React, { useState } from "react";
 import HeaderBlock from "../components/HeaderBlock";
 import "./ChatPage.css";
 
-
-export const questions = {
-    frontend: {
-        junior: [
-            {
-                question: "Что такое HTML?",
-                options: ["Язык разметки", "Фреймворк"],
-            },
-            {
-                question: "Что такое CSS?",
-                options: ["Стили", "База данных"],
-            }
-        ],
-        middle: [
-            {
-                question: "Что такое Virtual DOM?",
-                options: ["Копия DOM", "Объект браузера"],
-            }
-        ],
-        senior: [
-            {
-                question: "Как работает reconciliation в React?",
-                options: ["Diffing", "Shadow DOM"],
-            }
-        ]
-    },
-
-    backend: {
-        junior: [
-            { question: "Что такое API?", options: ["Интерфейс", "Протокол"] }
-        ],
-        middle: [
-            { question: "Что такое Docker?", options: ["Контейнеризация", "Сервис"] }
-        ],
-        senior: [
-            { question: "Что такое CQRS?", options: ["Паттерн", "Язык"] }
-        ]
-    },
-
-    qa: {
-        junior: [
-            { question: "Что такое тест-кейс?", options: ["Сценарий", "Сервис"] }
-        ],
-        middle: [
-            { question: "Что такое регрессия?", options: ["Повторное тестирование", "Сбор данных"] }
-        ],
-        senior: [
-            { question: "Что такое нагрузочное тестирование?", options: ["Тест скорости", "Тест UI"] }
-        ]
-    }
-};
-
 const ChatPage = ({ onBack }) => {
     const [messages, setMessages] = useState([]);
     const [inputValue, setInputValue] = useState("");
+    const [loading, setLoading] = useState(false);
 
-    const sendMessage = () => {
+    const sendMessage = async () => {
         if (!inputValue.trim()) return;
 
         // Добавляем сообщение пользователя
@@ -70,20 +19,50 @@ const ChatPage = ({ onBack }) => {
 
         setMessages(prev => [...prev, newMessage]);
         setInputValue("");
+        setLoading(true);
 
-        // Симуляция ответа AI
-        setTimeout(() => {
+        try {
+            // Отправляем сообщение на бэкенд
+            const response = await fetch("http://localhost:8000/sendmessage", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    message: inputValue,
+                    user_id: "user123"  // можно добавить идентификатор пользователя
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const data = await response.json();
+
+            // Добавляем ответ от бэкенда
             const aiResponse = {
                 id: Date.now() + 1,
-                text: "Это пример ответа AI. Здесь будет логика собеседования",
+                text: data.answer,
                 isUser: false
             };
             setMessages(prev => [...prev, aiResponse]);
-        }, 1000);
+
+        } catch (error) {
+            console.error("Ошибка:", error);
+            const aiResponse = {
+                id: Date.now() + 1,
+                text: "❌ Ошибка соединения с сервером",
+                isUser: false
+            };
+            setMessages(prev => [...prev, aiResponse]);
+        } finally {
+            setLoading(false);
+        }
     };
 
     const handleKeyPress = (e) => {
-        if (e.key === "Enter") {
+        if (e.key === "Enter" && !loading) {
             sendMessage();
         }
     };
@@ -115,6 +94,12 @@ const ChatPage = ({ onBack }) => {
                             </div>
                         ))
                     )}
+                    {/* Индикатор загрузки */}
+                    {loading && (
+                        <div className="message ai-message loading">
+                            ⌛ Бэкенд думает...
+                        </div>
+                    )}
                 </div>
 
                 {/* Поле ввода */}
@@ -127,13 +112,14 @@ const ChatPage = ({ onBack }) => {
                             onKeyPress={handleKeyPress}
                             placeholder="Напишите ваш вопрос..."
                             className="chat-input"
+                            disabled={loading}
                         />
                         <button 
                             onClick={sendMessage}
-                            disabled={!inputValue.trim()}
+                            disabled={!inputValue.trim() || loading}
                             className="send-button"
                         >
-                            ➤
+                            {loading ? "⏳" : "➤"}
                         </button>
                     </div>
                 </div>

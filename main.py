@@ -5,6 +5,7 @@ import requests
 import json
 from typing import Optional
 from fastapi.responses import RedirectResponse
+import random
 
 # Импортируем конфигурацию из отдельного файла
 try:
@@ -20,6 +21,73 @@ app = FastAPI(
     version="1.0.0"
 )
 
+questions = {
+    "frontend": {
+        "junior": [
+            {
+                "question": "Что такое HTML?",
+                "options": ["Язык разметки", "Фреймворк"]
+            },
+            {
+                "question": "Что такое CSS?",
+                "options": ["Стили", "База данных"]
+            }
+        ],
+        "middle": [
+            {
+                "question": "Что такое Virtual DOM?",
+                "options": ["Копия DOM", "Объект браузера"]
+            }
+        ],
+        "senior": [
+            {
+                "question": "Как работает reconciliation в React?",
+                "options": ["Diffing", "Shadow DOM"]
+            }
+        ]
+    },
+    "backend": {
+        "junior": [
+            {
+                "question": "Что такое API?",
+                "options": ["Интерфейс", "Протокол"]
+            }
+        ],
+        "middle": [
+            {
+                "question": "Что такое Docker?",
+                "options": ["Контейнеризация", "Сервис"]
+            }
+        ],
+        "senior": [
+            {
+                "question": "Что такое CQRS?",
+                "options": ["Паттерн", "Язык"]
+            }
+        ]
+    },
+    "qa": {
+        "junior": [
+            {
+                "question": "Что такое тест-кейс?",
+                "options": ["Сценарий", "Сервис"]
+            }
+        ],
+        "middle": [
+            {
+                "question": "Что такое регрессия?",
+                "options": ["Повторное тестирование", "Сбор данных"]
+            }
+        ],
+        "senior": [
+            {
+                "question": "Что такое нагрузочное тестирование?",
+                "options": ["Тест скорости", "Тест UI"]
+            }
+        ]
+    }
+}
+
 # Добавьте CORS middleware
 app.add_middleware(
     CORSMiddleware,
@@ -28,6 +96,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+class MessageRequest(BaseModel):
+    message: str
 
 class ChatRequest(BaseModel):
     message: str
@@ -118,6 +189,23 @@ async def health_check():
 async def start_interview():
     # А вот это уже редирект на другую страницу
     return RedirectResponse(url="/chat")
+
+@app.post("/sendmessage")
+async def send_message(request: MessageRequest):
+    # Выбираем случайное направление
+    direction = "backend"
+    
+    # Выбираем случайный уровень для этого направления
+    level = "middle"
+    
+    # Выбираем случайный вопрос для этого направления и уровня
+    question_data = random.choice(questions[direction][level])
+    
+    # Формируем ответ
+    answer = f"🎯 Вопрос из {direction} ({level}):\n\n{question_data['question']}\n\nВарианты: {', '.join(question_data['options'])}"
+    
+    return {"answer": answer}
+
 
 if __name__ == "__main__":
     import uvicorn
