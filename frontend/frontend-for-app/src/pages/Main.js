@@ -2,17 +2,42 @@ import { useState, useEffect } from "react";
 import HeaderBlock from "../components/HeaderBlock";
 // import { questions } from "../data/questions";
 import "./Main.css";
+import '../assets/fonts/fonts.css';
 
 export const questions = {
     frontend: {
         junior: [
             {
-                question: "Что такое HTML?",
-                options: ["Язык разметки", "Фреймворк"],
+                question: "Какой тег используется для создания ссылки?",
+                options: ["<link>", "<a>", "<href>", "<url>"],
             },
             {
-                question: "Что такое CSS?",
-                options: ["Стили", "База данных"],
+                question: "Как изменить цвет текста в CSS?",
+                options: ["text-color: red", "font-color: red", "color: red", "text-style: red"],
+            },
+             {
+                question: "Как объявить переменную в JavaScript?",
+                options: ["variable x = 5", "let x = 5", "v x = 5", "var x = 5"],
+            },
+             {
+                question: "Как добавить класс элементу через JavaScript?",
+                options: ["element.addClass('new-class')", "element.className = 'new-class'", "element.classList.add('new-class')", "element.setClass('new-class')"],
+            },
+             {
+                question: "Как сделать элемент блочным?",
+                options: ["display: block", "position: block", "type: block", "block: true"],
+            },
+             {
+                question: "Как создать массив в JavaScript?",
+                options: ["array = [1,2,3]", "array = {1,2,3}", "array = (1,2,3)", "array = '1,2,3'"],
+            },
+            {
+                question: "Как подключить CSS к HTML?",
+                options: ["<script src='style.css'>", "<style src='style.css'>", "<link rel='stylesheet' href='style.css'>", "<css>style.css</css>"],
+            },
+            {
+                question: "Что делает console.log()?",
+                options: [ "Создает HTML-элемент", "Выводит данные в консоль браузера", "Изменяет стили страницы", "Сохраняет данные в localStorage"],
             }
         ],
         middle: [
@@ -212,7 +237,7 @@ const Main = () => {
                     </div>
                 </div>
             )}
-            backend junior
+
             {/* --- ЭКРАН 3: Уровень --- */}
             {stage === "level" && (
                 <div className="fullscreen">
@@ -278,6 +303,9 @@ const Main = () => {
                                 Начать заново
                             </button>
                         )}
+                        <button className="restart-button" onClick={restartInterview}>
+                                Начать заново
+                            </button>
                         </div>
                     )}
                 </div>

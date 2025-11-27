@@ -1,0 +1,2262 @@
+[
+    {
+        "option_id": 1,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Как реализовать кастомный анимационный переход между Fragment?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "FragmentTransaction.setCustomAnimations()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать Shared Element Transition"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Создать ObjectAnimator в onViewCreated"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Комбинирование подходов",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://developer.android.com/guide/fragments/animate"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как оптимизировать RecyclerView с 10K+ элементами?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать DiffUtil + объединение данных"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Увеличить размер пула ViewHolder"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отключить анимации по умолчанию"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Множественные техники оптимизации",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/reference/androidx/recyclerview/widget/DiffUtil"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Для чего нужен SavedStateHandle в ViewModel?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Сохранение данных при process death"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Передача аргументов между Fragment"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Кэширование сетевых запросов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Шифрование пользовательских данных"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Восстановление состояния",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/topic/libraries/architecture/viewmodel-savedstate"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Как избежать утечек памяти при использовании LiveData?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать LifecycleOwner с правильным жизненным циклом"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Преобразовать LiveData в Flow"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Вызывать removeObserver явно"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Управление подписками",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://medium.com/androiddevelopers/livedata-with-snackbar-navigation-and-other-events-the-singleliveevent-case-ac2622673150"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как реализовать каскадное удаление в Room?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "@ForeignKey(onDelete = CASCADE)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать @Transaction с DAO-методом"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Вручную удалять связанные данные"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Внешние ключи",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://developer.android.com/training/data-storage/room/relationships#cascade"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как использовать Flow для пагинации с сетью и кэшем?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "PagingData.from() + RemoteMediator"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "combine() нескольких Flow"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "flatMapLatest() для инвалидации кэша"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Paging 3.0",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/topic/libraries/architecture/paging/v3-network-db"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как обработать ошибки в цепочке корутин?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "try/catch в корневом launch"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "CoroutineExceptionHandler"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "supervisorScope"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Иерархия исключений",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/exception-handling.html"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как реализовать A/B-тестирование фичи без перезапуска приложения?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Feature Flags + Remote Config"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Создать отдельные ветки кода"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать Build Variants"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Динамическая загрузка классов"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Удаленное управление",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://firebase.google.com/docs/remote-config"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как уменьшить размер APK?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Включить ProGuard/R8 + использовать WebP"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Удалить неиспользуемые локализации"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Разделить на динамические фичи"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Множественные подходы",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/topic/performance/reduce-apk-size"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как реализовать двустороннюю привязку данных в Jetpack Compose?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "var value by remember { mutableStateOf(...) }"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать MutableStateFlow"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "ViewModel с LiveData"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Состояние vs события",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/jetpack/compose/state#two-way"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как профилировать использование памяти в Android Studio?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Memory Profiler + Heap Dump"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Logcat с фильтром по тегам"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Debug.startMethodTracing()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Счетчики в onDestroy()"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Инструменты разработчика",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/studio/profile/memory-profiler"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как организовать модульную навигацию с Hilt?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Навигационные графы в каждом модуле + общий NavHost"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Единый граф в app-модуле"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Deep Links для межмодульного взаимодействия"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Изоляция модулей",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/training/dependency-injection/hilt-multi-module"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как реализовать retry для сетевого запроса с экспоненциальной задержкой?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Retrofit с Interceptor + Coroutine retryWhen"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ручной счетчик попыток в цикле"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать WorkManager"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "ExponentialBackoff в OkHttp"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Комбинирование подходов",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://square.github.io/okhttp/4.x/okhttp/okhttp3/-ok-http-client/-builder/retry-on-connection-failure/"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как обеспечить безопасное хранение токенов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Android Keystore + EncryptedSharedPreferences"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Хранить в приватном SharedPreferences"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать SecureRandom для генерации"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Шифрование на уровне системы",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://developer.android.com/topic/security/data"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как тестировать ViewModel с LiveData?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "observeForTesting() + InstantTaskExecutorRule"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Mockito для симуляции LiveData"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Ручное управление жизненным циклом"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "JUnit Rules",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/training/testing/local-tests"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Как обработать конфигурацию Clean Architecture в Android?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Разделение на data/domain/presentation слои"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать единый модуль с пакетами"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Внедрение зависимостей через Service Locator"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Слоистая архитектура",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/topic/architecture"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как реализовать предзагрузку данных для ViewPager2?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "setOffscreenPageLimit()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать FragmentStateAdapter с LazyLoading"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Кэширование в Repository"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Комбинирование методов",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/training/animation/vp2-migration#prefetch"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как использовать Hilt для внедрения контекста?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "@ApplicationContext/@ActivityContext"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Через @Inject constructor()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать Application.getContext()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Создать Provider-класс"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Qualifiers",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://developer.android.com/training/dependency-injection/hilt-android#component-default"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как улучшить FPS в анимированном Lottie?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Уменьшить разрешение анимации"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать hardwareAccelerated"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Кэшировать рендер в Bitmap"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Оптимизация рендеринга",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://airbnb.io/lottie/#/android?id=performance"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как реализовать кастомный атрибут View?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "declare-styleable + TypedArray"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать BindingAdapter"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Расширить класс View"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Несколько подходов",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://developer.android.com/training/custom-views/create-view#customattr"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 2,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Как реализовать отложенную задачу с условием выполнения при наличии сети?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "WorkManager + Constraints.Builder().setRequiredNetworkType()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать AlarmManager"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Периодический polling в Service"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Использование Constraints в WorkManager",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/topic/libraries/architecture/workmanager"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как избежать StrictMode violations при работе с диском в основном потоке?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Вынести операции в IO Dispatcher"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать StrictMode.allowThreadDiskReads()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отключить StrictMode в релизе"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Правила работы с потоками",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/reference/android/os/StrictMode"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как организовать multi-module DI с Hilt?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "@InstallIn в модулях + компонентные зависимости"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Единый AppComponent"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Ручное внедрение через фабрики"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать Service Locator"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Иерархия компонентов Hilt",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/training/dependency-injection/hilt-multi-module"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Как реализовать кастомный прелоадер для Glide?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Реализовать ModelLoader + Registry"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать RequestListener"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Написать кастомный Target"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Расширение функциональности Glide",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://bumptech.github.io/glide/doc/custom-modelloader.html"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как синхронизировать данные Room с бэкендом через WebSocket?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать Flow + WebSocketListener с преобразованием в Entity"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ручное обновление через DAO"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Создать SyncAdapter"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать конфликты"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Реактивные обновления",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/training/data-storage/room"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как предотвратить ANR при обработке больших JSON?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать Streaming API (например, Moshi) в IO-потоке"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Увеличить StrictMode timeout"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Разбить JSON на чанки"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Оптимизация парсинга",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://github.com/square/moshi"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как реализовать кастомную анимацию переходов между Activity?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "overridePendingTransition()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Создать Transition API с MotionScene"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать Window.Enter/ExitTransition"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Material Motion",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://developer.android.com/training/transitions"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как организовать feature-модули с динамической загрузкой?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Dynamic Feature Modules + Play Core Library"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Создать отдельные APK"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать ClassLoader"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Dynamic Delivery",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/guide/app-bundle"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как профилировать энергопотребление приложения?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Android Profiler > Energy"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Battery Historian"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "adb shell dumpsys batterystats"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Инструменты анализа батареи",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/topic/performance/power"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как использовать Navigation Component для глубоких ссылок?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "@DeepLink в nav_graph + обработка Intent"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ручной парсинг Uri в Activity"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать Firebase Dynamic Links"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Навигация + Deeplinking",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/guide/navigation/navigation-deep-link"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как реализовать бинарную совместимость при обновлении нативных библиотек?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать JNI_OnLoad для регистрации методов"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Соблюдать правила обратной совместимости в C API"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Генерация обёрток через SWIG"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Нативные методы и ABI",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://developer.android.com/ndk/guides/stable_apis"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как оптимизировать запуск приложения?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Lazy-инициализация компонентов + фоновая загрузка"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Уменьшить размер запускаемых классов"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать Baseline Profiles"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Ускорение cold start",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/topic/performance/launch-time"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как организовать тестирование модулей в isolation?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Мокировать зависимости через Hilt TestComponents"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать Robolectric"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Создать тестовые реализации интерфейсов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Модульное тестирование",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/training/dependency-injection/hilt-testing"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как реализовать кастомный шейдер в Jetpack Compose?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать Modifier.graphicsLayer с RenderEffect"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Написать собственный Composable"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать OpenGL ES напрямую"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Графические эффекты",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://developer.android.com/jetpack/compose/graphics"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как обработать конфигурацию динамических цветов (Material You)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать DynamicColorsActivityHelper"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ручное обновление темы при изменении wallpaper"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "MaterialColorUtilities + Monet"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Android 12+ Dynamic Color",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://material.io/blog/announcing-material-you"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Как реализовать адаптивную сетку изображений под разные экраны?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "GridLayoutManager с расчетом spanCount по ширине экрана"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать ConstraintLayout с Guidelines"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Кастомный ItemDecoration"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Адаптивный дизайн",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/develop/ui/views/layout/recyclerview"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как использовать CameraX для обработки видео в реальном времени?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "VideoCapture + ProcessCameraProvider"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "SurfaceTexture + MediaCodec"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать FFmpeg"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "CameraX API",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://developer.android.com/training/camerax"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как уменьшить потребление памяти при работе с Bitmap?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать inSampleSize + BitmapPool"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Конвертировать в WebP"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Выгружать bitmap.recycle()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Оптимизация графики",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/topic/performance/graphics"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как реализовать кастомный LayoutManager для RecyclerView?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Наследовать от RecyclerView.LayoutManager"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать FlexboxLayoutManager"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Переопределить onLayoutChildren()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Кастомное расположение элементов",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.LayoutManager"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как интегрировать Crashlytics для отслеживания ANR?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Firebase Crashlytics с включенным NDK reporting"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ручное логирование через Thread.setDefaultUncaughtExceptionHandler"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать ACRA"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Firebase Integration",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://firebase.google.com/docs/crashlytics"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 3,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Как реализовать SSL Pinning в Retrofit?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Создать кастомный OkHttpClient с CertificatePinner"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать HTTPS URL без проверки"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Добавить @SSL аннотацию к API-интерфейсу"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Включить StrictMode для сети"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Защита от MITM-атак",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://square.github.io/okhttp/4.x/okhttp/okhttp3/-certificate-pinner/"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как оптимизировать RecyclerView с анимированными элементами?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать DiffUtil с payloads"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Отключить анимации через setHasStableIds(true)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Увеличить пул ViewHolder"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Минимизация перерисовок",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/reference/androidx/recyclerview/widget/DiffUtil"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как организовать межмодульную навигацию с Hilt?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Интерфейсы навигации + @EntryPoint"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Глобальный EventBus"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Прямые ссылки между модулями"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать DeepLink только через манифест"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Инверсия зависимостей",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/training/dependency-injection/hilt-multi-module#navigation"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Как обработать конфигурацию процессора ARM64-v8a?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Добавить abiFilters в build.gradle"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Собрать универсальный APK"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать только armeabi-v7a"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Динамически загружать библиотеки"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Поддержка 64-битных устройств",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://developer.android.com/ndk/guides/abis"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как реализовать кэширование данных с TTL в Room?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Добавить колонку timestamp и фильтровать через @Query"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать @InvalidationTracker"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Создать триггеры SQLite"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Время жизни кэша",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/training/data-storage/room/transactions"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как избежать утечек памяти при подписке на Flow в Fragment?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать lifecycleScope.launchWhenStarted"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Отменить корутину в onDestroyView"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Повторно использовать Flow из ViewModel"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 2 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Управление жизненным циклом",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://medium.com/androiddevelopers/a-safer-way-to-collect-flows-from-android-uis-23080b1f8bda"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как реализовать анимацию MotionLayout с динамическими целями?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Изменить ConstraintSet программно"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать KeyAttribute для кастомных свойств"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Связать с LiveData в MotionScene"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Динамическая анимация",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://developer.android.com/training/constraint-layout/motionlayout"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как уменьшить размер APK для разных плотностей экранов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать WebP + density splits"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Удалить xxhdpi ресурсы"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Динамическая загрузка ресурсов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Оптимизация ресурсов",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/topic/performance/reduce-apk-size"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как тестировать LiveData в ViewModel?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "observeForTesting + InstantTaskExecutorRule"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать Mockito для симуляции жизненного цикла"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Ручной вызов onChanged()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "JUnit и Architecture Components",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/training/testing/local-tests"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как интегрировать C++ код через JNI?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "extern \"C\" + NDK Build"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать Kotlin/Native"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Создать Android.mk файл"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Нативная разработка",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://developer.android.com/ndk/guides/cpp-support"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как реализовать кастомный индикатор прогресса в Jetpack Compose?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Canvas API + анимации rememberInfiniteTransition"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать CircularProgressIndicator с модификаторами"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Написать Modifier.drawWithCache"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Кастомная отрисовка",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/jetpack/compose/graphics"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как использовать Dagger Hilt в мультимодульном проекте?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "@InstallIn(ApplicationComponent) для общих зависимостей"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Общий компонент в core-модуле"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "@EntryPoint для доступа к зависимостям из других модулей"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Иерархия компонентов",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/training/dependency-injection/hilt-multi-module"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как обработать глубокие ссылки с параметрами в Navigation Component?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Добавить аргументы в nav_graph и использовать Safe Args"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Парсить Uri вручную через getQueryParameter"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать Intent filters в Activity"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Безопасная навигация",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://developer.android.com/guide/navigation/navigation-deep-link"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как реализовать фоновое обновление данных раз в 24 часа?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "WorkManager с PeriodicWorkRequest"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "AlarmManager + BroadcastReceiver"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Foreground Service с таймером"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Энергоэффективность",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/topic/libraries/architecture/workmanager"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как использовать DataStore вместо SharedPreferences?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Преобразовать Preferences в Flow"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Миграция через SharedPreferencesMigration"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать Proto DataStore для сложных данных"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Современное хранилище",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/topic/libraries/architecture/datastore"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Как реализовать кастомный шрифт для всего приложения?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Создать тему с android:fontFamily"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать TextViewStyle в AppCompat"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Применить FontsInXml + MaterialComponents Theme"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Глобальные стили",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/guide/topics/ui/look-and-feel/fonts-in-xml"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как использовать LeakCanary для поиска утечек?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Добавить зависимость debugImplementation"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Настроить RefWatcher в Application классе"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Анализировать кучи через Android Profiler"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Детектор утечек",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://square.github.io/leakcanary/"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как реализовать swipe-to-refresh с кастомной анимацией?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "SwipeRefreshLayout + AnimatedVectorDrawable"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "LottieAnimationView внутри RefreshHeader"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Кастомный SwipeToRefresh на базе MotionLayout"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Кастомизация UI",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/training/swipe"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как обработать конфигурацию Dynamic Feature Module?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Проверить доступность через SplitInstallManager"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать Play Core Library для загрузки"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Динамически загружать классы через ClassLoader"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Динамическая доставка",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/guide/playcore"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как профилировать GPU Rendering?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Инструмент Profile GPU Rendering в настройках разработчика"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Android Studio Profiler > GPU"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Системные трейсы через systrace"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Оптимизация рендеринга",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/topic/performance/rendering/inspect-gpu-rendering"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 4,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Как обработать race condition при работе с SharedFlow?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать Mutex или потокобезопасные коллекции"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Увеличить размер буфера Flow"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отключить многопоточность в корутинах"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Заменить Flow на LiveData"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Синхронизация потоков",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/shared-mutable-state-and-concurrency.html"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как реализовать кастомный жизненный цикл для Service?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Создать свой LifecycleRegistry и управлять состояниями"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать LifecycleService из AndroidX"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Наследовать от Activity"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Кастомизация LifecycleOwner",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://developer.android.com/topic/libraries/architecture/lifecycle"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как оптимизировать потребление памяти RecyclerView с изображениями?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать Glide с опцией .override() и дискровым кэшем"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Загружать изображения в главном потоке"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отключить RecyclerView Pool"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Хранить все Bitmap в статическом классе"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Оптимизация загрузки изображений",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://bumptech.github.io/glide/doc/caching.html"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Как реализовать офлайн-режим с синхронизацией через WorkManager?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать OneTimeWorkRequest с Constraints"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Сохранять данные в Room и помечать измененные записи"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Синхронизировать при каждом запуске приложения"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Фоновая синхронизация",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/topic/libraries/architecture/workmanager"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как использовать JNI для вызова C++ кода из Kotlin?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Объявить external функции и загрузить нативную библиотеку"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать WebAssembly"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Создать сервис для нативных операций"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Нативная интеграция",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://developer.android.com/ndk/guides/concepts"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как уменьшить размер APK для разных архитектур процессоров?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Настроить abiFilters в build.gradle"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать App Bundle"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Собрать универсальный APK"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Динамическая доставка",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/guide/app-bundle"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как реализовать анимацию перехода между элементами списка?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать Shared Element Transition + ViewHolder position"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Добавить ObjectAnimator в onBindViewHolder"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Применить RecyclerView.ItemAnimator"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Согласованность анимаций",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/training/transitions"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как внедрить зависимость в Android-компонент через Hilt?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать @AndroidEntryPoint"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ручное создание через фабрику"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Dagger.Component"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Аннотации Hilt",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/training/dependency-injection/hilt-android"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как реализовать кастомный фильтр для CameraX?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Создать эффект через CameraEffect и применить к UseCase"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать OpenGL ES шейдеры"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Наложить BitmapFilter на PreviewView"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Обработка изображений в реальном времени",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://developer.android.com/training/camerax"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как оптимизировать использование батареи фоновым Service?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать WorkManager вместо foreground service"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Добавить JobScheduler с условиями заряда"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Уменьшить частоту обновлений"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Энергоэффективность",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/topic/performance/power"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как реализовать паттерн Repository с Room и Retrofit?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Кэшировать данные из сети в БД и возвращать Flow"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать только сетевые запросы"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Сохранять данные в SharedPreferences"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать кэширование"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Единый источник данных",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/codelabs/android-room-with-a-view"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как настроить CI/CD для Android-приложения?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать GitHub Actions с Gradle-задачами"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ручная сборка APK для каждого релиза"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Настроить Jenkins pipeline"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Автоматизация сборки",
+                "theme": "Тема на выбор",
+                "useful_info": [
+                    "https://developer.android.com/studio/build"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как тестировать ViewModel с Kotlin Flow?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать Turbine для проверки потоков"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Mock-объекты зависимостей"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Запускать корутины в TestDispatcher"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Асинхронное тестирование",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/kotlin/flow/test"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как обработать ошибки сети в Retrofit с Kotlin Coroutines?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "try/catch + обработка HttpException"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать Callback вместо suspend функций"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Повторять запрос бесконечно"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать ошибки"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Обработка исключений",
+                "theme": "Углубленные темы",
+                "useful_info": [
+                    "https://square.github.io/retrofit/"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как использовать Lottie для сложных анимаций?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Загрузить JSON-анимацию и управлять скоростью"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Создать кастомные слои в After Effects"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать анимации только для Splash Screen"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Интеграция Lottie",
+                "theme": "Тема на выбор",
+                "useful_info": [
+                    "https://airbnb.io/lottie/#/android"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Как реализовать навигацию с вложенными графами в Navigation Component?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать <include> для вложенных nav_graph"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Создать отдельные Activity для каждого графа"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Динамически менять граф через NavController"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Модульная навигация",
+                "theme": "Архитектура",
+                "useful_info": [
+                    "https://developer.android.com/guide/navigation/navigation-nested-graphs"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как применить принцип SOLID в мобильной разработке?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Разделить интерфейсы на мелкие (ISP)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Инъекция зависимостей вместо жестких связей (DIP)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать наследование для переиспользования кода (LSP)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Принципы ООП",
+                "theme": "Тема на выбор",
+                "useful_info": [
+                    "https://medium.com/androiddevelopers/solid-principles-in-android-development-1e04a7b95743"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как настроить Firebase Crashlytics для отслеживания ANR?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Добавить dependency и включить reporting в манифесте"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Вручную логировать исключения через log()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать только Google Analytics"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Интеграция Crashlytics",
+                "theme": "Тема на выбор",
+                "useful_info": [
+                    "https://firebase.google.com/docs/crashlytics"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как реализовать динамическое обновление UI при изменении конфигурации?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать ViewModel + SavedStateHandle"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Сохранять данные в onSaveInstanceState"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Перезагружать Activity при повороте"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Сохранение состояния",
+                "theme": "Оптимизация",
+                "useful_info": [
+                    "https://developer.android.com/topic/libraries/architecture/viewmodel-savedstate"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как использовать GraphQL в Android с Apollo?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Настроить ApolloClient и сгенерировать модели"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Писать raw HTTP-запросы"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать только REST API"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "GraphQL-клиент",
+                "theme": "Тема на выбор",
+                "useful_info": [
+                    "https://www.apollographql.com/docs/android/"
+                ]
+            }
+        ]
+    }
+]

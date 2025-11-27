@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("./Arian_normal.otf") format("otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("./Arian_bold.otf") format("otf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

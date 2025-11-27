@@ -1,0 +1,2262 @@
+[
+    {
+        "option_id": 1,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Какой тег используется для создания ссылки?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<link>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "<a>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<href>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "<url>"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Использует атрибут href",
+                "theme": "HTML Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTML/Element/a"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как изменить цвет текста в CSS?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "text-color: red"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "font-color: red"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "color: red"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "text-style: red"
+                    }
+                ],
+                "correct_answer_id": 3,
+                "hint": "Свойство из 4 букв",
+                "theme": "CSS Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/color"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как объявить переменную в JavaScript?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "variable x = 5"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "let x = 5"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "v x = 5"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "var x = 5"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "ES6+ синтаксис",
+                "theme": "JavaScript Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Как добавить класс элементу через JavaScript?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "element.addClass('new-class')"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "element.className = 'new-class'"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "element.classList.add('new-class')"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "element.setClass('new-class')"
+                    }
+                ],
+                "correct_answer_id": 3,
+                "hint": "Использует classList API",
+                "theme": "DOM Manipulation",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/API/Element/classList"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как сделать элемент блочным?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "display: block"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "position: block"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "type: block"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "block: true"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "CSS свойство display",
+                "theme": "CSS Layout",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/display"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как создать массив в JavaScript?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "array = [1,2,3]"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "array = {1,2,3}"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "array = (1,2,3)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "array = '1,2,3'"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Использует квадратные скобки",
+                "theme": "JavaScript Arrays",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как подключить CSS к HTML?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<script src='style.css'>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "<style src='style.css'>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<link rel='stylesheet' href='style.css'>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "<css>style.css</css>"
+                    }
+                ],
+                "correct_answer_id": 3,
+                "hint": "Тег link с атрибутом rel",
+                "theme": "HTML/CSS Integration",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTML/Element/link"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Что делает console.log()?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Создает HTML-элемент"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Выводит данные в консоль браузера"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Изменяет стили страницы"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Сохраняет данные в localStorage"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Инструмент отладки",
+                "theme": "JavaScript Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/API/Console/log"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как выбрать элемент по id в JavaScript?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "document.querySelector('#id')"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "document.getElementByClass('id')"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "document.getElementById('id')"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "document.find('#id')"
+                    }
+                ],
+                "correct_answer_id": 3,
+                "hint": "Метод с getElementById",
+                "theme": "DOM Manipulation",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/API/Document/getElementById"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как сделать текст жирным?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<bold>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "<strong>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<b>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Несколько тегов работают",
+                "theme": "HTML Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTML/Element/strong"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как центрировать элемент по горизонтали через CSS?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "margin: 0 auto"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "padding: center"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "align: center"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "position: center"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Работает для блочных элементов",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://www.w3schools.com/css/css_align.asp"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как обработать клик на кнопке?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "button.onclick = function() {}"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "button.addEventListener('hover', handler)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "button.clickEvent(() => {})"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "button.on('click', handler)"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Свойство onclick",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/API/GlobalEventHandlers/onclick"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как скрыть элемент, оставив место в потоке?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "display: none"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "visibility: hidden"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "opacity: 0"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "width: 0"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Элемент остается в DOM",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/visibility"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как получить значение input с id='name'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "document.querySelector('#name').text"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "document.getElementById('name').value"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "document.getElementById('name').innerHTML"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "document.input('name')"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Свойство value",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/API/HTMLInputElement"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как создать новый div через JavaScript?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "document.create('div')"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "document.createElement('div')"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "new DivElement()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "<div>.create()"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Метод createElement",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/API/Document/createElement"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Что выведет console.log(2 + '2')?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "4"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "22"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "NaN"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Ошибка"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Конкатенация строк",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Addition"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Какой цикл перебирает массив?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "for (let i = 0; i < arr.length; i++)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "while (arr) {}"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "for (let item in arr)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Классический for-loop",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как изменить текст элемента с id='title' на 'Hello'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "document.getElementById('title').text = 'Hello'"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "document.querySelector('#title').innerText = 'Hello'"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "document.title = 'Hello'"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "innerText или textContent",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/API/HTMLElement/innerText"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как проверить, что число четное?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "num % 2 === 0"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "num / 2 === 0"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "num % 2 == 1"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Math.isEven(num)"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Остаток от деления",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Remainder"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как объединить массивы [1,2] и [3,4]?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "arr1 + arr2"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "arr1.concat(arr2)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "arr1.join(arr2)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "arr1.merge(arr2)"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Метод concat",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/concat"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 2,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Какой тег используется для вставки изображения?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<image>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "<img>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<pic>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "<src>"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Требует атрибута src",
+                "theme": "HTML Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTML/Element/img"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Какое свойство CSS меняет цвет фона?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "bgcolor"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "background-color"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "color"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "background"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Состоит из двух слов через дефис",
+                "theme": "CSS Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/background-color"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как объявить функцию в JavaScript?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "func myFunc() {}"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "def myFunc() {}"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "function myFunc() {}"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "createFunction myFunc() {}"
+                    }
+                ],
+                "correct_answer_id": 3,
+                "hint": "Ключевое слово function",
+                "theme": "JavaScript Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/function"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Как сделать текст курсивом?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<i>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "<em>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<italic>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "<i> и <em> работают",
+                "theme": "HTML Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTML/Element/em"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как изменить размер шрифта?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "font-size"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "text-size"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "size"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "font-style"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "CSS свойство с дефисом",
+                "theme": "CSS Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/font-size"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как создать объект в JavaScript?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "obj = {}"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "obj = []"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "obj = ()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "obj = new Object"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Использует фигурные скобки",
+                "theme": "JavaScript Objects",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Object_initializer"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как добавить тень элементу?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "shadow: 2px 2px gray"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "box-shadow: 2px 2px gray"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "element-shadow: 2px 2px"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "text-shadow: 2px 2px"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Свойство начинается с box-",
+                "theme": "CSS Effects",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/box-shadow"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Что делает метод push()?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Удаляет последний элемент массива"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Добавляет элемент в конец массива"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Объединяет массивы"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Сортирует массив"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Противоположность pop()",
+                "theme": "JavaScript Arrays",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/push"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как выбрать все элементы с классом 'item'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "document.querySelectorAll('.item')"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "document.getElementByClass('item')"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "document.getElementById('item')"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "document.find('.item')"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Использует CSS-селектор",
+                "theme": "DOM Manipulation",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/API/Document/querySelectorAll"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как сделать нумерованный список?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<ul>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "<ol>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<li>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "<list>"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Ordered List",
+                "theme": "HTML Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTML/Element/ol"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как сделать элемент невидимым и не занимающим место?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "visibility: hidden"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "display: none"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "opacity: 0"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "width: 0; height: 0"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Свойство display",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/display"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как добавить обработчик события клика?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "element.onclick = handler"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "element.addEvent('click', handler)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "element.addEventListener('click', handler)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "element.click(handler)"
+                    }
+                ],
+                "correct_answer_id": 3,
+                "hint": "Рекомендуемый метод",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/API/EventTarget/addEventListener"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как задать внешний отступ сверху 10px?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "margin-top: 10px"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "padding-top: 10px"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "spacing: 10px"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "offset-top: 10px"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Свойство margin",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/margin-top"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как получить значение data-атрибута 'info'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "element.data.info"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "element.getAttribute('data-info')"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "element.dataset.info"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 2 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Доступ через dataset",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTML/Global_attributes/data-*"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как удалить элемент из DOM?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "element.remove()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "element.delete()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "document.remove(element)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "element.hide()"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Метод remove()",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/API/Element/remove"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Что выведет typeof NaN?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "number"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "string"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "undefined"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "NaN"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Особое значение в JS",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/NaN"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как объединить строки 'Hello' и 'World'?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "'Hello' + 'World'"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "'Hello'.concat('World')"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "`${'Hello'}${'World'}`"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Несколько способов",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/concat"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как перебрать массив циклом for...of?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "for (let item of arr)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "for (item in arr)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "arr.forEachOf(item)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "arr.loop(item)"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "ES6+ синтаксис",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for...of"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как проверить, что переменная — массив?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Array.isArray(var)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "typeof var === 'array'"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "var.isArray()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "var instanceof Array"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Статический метод Array",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как округлить число до целого?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Math.round(num)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "num.toFixed(0)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "parseInt(num)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Разные методы дают разный результат",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/round"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 3,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Какой тег создает контейнер без семантического значения?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<section>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "<div>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<article>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "<span>"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Часто используется для стилизации",
+                "theme": "HTML Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTML/Element/div"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Какое свойство делает элемент плавающим?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "position"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "float"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "display"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "flex"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Устаревший подход для верстки",
+                "theme": "CSS Layout",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/float"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как объявить константу в JavaScript?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "var x = 5"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "let x = 5"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "const x = 5"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "constant x = 5"
+                    }
+                ],
+                "correct_answer_id": 3,
+                "hint": "ES6+ синтаксис",
+                "theme": "JavaScript Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Как создать выпадающий список?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<select>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "<dropdown>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<input type='list'>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "<option>"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Используется с тегом <option>",
+                "theme": "HTML Forms",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTML/Element/select"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как задать жирность шрифта?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "font-weight"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "text-bold"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "font-style"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "weight"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Значение 700 = bold",
+                "theme": "CSS Typography",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/font-weight"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Какой метод преобразует строку в число?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Number()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "String()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Boolean()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Array()"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Можно использовать parseInt()",
+                "theme": "JavaScript Data Types",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как сделать элемент flex-контейнером?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "display: flex"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "display: grid"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "display: block"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "display: inline"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Flexbox layout",
+                "theme": "CSS Flexbox",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/flex"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Какой оператор проверяет равенство по типу и значению?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "=="
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "==="
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "="
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "!="
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Строгое сравнение",
+                "theme": "JavaScript Operators",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как создать заголовок первого уровня?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<h1>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "<header>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<head>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "<title>"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Семантический тег",
+                "theme": "HTML Semantics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTML/Element/Heading_Elements"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как добавить комментарий в CSS?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "/* Комментарий */"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "// Комментарий"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<!-- Комментарий -->"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "# Комментарий"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Синтаксис как в C",
+                "theme": "CSS Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/Comments"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как центрировать элемент по вертикали в flex-контейнере?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "align-items: center"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "justify-content: center"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "align-content: center"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "flex-direction: column"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Поперечная ось",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/align-items"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как предотвратить отправку формы?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "event.preventDefault()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "event.stopPropagation()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "return false"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Используется в обработчике submit",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/API/Event/preventDefault"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как сделать фон полупрозрачным?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "background-color: rgba(0,0,0,0.5)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "opacity: 0.5"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "transparent: 50%"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Не влияет на дочерние элементы",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/background-color"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как получить первый элемент массива?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "arr[0]"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "arr.first()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "arr.get(0)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "arr[-1]"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Индексация с нуля",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как добавить элемент в начало массива?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "arr.unshift(item)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "arr.push(item)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "arr.addFirst(item)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "arr[0] = item"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Противоположность push()",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Что выведет console.log(typeof null)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "object"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "null"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "undefined"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "string"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Историческая особенность JS",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/typeof"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как преобразовать строку в верхний регистр?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "str.toUpperCase()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "str.upperCase()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "str.capitalize()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "str.toUpper()"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Метод строки",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как проверить, содержит ли массив элемент?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "arr.includes(item)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "arr.contains(item)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "arr.indexOf(item) !== -1"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "ES6+ и старые методы",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/includes"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как удалить последний символ строки?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "str.slice(0, -1)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "str.substring(0, str.length-1)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "str.substr(0, str.length-1)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Несколько способов",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/slice"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как создать массив чисел от 1 до 5?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "[1,2,3,4,5]"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Array.from({length:5}, (_,i) => i+1)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "new Array(5).fill(0).map((_,i) => i+1)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Разные подходы",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/from"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 4,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Какой тег создает абзац?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<p>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "<div>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<span>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "<para>"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Семантический тег для текста",
+                "theme": "HTML Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTML/Element/p"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как задать границу элемента?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "border: 1px solid black"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "outline: 1px"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "frame: solid"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "line: 1px"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Свойство border",
+                "theme": "CSS Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/border"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как объявить переменную с областью видимости блока?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "var x = 5"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "let x = 5"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "variable x = 5"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "const x = 5"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "ES6+ синтаксис",
+                "theme": "JavaScript Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Как вставить видео?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<video>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "<movie>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<media>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "<iframe>"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Поддерживает атрибут controls",
+                "theme": "HTML Media",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTML/Element/video"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как сделать текст подчеркнутым?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "text-decoration: underline"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "underline: true"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "font-style: underline"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "line: underline"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "CSS свойство text-decoration",
+                "theme": "CSS Typography",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/text-decoration"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Какой метод массива создает новый массив?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "map()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "forEach()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "loop()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "push()"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Используется для трансформации данных",
+                "theme": "JavaScript Arrays",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как сделать элемент grid-контейнером?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "display: grid"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "display: flex"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "display: block"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "display: inline-grid"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "CSS Grid Layout",
+                "theme": "CSS Grid",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/grid"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как проверить, что переменная равна null?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "x === null"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "x == null"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "x.isNull()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "x.equals(null)"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Строгое сравнение",
+                "theme": "JavaScript Operators",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как создать ненумерованный список?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<ul>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "<ol>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<li>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "<list>"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Unordered List",
+                "theme": "HTML Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTML/Element/ul"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как добавить тень тексту?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "text-shadow"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "font-shadow"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "shadow-effect"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "text-effect"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "CSS свойство с text-",
+                "theme": "CSS Effects",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/text-shadow"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как растянуть элемент на всю ширину контейнера?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "width: 100%"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "max-width: 100%"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "flex-grow: 1"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Зависит от контекста",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/width"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как изменить курсор при наведении?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "cursor: pointer"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "hover: cursor(pointer)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "mouse-pointer: click"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "pointer-events: auto"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "CSS свойство cursor",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/cursor"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как получить случайный элемент массива?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "arr[Math.floor(Math.random() * arr.length)]"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "arr.random()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "arr.shuffle()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Math.choice(arr)"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Используйте Math.random",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/random"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как добавить задержку выполнения функции?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "setTimeout(func, delay)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "delay(func, time)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "func.wait(delay)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "sleep(delay)"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Асинхронная функция",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/API/setTimeout"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как скрыть scrollbar?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "::-webkit-scrollbar { display: none }"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "scrollbar-width: none"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "overflow: hidden"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Зависит от браузера",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/overflow"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Что выведет console.log([] == ![])?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "true"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "false"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Ошибка"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "undefined"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Особенности приведения типов",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как преобразовать объект в JSON?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "JSON.stringify(obj)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "obj.toJSON()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "JSON.parse(obj)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "stringify(obj)"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Метод JSON",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как удалить элемент из массива по индексу?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "arr.splice(index, 1)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "arr.pop(index)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "arr.delete(index)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "arr.remove(index)"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Метод изменяет исходный массив",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/splice"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как перевернуть строку?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "str.split('').reverse().join('')"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "str.reverse()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "str.flip()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "reverse(str)"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Цепочка методов",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как проверить, что строка пустая?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "str.length === 0"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "str === ''"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "!str"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Учитывайте falsy-значения",
+                "theme": "Задачи на код",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Glossary/Falsy"
+                ]
+            }
+        ]
+    }
+]

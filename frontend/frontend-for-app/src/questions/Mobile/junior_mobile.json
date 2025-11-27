@@ -1,0 +1,2262 @@
+[
+    {
+        "option_id": 1,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Что такое Activity в Android?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Экран приложения с UI"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Фоновый процесс"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Тип анимации"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Библиотека для сетевых запросов"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Базовый строительный блок UI",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/guide/components/activities/intro-activities"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как объявить переменную в Kotlin?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "val name = \"John\""
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "var name: String = \"John\""
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "String name = \"John\""
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "val - неизменяемая, var - изменяемая",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/basic-syntax.html#variables"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Какой метод вызывается при первом создании Activity?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "onCreate()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "onStart()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "onResume()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "onPause()"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Инициализация компонентов",
+                "theme": "Жизненный цикл",
+                "useful_info": [
+                    "https://developer.android.com/guide/components/activities/activity-lifecycle"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Что делает @Composable в Jetpack Compose?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Определяет UI-компонент"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Запускает анимацию"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Обрабатывает клики"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Кэширует изображения"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Декларативный подход",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/jetpack/compose"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как добавить кнопку в XML-макет?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<Button/>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "<ImageView/>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<TextView/>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "<EditText/>"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Элементы управления",
+                "theme": "Макеты",
+                "useful_info": [
+                    "https://developer.android.com/guide/topics/ui/controls/button"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как обработать клик по кнопке в Android?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "setOnClickListener{}"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "setOnLongClickListener{}"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "addTextChangedListener{}"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "setOnCheckedChangeListener{}"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Лямбда-выражения",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/guide/topics/ui/controls/button#HandleClicks"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Какой файл содержит список зависимостей?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "build.gradle"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "AndroidManifest.xml"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "strings.xml"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "MainActivity.kt"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Конфигурация сборки",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/studio/build/dependencies"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Что такое RecyclerView?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Для отображения списков"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Для анимаций"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Для хранения данных"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Для работы с сетью"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Эффективный список",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/guide/topics/ui/layout/recyclerview"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как получить доступ к View в Activity?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "findViewById()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "createView()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "inflate()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "attachToWindow()"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Инициализация элементов UI",
+                "theme": "Код",
+                "useful_info": [
+                    "https://developer.android.com/reference/android/app/Activity#findViewById(int)"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Что такое Intent?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Механизм для взаимодействия компонентов"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Тип данных в Kotlin"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Способ анимации"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Метод сортировки списков"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Навигация и коммуникация",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/guide/components/intents-filters"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как скрыть элемент в XML?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "android:visibility=\"gone\""
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "android:hide=\"true\""
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "android:enable=\"false\""
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "android:alpha=\"0\""
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Управление видимостью",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/reference/android/view/View#GONE"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Какой метод используется для обновления UI из фонового потока?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "runOnUiThread()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "execute()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "background()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "asyncTask()"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Потокобезопасность",
+                "theme": "Код",
+                "useful_info": [
+                    "https://developer.android.com/guide/components/processes-and-threads#Threads"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как объявить массив в Kotlin?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "val arr = arrayOf(1,2,3)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Array list = new Array()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "int[] arr = {1,2,3}"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "arr = [1,2,3]"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Используйте arrayOf",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/basic-types.html#arrays"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Какой компонент отвечает за хранение данных?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Room Database"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "RecyclerView"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Intent"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Fragment"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Локальное хранилище",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/training/data-storage/room"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как открыть новую Activity?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "startActivity(Intent)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "finish()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "navigateTo()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "openScreen()"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Используйте Intent",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/guide/components/intents-filters"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Какой тег отвечает за верстку списка в Jetpack Compose?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "LazyColumn"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Row"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Box"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Button"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Аналог RecyclerView",
+                "theme": "Код",
+                "useful_info": [
+                    "https://developer.android.com/jetpack/compose/lists"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Что такое Logcat?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Инструмент для просмотра логов"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Библиотека для логирования"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Тип базы данных"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Метод сортировки"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Отладка приложений",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/studio/debug/logcat"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как установить текст для TextView в коде?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "textView.text = \"Hello\""
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "textView.setText(\"Hello\")"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "textView.value = \"Hello\""
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "textView.addText(\"Hello\")"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Java-стиль vs Kotlin-свойства",
+                "theme": "Код",
+                "useful_info": [
+                    "https://developer.android.com/reference/android/widget/TextView#setText(java.lang.CharSequence)"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как добавить разрешение в манифест?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<uses-permission/>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "<permission/>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<allow-permission/>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "<grant-permission/>"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Доступ к функциям устройства",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/guide/topics/manifest/uses-permission-element"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как объявить функцию в Kotlin?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "fun myFunction() {}"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "function myFunction() {}"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "def myFunction() {}"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "void myFunction() {}"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Ключевое слово fun",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/functions.html"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 2,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Что такое Fragment в Android?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Переиспользуемая часть UI внутри Activity"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Фоновый поток выполнения"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Тип анимации перехода"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Способ хранения данных"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Модульность интерфейса",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/guide/fragments"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Какой метод жизненного цикла вызывается при сворачивании приложения?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "onPause()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "onDestroy()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "onCreate()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "onResume()"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Приостановка активности",
+                "theme": "Жизненный цикл",
+                "useful_info": [
+                    "https://developer.android.com/guide/components/activities/activity-lifecycle"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как объявить переменную с поздней инициализацией в Kotlin?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "lateinit var name: String"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "var name: String?"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "val name = null"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "String name"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Ключевое слово lateinit",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/properties.html#late-initialized-properties-and-variables"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Для чего используется View Binding?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Безопасный доступ к элементам UI"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Анимация переходов"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Сетевая коммуникация"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Шифрование данных"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Замена findViewById",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/topic/libraries/view-binding"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как добавить разрешение на доступ к интернету?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<uses-permission android:name=\"android.permission.INTERNET\"/>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "<permission android:name=\"INTERNET\"/>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<allow-internet/>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "В коде через Runtime.requestPermission()"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Манифест-файл",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/training/basics/network-ops/connecting"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Что такое SharedPreferences?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Хранение простых данных в виде ключ-значение"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "База данных SQL"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Сетевой кэш"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Файловая система"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Легковесное хранилище",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/training/data-storage/shared-preferences"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как создать условный оператор в Kotlin?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "if (condition) { ... } else { ... }"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "condition ? then : else"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "switch (condition) { ... }"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "when (condition) { ... }"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Синтаксис как в Java",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/control-flow.html#if-expression"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как показать Toast сообщение?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Toast.makeText(context, \"Text\", Toast.LENGTH_SHORT).show()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Snackbar.make(...).show()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Log.d(\"TAG\", \"Text\")"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "TextView.setText(\"Text\")"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Всплывающее уведомление",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/guide/topics/ui/notifiers/toasts"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Что делает модификатор `const` в Kotlin?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Объявляет константу времени компиляции"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Запрещает изменение переменной"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Оптимизирует память"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Делает переменную публичной"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Только для примитивов и String",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/properties.html#compile-time-constants"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как передать данные между Activity?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Через Intent.putExtra()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать глобальные переменные"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Сохранить в файл"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Через статическое поле класса"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Bundle данных",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/guide/components/activities/parcelables-and-bundles"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как объявить макет в XML?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<androidx.constraintlayout.widget.ConstraintLayout .../>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "<LinearLayout .../>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<ViewGroup .../>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Разные типы контейнеров",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/guide/topics/ui/declaring-layout"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как запустить фоновую задачу в Kotlin?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "CoroutineScope(Dispatchers.IO).launch { ... }"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Thread { ... }.start()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "ExecutorService.execute()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Многопоточность",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/coroutines-basics.html"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Что такое Gradle?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Система сборки проекта"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Язык программирования"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Библиотека UI"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Сервер баз данных"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Автоматизация задач",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/studio/build"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как объявить цикл for для массива?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "for (item in array) { ... }"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "for (int i=0; i<array.size; i++) { ... }"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "array.forEach { ... }"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Kotlin-синтаксис",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/control-flow.html#for-loops"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как создать однострочную функцию в Kotlin?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "fun sum(a: Int, b: Int) = a + b"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "fun sum(a: Int, b: Int): Int { return a + b }"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "function sum(a, b) => a + b"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2 верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Сокращенный синтаксис",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/functions.html#single-expression-functions"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Как скруглить углы у View?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать CardView с app:cardCornerRadius"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Задать background с shape"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать MaterialButton"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Несколько подходов",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/develop/ui/views/layout/cardview"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Что такое Service в Android?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Компонент для фоновых операций"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Сетевой запрос"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Часть Activity"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "База данных"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Долгие процессы",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/guide/components/services"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как создать обработчик долгого нажатия?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "view.setOnLongClickListener { ... }"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "view.setOnClickListener { ... }"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "view.addTouchListener(...)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать GestureDetector"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Лямбда-выражения",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/reference/android/view/View#setOnLongClickListener(android.view.View.OnLongClickListener)"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как объявить nullable переменную?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "var name: String?"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "var name = null"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "var name: Any"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "String name"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Тип с ?",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/null-safety.html"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как добавить отступы в LinearLayout?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "android:padding=\"16dp\""
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "android:layout_margin=\"16dp\""
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "android:spacing=\"16dp\""
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2 верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Padding vs Margin",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/develop/ui/views/layout/linear"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 3,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Что такое ViewModel в Android?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Хранит данные UI независимо от жизненного цикла"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Отвечает за анимации"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Создает XML-макеты"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Управляет сетевыми запросами"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Архитектурный компонент",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/topic/libraries/architecture/viewmodel"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как объявить анонимный объект в Kotlin?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "object : SomeInterface { ... }"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "new SomeInterface()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "class Anonymous : SomeInterface"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "fun createObject() = SomeInterface"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Ключевое слово object",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/object-declarations.html"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как сохранить данные при повороте экрана?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать ViewModel + onSaveInstanceState"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Перезагружать данные из сети"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Блокировать ориентацию"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Сохранять в SharedPreferences"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Жизненный цикл конфигураций",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/guide/components/activities/activity-lifecycle#save-state"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Что делает модификатор `open` в Kotlin?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Разрешает наследование класса"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Закрывает доступ к переменной"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Объявляет интерфейс"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Оптимизирует сборку мусора"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Наследование по умолчанию запрещено",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/inheritance.html#overriding-methods"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как создать кастомный View?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Наследовать от View и переопределить onDraw"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать готовые библиотеки"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Добавить атрибут в XML"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Несколько подходов",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/develop/ui/views/custom-views"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Что такое ContentProvider?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Механизм обмена данными между приложениями"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Источник контента для RecyclerView"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "База данных SQLite"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "UI-компонент"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Доступ к данным извне",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/guide/topics/providers/content-providers"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как объявить sealed class в Kotlin?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "sealed class Result"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "abstract class Result"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "data class Result"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "open class Result"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Ограниченная иерархия",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/sealed-classes.html"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как отобразить диалоговое окно?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "AlertDialog.Builder(context).create().show()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Toast.makeText(...).show()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "startActivity(Intent)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Snackbar.make(...).show()"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Диалог с кнопками",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/develop/ui/views/components/dialogs"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Что такое LiveData?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Наблюдаемый контейнер данных с жизненным циклом"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "База данных в реальном времени"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Сетевой протокол"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Тип анимации"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Реактивное программирование",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/topic/libraries/architecture/livedata"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как создать список с горизонтальной прокруткой?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "RecyclerView с LinearLayoutManager.HORIZONTAL"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "ListView с атрибутом scrollHorizontal"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "HorizontalScrollView"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Несколько подходов",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/develop/ui/views/layout/recyclerview"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как объявить интерфейс в Kotlin?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "interface MyInterface { ... }"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "class MyInterface { ... }"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "abstract class MyInterface { ... }"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "object MyInterface { ... }"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Ключевое слово interface",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/interfaces.html"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Что такое WorkManager?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Библиотека для отложенных задач"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Менеджер потоков"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Инструмент сборки"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "UI-компонент"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Фоновые операции",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/topic/libraries/architecture/workmanager"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как обработать ошибку в корутине?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "try/catch или CoroutineExceptionHandler"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать Thread.sleep()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать исключения"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Перезапустить корутину"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Обработка исключений",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/exception-handling.html"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как создать анимацию перехода между Activity?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "overridePendingTransition()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "startActivityForResult()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "finishAffinity()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать Transition API"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Material Motion",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/training/transitions"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как объявить глобальную константу?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "const val MAX = 100 в object"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "var MAX = 100"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "lateinit val MAX"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "static final int MAX = 100"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Ключевое слово const",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/properties.html#compile-time-constants"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Что такое Material Design?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Дизайн-система от Google"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Язык программирования"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Библиотека для работы с данными"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Серверная технология"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Визуальные стандарты",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://material.io/design"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как использовать Data Binding в макете?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<layout> + binding-переменные"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать findViewById"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Добавить тег <data>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "XML-макет с привязкой данных",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/topic/libraries/data-binding"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как преобразовать строку в число?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "\"123\".toInt()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Integer.parseInt(\"123\")"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "String.toNumber()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2 верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Kotlin и Java подходы",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/to-int.html"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как добавить иконку приложения?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "В папку res/mipmap"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "В assets"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "В папку raw"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Через манифест"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Ресурсы приложения",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/studio/write/image-asset-studio"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как запретить поворот экрана?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "android:screenOrientation=\"portrait\" в манифесте"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать SensorManager"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Заблокировать акселерометр"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Динамически через код"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Фиксация ориентации",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/guide/topics/manifest/activity-element"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 4,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Что такое AndroidManifest.xml?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Файл с метаданными приложения"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Макет главного экрана"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Список зависимостей Gradle"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Скрипт анимации"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Регистрация компонентов",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/guide/topics/manifest/manifest-intro"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как создать функцию-расширение в Kotlin?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "fun String.customFunction() { ... }"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "extension fun String() { ... }"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "function String.custom()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "def extendString(): Unit"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Ключевое слово fun",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/extensions.html"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как добавить обработчик свайпа в RecyclerView?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "ItemTouchHelper"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "ScrollListener"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "GestureDetector"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "MotionLayout"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Библиотека AndroidX",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/reference/androidx/recyclerview/widget/ItemTouchHelper"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Что такое dp в Android?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Плотность-независимые пиксели"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Точки данных"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Динамические параметры"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Тип шрифта"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Адаптация к экранам",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/training/multiscreen/screendensities"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как создать задержку выполнения кода?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Handler().postDelayed({ ... }, 1000)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Thread.sleep(1000)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "System.wait(1000)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "UI vs фоновые потоки",
+                "theme": "Код",
+                "useful_info": [
+                    "https://developer.android.com/guide/background/threading"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как получить доступ к ресурсам строк?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "R.string.app_name"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "getResources().getString()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Context.getString()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Доступ через R-класс",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/guide/topics/resources/string-resource"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как объявить статическую переменную в Kotlin?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "В object или companion object"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать ключевое слово static"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Глобальная переменная в классе"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "@JvmStatic аннотация"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Компаньон-объекты",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/object-declarations.html#companion-objects"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как скрыть клавиатуру?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Keyboard.hide()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "EditText.clearFocus()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "InputMethodManager",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/training/keyboard-input/visibility"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Что такое Dagger Hilt?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Библиотека внедрения зависимостей"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Анализатор кода"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Инструмент тестирования"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Шаблон проектирования"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "DI-решение от Google",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/training/dependency-injection/hilt-android"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как создать вертикальный LinearLayout?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "android:orientation=\"vertical\""
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "app:layoutDirection=\"vertical\""
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "tools:scrollVertically=\"true\""
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "android:gravity=\"top\""
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Атрибут orientation",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/develop/ui/views/layout/linear"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как объявить data class?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "data class User(val name: String)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "class DataUser(...)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "@Data class User(...)"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "struct User(...)"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Ключевое слово data",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/data-classes.html"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как добавить отступы между элементами RecyclerView?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "ItemDecoration"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Margin в XML макете"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Spaces между элементами"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Несколько подходов",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.ItemDecoration"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Что такое ProGuard?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Инструмент для обфускации кода"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Анализатор производительности"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Менеджер пакетов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Система сборки"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Оптимизация APK",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/studio/build/shrink-code"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как использовать when в Kotlin?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Аналог switch-case с улучшениями"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Условный оператор для циклов"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Функция для корутин"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Декоратор классов"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Проверка условий",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/control-flow.html#when-expression"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как изменить цвет статус-бара?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "window.statusBarColor = ..."
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Изменить тему приложения"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать SystemChrome"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "API уровня 21+",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/develop/ui/views/look-and-feel/status-bar"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Что такое Parcelable?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Интерфейс для сериализации объектов"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Тип анимации"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Способ хранения файлов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "UI-компонент"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Передача данных между Activity",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/reference/android/os/Parcelable"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как создать анимацию прозрачности?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "ObjectAnimator.ofFloat(view, \"alpha\", 0f, 1f)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "TransitionManager.beginDelayedTransition()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "View.animate().alpha()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Несколько подходов",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/develop/ui/views/animations"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как объявить лямбда-функцию?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "val sum = { a: Int, b: Int -> a + b }"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "function sum(a, b) = a + b"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "lambda (a, b): a + b"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "def sum = (a, b) => a + b"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Синтаксис Kotlin",
+                "theme": "Код",
+                "useful_info": [
+                    "https://kotlinlang.org/docs/lambdas.html"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как добавить иконку меню в ActionBar?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Создать XML-меню и инфлейтить в onCreateOptionsMenu"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Добавить Button в макет"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать FloatingActionButton"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Написать код в onResume()"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Меню-ресурсы",
+                "theme": "Основы Android",
+                "useful_info": [
+                    "https://developer.android.com/develop/ui/views/components/menus"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как получить результат из Activity?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "startActivityForResult() + onActivityResult()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать LiveData"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Передать callback-функцию"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Множество подходов",
+                "theme": "Кейсы",
+                "useful_info": [
+                    "https://developer.android.com/training/basics/intents/result"
+                ]
+            }
+        ]
+    }
+]

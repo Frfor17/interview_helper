@@ -1,0 +1,2262 @@
+[
+    {
+        "option_id": 1,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Как в React предотвратить лишние рендеры дочерних компонентов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать React.memo()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Применять useCallback для колбэков"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Реализовать shouldComponentUpdate"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Оптимизация производительности React",
+                "theme": "React Optimization",
+                "useful_info": [
+                    "https://react.dev/reference/react/memo"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Чем отличается computed свойство от methods во Vue?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Methods кэшируют результат"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Computed свойства кэшируются"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Ничем"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Computed нельзя использовать в шаблонах"
+                    }
+                ],
+                "correct_answer_id": 2,
+                "hint": "Кэширование вычислений",
+                "theme": "Vue.js",
+                "useful_info": [
+                    "https://vuejs.org/guide/essentials/computed.html"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Для чего используется Hot Module Replacement в Webpack?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Для обновления кода без перезагрузки страницы"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Для сжатия изображений"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Для создания production-сборки"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Для удаления неиспользуемого кода"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Ускорение разработки",
+                "theme": "Build Tools",
+                "useful_info": [
+                    "https://webpack.js.org/concepts/hot-module-replacement/"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Какое ключевое слово в TypeScript позволяет создавать пользовательские типы?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "interface"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "type"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "class"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Два основных способа",
+                "theme": "TypeScript",
+                "useful_info": [
+                    "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Что такое margin collapse в CSS?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Схлопывание вертикальных отступов"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Исчезновение границ элемента"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Ошибка парсинга CSS"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Анимация margin"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Особенности блочной модели",
+                "theme": "CSS Advanced",
+                "useful_info": [
+                    "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Что такое делегирование событий в JavaScript?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Обработка событий на родительском элементе"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Передача событий между iframe"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отмена события по умолчанию"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Генерация синтетических событий"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Паттерн обработки событий",
+                "theme": "JavaScript Events",
+                "useful_info": [
+                    "https://javascript.info/event-delegation"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Чем отличается GraphQL query от mutation?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Query для чтения, mutation для изменений"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Mutation для кэширования данных"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Нет различий"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Query требует авторизации"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "CRUD операции",
+                "theme": "GraphQL",
+                "useful_info": [
+                    "https://graphql.org/learn/queries/"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как реализовать ленивую загрузку изображений?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать атрибут loading='lazy'"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Загружать через setTimeout"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отключить кэширование"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать CSS opacity: 0"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Нативный HTML-атрибут",
+                "theme": "Optimization",
+                "useful_info": [
+                    "https://web.dev/browser-level-image-lazy-loading/"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как мемоизировать вычисления в React-компоненте?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "useMemo()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "useEffect()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "useState()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "useReducer()"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Хук для кэширования",
+                "theme": "React Optimization",
+                "useful_info": [
+                    "https://react.dev/reference/react/useMemo"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как оптимизировать рендеринг больших списков в React?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать виртуализацию"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Рендерить все элементы сразу"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Удалить ключи из элементов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Отключить React.StrictMode"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Библиотеки типа react-window",
+                "theme": "Performance",
+                "useful_info": [
+                    "https://react.dev/reference/react-dom/components/common#rendering-large-lists-efficiently"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Какое преимущество Server-Side Rendering (SSR)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Улучшение SEO"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Сокращение времени разработки"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Упрощение кода"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Автоматическая оптимизация изображений"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Работа с поисковыми системами",
+                "theme": "Architecture",
+                "useful_info": [
+                    "https://nextjs.org/docs/pages/building-your-application/rendering/server-side-rendering"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Когда использовать Redux вместо Context API?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Для сложных глобальных состояний"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Всегда использовать Redux"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Только для маленьких приложений"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Когда не нужна отладка"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Масштабируемость",
+                "theme": "State Management",
+                "useful_info": [
+                    "https://redux.js.org/introduction/why-rtk-is-redux-today"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как организовать компоненты по методологии Atomic Design?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Atoms → Molecules → Organisms → Templates → Pages"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Small → Medium → Large"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Components → Containers → Services"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "UI → Logic → Data"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Иерархическая структура",
+                "theme": "Architecture",
+                "useful_info": [
+                    "https://atomicdesign.bradfrost.com/chapter-2/"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как избежать множественных API-запросов при частом изменении input?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать debounce"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Увеличить частоту запросов"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отключить кэширование"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Блокировать пользовательский ввод"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Троттлинг/дебаунс",
+                "theme": "Optimization",
+                "useful_info": [
+                    "https://lodash.com/docs/4.17.15#debounce"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как найти утечку памяти в JavaScript?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Chrome DevTools Memory tab"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Увеличить объем памяти в браузере"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать console.log()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Перезагружать страницу каждые 5 минут"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Инструменты разработчика",
+                "theme": "Debugging",
+                "useful_info": [
+                    "https://developer.chrome.com/docs/devtools/memory-problems/"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Что из перечисленного НЕ является преимуществом HTTP/2?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Мультиплексирование"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Сжатие заголовков"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Приоритизация потоков"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Синхронные запросы"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Особенности протокола",
+                "theme": "HTTP/2",
+                "useful_info": [
+                    "https://developer.mozilla.org/en-US/docs/Glossary/HTTP_2"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Какой протокол используется для двусторонней связи в реальном времени?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "WebSocket"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "HTTP"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "FTP"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "TCP"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Чат-приложения",
+                "theme": "WebSocket",
+                "useful_info": [
+                    "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Из каких частей состоит JWT?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Header.Payload.Signature"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Key.Data.Hash"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "User.Header.Body"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Token.Info.Secret"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Три компонента через точку",
+                "theme": "JWT",
+                "useful_info": [
+                    "https://jwt.io/introduction/"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Какой язык компилируется в WebAssembly?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "C++"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Python"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "JavaScript"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "HTML"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Низкоуровневые языки",
+                "theme": "WebAssembly",
+                "useful_info": [
+                    "https://webassembly.org/getting-started/developers-guide/"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Что НЕ является обязательным для PWA?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "SSL-сертификат"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Service Worker"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Манифест"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "WebSocket"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Основные требования PWA",
+                "theme": "PWA",
+                "useful_info": [
+                    "https://web.dev/progressive-web-apps/"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 2,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Какой метод жизненного цикла React используется для сайд-эффектов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "componentDidMount"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "render"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "useEffect"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "constructor"
+                    }
+                ],
+                "correct_answer_id": 3,
+                "hint": "Хуки vs классовые компоненты",
+                "theme": "React Lifecycle",
+                "useful_info": [
+                    "https://react.dev/reference/react/useEffect"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как создать кастомный хук в React?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Функция, имя которой начинается с 'use'"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Класс с методом render"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "HOC-компонент"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать render props"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Правила хуков",
+                "theme": "React Hooks",
+                "useful_info": [
+                    "https://react.dev/learn/reusing-logic-with-custom-hooks"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Что делает CSS-свойство `will-change`?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Оптимизирует анимации"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Изменяет z-index"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Указывает браузеру на будущие изменения"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Устаревшее свойство"
+                    }
+                ],
+                "correct_answer_id": 3,
+                "hint": "Предупреждение браузера",
+                "theme": "CSS Optimization",
+                "useful_info": [
+                    "https://developer.mozilla.org/en-US/docs/Web/CSS/will-change"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Какой тип TypeScript описывает массив строк?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Array<string>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "string[]"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Оба варианта верны"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "List<string>"
+                    }
+                ],
+                "correct_answer_id": 3,
+                "hint": "Синтаксис TypeScript",
+                "theme": "TypeScript",
+                "useful_info": [
+                    "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Что такое CSS-модули?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Локальная область видимости стилей"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Библиотека для анимаций"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Способ вставки inline-стилей"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Синтаксис для медиа-запросов"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Изоляция стилей",
+                "theme": "CSS Architecture",
+                "useful_info": [
+                    "https://github.com/css-modules/css-modules"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Какой метод массива возвращает первый элемент, удовлетворяющий условию?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "find()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "filter()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "some()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "map()"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "ES6+ методы",
+                "theme": "JavaScript Arrays",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/find"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как отменить всплытие события в JavaScript?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "event.stopPropagation()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "event.preventDefault()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "event.cancelBubble = true"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Старый и новый методы",
+                "theme": "JavaScript Events",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/API/Event/stopPropagation"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как уменьшить время загрузки первого ресурса (TTFB)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Кэширование на сервере"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать CDN"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Оптимизировать бэкенд"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Серверные метрики",
+                "theme": "Optimization",
+                "useful_info": [
+                    "https://web.dev/ttfb/"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как реализовать code splitting в React?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "React.lazy() + Suspense"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Импортировать все компоненты сразу"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать require()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Указать в package.json"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Динамический импорт",
+                "theme": "React Optimization",
+                "useful_info": [
+                    "https://react.dev/reference/react/lazy"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как оптимизировать перерисовки в React?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать useMemo и useCallback"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Уменьшить количество useState"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отключить StrictMode"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Мемоизация зависимостей",
+                "theme": "React Performance",
+                "useful_info": [
+                    "https://react.dev/reference/react/useMemo"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Что такое инверсия зависимостей (DI) в архитектуре?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Контроль зависимостей через внешние контейнеры"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Жесткая связь модулей"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отказ от сторонних библиотек"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Ручное управление памятью"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Принцип SOLID",
+                "theme": "Architecture",
+                "useful_info": [
+                    "https://en.wikipedia.org/wiki/Dependency_inversion_principle"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как избежать повторной загрузки шрифтов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать font-display: swap"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Предзагрузка через <link rel='preload'>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Встраивание base64 в CSS"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Оптимизация шрифтов",
+                "theme": "Performance",
+                "useful_info": [
+                    "https://web.dev/optimize-webfont-loading/"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как настроить путь алиасов в Webpack?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "resolve.alias в конфиге"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать symlink"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Модифицировать package.json"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Добавить NODE_PATH в .env"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Конфигурация модулей",
+                "theme": "Build Tools",
+                "useful_info": [
+                    "https://webpack.js.org/configuration/resolve/"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Какой паттерн предотвращает множественные API-запросы при рендере списка?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Дебаунс запросов"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Кэширование данных"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать AbortController"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Оптимизация запросов",
+                "theme": "API Optimization",
+                "useful_info": [
+                    "https://developer.mozilla.org/en-US/docs/Web/API/AbortController"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как реализовать dark mode без перезагрузки страницы?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "CSS Variables + localStorage"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Перезаписать CSS-файл"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать iframe"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Плагин jQuery"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Динамическое изменение тем",
+                "theme": "CSS Features",
+                "useful_info": [
+                    "https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Какой метод HTTP используется для создания ресурса?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "POST"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "GET"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "PUT"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "DELETE"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "CRUD операции",
+                "theme": "HTTP Methods",
+                "useful_info": [
+                    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Что такое CORS?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Механизм безопасности браузеров"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Язык программирования"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Фреймворк для CSS"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Алгоритм сортировки"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Cross-Origin запросы",
+                "theme": "Web Security",
+                "useful_info": [
+                    "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Какой инструмент используется для статической типизации JavaScript?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "TypeScript"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "ESLint"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Babel"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Webpack"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Надмножество JavaScript",
+                "theme": "Type Checking",
+                "useful_info": [
+                    "https://www.typescriptlang.org/"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Какой тег HTML5 используется для семантической навигации?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<nav>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "<div>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<menu>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "<header>"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Семантическая разметка",
+                "theme": "HTML5",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTML/Element/nav"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Какой атрибут указывает на недопустимый ввод в форме?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "aria-invalid"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "required"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "disabled"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "placeholder"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Доступность (a11y)",
+                "theme": "Web Accessibility",
+                "useful_info": [
+                    "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-invalid"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 3,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Какой паттерн используется для управления глобальным состоянием в React без сторонних библиотек?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Context API"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Singleton"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Observer"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Facade"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Встроенное решение React",
+                "theme": "State Management",
+                "useful_info": [
+                    "https://react.dev/reference/react/useContext"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Что делает метод `Object.freeze()`?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Запрещает изменение свойств объекта"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Удаляет все свойства объекта"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Клонирует объект"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Шифрует данные объекта"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Иммутабельность",
+                "theme": "JavaScript Advanced",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как оптимизировать CSS для устранения лагов анимации?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать `transform` и `opacity`"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Увеличить z-index"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Добавить `!important`"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать float"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Аппаратное ускорение",
+                "theme": "CSS Performance",
+                "useful_info": [
+                    "https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Что такое «мемоизация»?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Кэширование результатов функций"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Сжатие данных"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Оптимизация изображений"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Шифрование памяти"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Производительность функций",
+                "theme": "Optimization",
+                "useful_info": [
+                    "https://www.patterns.dev/posts/memoization-pattern/"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Какой HTTP-код означает «Не найдено»?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "404"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "500"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "200"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "302"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Ошибки клиента",
+                "theme": "HTTP Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTTP/Status"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Для чего используется `key` в React-списках?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Оптимизация ререндеров"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Стилизация элементов"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Указание типа данных"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Генерация уникальных ID"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Виртуальный DOM",
+                "theme": "React Core",
+                "useful_info": [
+                    "https://react.dev/learn/rendering-lists#why-does-react-need-keys"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Какой инструмент измеряет производительность JavaScript-кода?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Chrome DevTools Performance Tab"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "ESLint"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Prettier"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Webpack Bundle Analyzer"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Профилирование",
+                "theme": "Debugging",
+                "useful_info": [
+                    "https://developer.chrome.com/docs/devtools/evaluate-performance/"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как предотвратить XSS-атаки?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Санкционировать пользовательский ввод"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать HTTPS"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Увеличить куки"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Отключить CSS"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Безопасный рендеринг",
+                "theme": "Web Security",
+                "useful_info": [
+                    "https://owasp.org/www-community/attacks/xss/"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как сократить время загрузки CSS?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Удалить неиспользуемый код"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Встроить стили в HTML"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать !important"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Инструменты PurgeCSS",
+                "theme": "Optimization",
+                "useful_info": [
+                    "https://purgecss.com/"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Что делает `new Set([1, 2, 2, 3])`?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Создает {1, 2, 3}"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Возвращает массив [1, 2, 3]"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Генерирует ошибку"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Удаляет все элементы"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Уникальные значения",
+                "theme": "JavaScript Data Structures",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Set"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как организовать код по принципу DRY?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Выносить повторяющуюся логику в функции/компоненты"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Копировать код между файлами"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать глобальные переменные"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Увеличить комментарии"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Don't Repeat Yourself",
+                "theme": "Architecture",
+                "useful_info": [
+                    "https://en.wikipedia.org/wiki/Don%27t_repeat_yourself"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Какой метод преобразует JSON-строку в объект?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "JSON.parse()"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "JSON.stringify()"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "JSON.toObject()"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "JSON.convert()"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Парсинг данных",
+                "theme": "JavaScript Basics",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как асинхронно загрузить скрипт в браузере?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<script async>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "<script defer>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<script lazy>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Атрибуты загрузки",
+                "theme": "Browser API",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTML/Element/script"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Что такое «хост-объекты» в JavaScript?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Объекты, предоставляемые средой (например, DOM)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Серверные объекты"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Объекты с методами хоста"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Спецификация ES6"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Зависит от окружения",
+                "theme": "JavaScript Core",
+                "useful_info": [
+                    "https://javascript.info/javascript-specials"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как реализовать бесконечный скролл?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Следить за позицией скролла + подгрузка данных"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать CSS-анимацию"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Увеличить высоту страницы"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Отключить скроллбар"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Intersection Observer API",
+                "theme": "UI Patterns",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/API/Intersection_Observer_API"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Как избежать «prop drilling» в React?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Context API или Redux"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Передавать props через 10+ компонентов"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать localStorage"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Копировать state в каждый компонент"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Глобальное состояние",
+                "theme": "React Patterns",
+                "useful_info": [
+                    "https://react.dev/learn/passing-data-deeply-with-context"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Какой метод HTTP используется для частичного обновления ресурса?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "PATCH"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "PUT"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "POST"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "UPDATE"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "REST API",
+                "theme": "HTTP Methods",
+                "useful_info": [
+                    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как проверить, поддерживает ли браузер WebP?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Через `Modernizr` или `picture` тег"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать User-Agent"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Проверить версию CSS"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Запросить данные у сервера"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Фолбэк-форматы",
+                "theme": "Browser Compatibility",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTML/Element/picture"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Что делает CSS-функция `calc()`?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Вычисление значений на лету"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Конвертирует единицы измерения"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Генерирует случайные числа"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Анализирует производительность"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Динамические размеры",
+                "theme": "CSS Functions",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/calc"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Какой атрибут HTML5 делает поле ввода обязательным?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "required"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "validate"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "mandatory"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "necessary"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Валидация форм",
+                "theme": "HTML5",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTML/Attributes/required"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 4,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Как работает Virtual DOM в React?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Сравнивает изменения и обновляет реальный DOM точечно"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Полностью заменяет реальный DOM при каждом обновлении"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Работает только с серверным рендерингом"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использует WebAssembly для рендеринга"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Diffing алгоритм",
+                "theme": "React Core",
+                "useful_info": [
+                    "https://react.dev/learn/preserving-and-resetting-state"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Что делает CSS-свойство `contain: strict`?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Изолирует стили для оптимизации рендеринга"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Скрывает элемент"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Запрещает изменение размера"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Фиксирует элемент на экране"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Оптимизация производительности",
+                "theme": "CSS Advanced",
+                "useful_info": [
+                    "https://developer.mozilla.org/en-US/docs/Web/CSS/contain"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Какой метод используется для глубокого клонирования объекта в JavaScript?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "JSON.parse(JSON.stringify(obj))"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Object.assign({}, obj)"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать spread-оператор {...obj}"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны для поверхностного копирования"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Ограничения методов",
+                "theme": "JavaScript Advanced",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/assign"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Для чего используют Intersection Observer API?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Отслеживание видимости элементов"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Измерение производительности кода"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Анализ сетевых запросов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Генерация CSS-анимаций"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Ленивая загрузка",
+                "theme": "Browser API",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/API/Intersection_Observer_API"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Что такое «tree shaking» в Webpack?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Удаление неиспользуемого кода"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Оптимизация изображений"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Сжатие HTML-разметки"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Кэширование модулей"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Сборка проекта",
+                "theme": "Build Tools",
+                "useful_info": [
+                    "https://webpack.js.org/guides/tree-shaking/"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как реализовать инкапсуляцию в JavaScript?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Замыкания и WeakMap"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать ключевое слово private"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Добавить префикс _ к свойствам"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Соглашения и паттерны",
+                "theme": "OOP in JS",
+                "useful_info": [
+                    "https://javascript.info/private-protected-properties-methods"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как оптимизировать загрузку шрифтов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "preload + font-display: swap"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Встроить шрифты в CSS"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать только системные шрифты"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "FOIT/FOUT",
+                "theme": "Performance",
+                "useful_info": [
+                    "https://web.dev/optimize-webfont-loading/"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Что такое hydration в SSR?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "«Оживление» статического HTML на клиенте"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Сжатие данных"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Шифрование передаваемых данных"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Оптимизация изображений"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Next.js, Nuxt.js",
+                "theme": "SSR",
+                "useful_info": [
+                    "https://react.dev/reference/react-dom/hydrate"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как избежать рефлову (layout thrashing)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Группировать чтение/запись DOM"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать requestAnimationFrame"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отключить CSS transitions"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 2"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Батчинг операций",
+                "theme": "Optimization",
+                "useful_info": [
+                    "https://developer.chrome.com/docs/devtools/evaluate-performance/"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Какой паттерн используется в Redux?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Flux"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Singleton"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Decorator"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Observer"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Однонаправленный поток данных",
+                "theme": "State Management",
+                "useful_info": [
+                    "https://redux.js.org/understanding/thinking-in-redux/three-principles"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как уменьшить количество перерисовок в React?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать React.memo для компонентов"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Оптимизировать селекторы в Redux"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Разделять состояние на мелкие части"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Мемоизация и селекторы",
+                "theme": "React Optimization",
+                "useful_info": [
+                    "https://react.dev/reference/react/memo"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Какой тип данных представляет ключ в React-списках?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "string или number"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Только string"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Символы"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Любой тип"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Уникальность ключей",
+                "theme": "React Core",
+                "useful_info": [
+                    "https://react.dev/learn/rendering-lists"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как реализовать анимацию без лагов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать CSS transitions/transform"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Применить requestAnimationFrame"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отказаться от JavaScript-анимаций"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Композитные слои",
+                "theme": "CSS Performance",
+                "useful_info": [
+                    "https://web.dev/animations-guide/"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Что делает метод `Array.prototype.flatMap()`?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "map() + flat(1)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Фильтрация и сортировка"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Группировка элементов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Рекурсивное выравнивание"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "ES2019",
+                "theme": "JavaScript Arrays",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как реализовать multi-threading в браузере?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Web Workers"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Service Workers"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "WebAssembly"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "SharedArrayBuffer"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Отдельные потоки",
+                "theme": "Browser API",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/API/Web_Workers_API"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Какой HTTP-заголовок управляет кэшированием?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Cache-Control"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Expires"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "ETag"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Клиент и сервер",
+                "theme": "HTTP Headers",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTTP/Headers/Cache-Control"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как избежать «callback hell»?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Использовать async/await"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Применять Promise"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Разбивать функции на части"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Все варианты верны"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Управление асинхронностью",
+                "theme": "JavaScript Async",
+                "useful_info": [
+                    "https://javascript.info/async"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Какой инструмент анализирует размер бандла?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Webpack Bundle Analyzer"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Lighthouse"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "ESLint"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Prettier"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Визуализация зависимостей",
+                "theme": "Build Tools",
+                "useful_info": [
+                    "https://github.com/webpack-contrib/webpack-bundle-analyzer"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Какой тег HTML5 используется для прогресс-бара?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "<progress>"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "<meter>"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "<range>"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "<loading>"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Семантическая разметка",
+                "theme": "HTML5",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/HTML/Element/progress"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как проверить поддержку Grid в браузере?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "@supports (display: grid)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Проверить navigator.userAgent"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать Modernizr"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Варианты 1 и 3"
+                    }
+                ],
+                "correct_answer_id": 4,
+                "hint": "Feature Queries",
+                "theme": "CSS Grid",
+                "useful_info": [
+                    "https://developer.mozilla.org/ru/docs/Web/CSS/@supports"
+                ]
+            }
+        ]
+    }
+]

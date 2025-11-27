@@ -2,6 +2,7 @@
     height: 50px;
     width: 100%;
     background-color: rgb(99, 99, 252);
+    font-family: "MyFont", sans-serif;
 }
 
 .headerBlock-container{
@@ -39,6 +40,7 @@
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-family: "MyFont", sans-serif;
 }
 
 .profile-button:hover {

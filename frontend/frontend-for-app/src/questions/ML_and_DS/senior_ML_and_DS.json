@@ -1,0 +1,2262 @@
+[
+    {
+        "option_id": 5,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Как спроектировать систему для обработки потоковых данных с онлайн-обучением модели?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Lambda-архитектура + инкрементальное обновление весов"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Только batch-обработка раз в сутки"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Хранить все данные в SQL без обработки"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать статическую модель"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Комбинация потоковой и пакетной обработки",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://www.oreilly.com/library/view/big-data/9781498508163/"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как спроектировать A/B-тестирование для ML-моделей с учётом сетевого эффекта?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Bucket-тестирование + стратификация по кластерам"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Тестировать только на 1% трафика"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать межпользовательские взаимодействия"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать только offline-метрики"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Учет групповых взаимодействий",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://netflixtechblog.com/"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как организовать versioning для ML-моделей в production?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "ML Metadata Store + Feature Store"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Хранить модели в разных папках"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Обновлять модель без отслеживания"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать только git для моделей"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Совместное управление данными и моделями",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://mlflow.org/"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Как спроектировать систему для обработки мультимодальных данных (текст+изображения)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Отдельные пайплайны + late fusion"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Игнорировать один из модальностей"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Преобразовать все в текст"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать только ResNet"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Комбинирование на уровне представлений",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://arxiv.org/abs/2103.14897"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как обеспечить воспроизводимость экспериментов в распределенной команде?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Docker + ML-платформа с трекингом"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Локальные Jupyter-ноутбуки"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Ручное документирование"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать seed для RNG"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Контейнеризация и автоматизация",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://www.docker.com/"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как бороться с дрифтом данных в production?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Мониторинг статистик + переобучение по триггерам"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Игнорировать изменения данных"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Увеличить размер модели"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать только старые данные"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Адаптация к изменениям",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://arxiv.org/abs/2004.05761"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как интерпретировать black-box модель для регуляторов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "SHAP/LIME + feature importance"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Сказать 'модель слишком сложная'"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать только линейные модели"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Скрыть детали реализации"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Explainable AI методы",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://shap.readthedocs.io/"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как обработать категориальные фичи с 1000+ уникальных значений?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Target Encoding + регуляризация"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "One-Hot Encoding"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Удалить фичу"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Случайные веса"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Предотвращение переобучения",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://contrib.scikit-learn.org/category_encoders/"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как выбрать оптимальный порог классификации при несбалансированных данных?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "PR-AUC + анализ costs/benefits"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Фиксировать 0.5"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Максимизировать accuracy"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать дисбаланс"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Бизнес-метрики vs технические",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://machinelearningmastery.com/"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как ускорить предсказания нейросети на CPU?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Квантзация + оптимизация графа"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Увеличить число слоев"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать float64"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Отключить кеш процессора"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Аппаратные оптимизации",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://www.tensorflow.org/lite/performance/post_training_quantization"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как бороться с leakage в временных рядах?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Strict time-based split + запрет будущих фич"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Случайный split"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать все данные"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Нормализовать глобально"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Валидация на \"окне\"",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://otexts.com/fpp3/"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как улучшить качество модели при ограниченных данных?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Transfer Learning + аугментации"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Обучить большую модель с нуля"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Удалить часть фич"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Увеличить batch size"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Использование внешних знаний",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1912.11370"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как выбрать оптимальный размер ансамбля моделей?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Диверсификация + анализ learning curves"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Всегда 10 моделей"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Только одна модель"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Случайный выбор"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Компромисс сложности и качества",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://mlwave.com/kaggle-ensembling-guide/"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как обрабатывать текст на 50+ языках?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Multilingual BERT + lang detection"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Обучить отдельные модели"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать редкие языки"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Транслитерация в латиницу"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Кросс-лингвальные подходы",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1810.04805"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как уменьшить размер NLP-модели для мобильных устройств?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Knowledge Distillation + квантизация"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать GPT-3"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Увеличить число слоев"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Хранить модель на сервере"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Компрессия модели",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1503.02531"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Как объяснить выбор сложной модели бизнес-заказчику?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Связать точность с прибылью"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать технический жаргон"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Скрыть сложность"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Отказаться от объяснений"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Фокус на бизнес-ценность",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://hbr.org/2022/05/how-to-present-technical-information-to-nontechnical-people"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как разрешить конфликт между data scientists и инженерами?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Совместные цели + кросс-функциональные митинги"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Навязать решение руководством"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать конфликт"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Разделить команды"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Коллаборация вместо конкуренции",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.atlassian.com/agile/teams"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как провести code review для сложного ML-алгоритма?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Фокус на воспроизводимость + тесты"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Проверять только стиль кода"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Одобрить без проверки"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Требовать полный рефакторинг"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Баланс качества и скорости",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://google.github.io/eng-practices/review/"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как мотивировать команду на рутинные задачи (data cleaning)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Автоматизация + объяснение impact"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Угрожать дедлайнами"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Делегировать junior'ам"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать качество данных"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Подчеркивание важности",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.mindtools.com/"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как выбрать между скоростью разработки и качеством модели?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "MVP подход + итеративное улучшение"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Потратить 6 месяцев на идеальную модель"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать метрики"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Сократить тестирование"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Бизнес-приоритеты vs техническое совершенство",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://martinfowler.com/bliki/TechnicalDebt.html"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 6,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Как спроектировать систему для онлайн-обучения рекомендательной системы с миллиардами событий в день?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Flink/Kafka Streams + распределенные embeddings"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ежедневный retraining на исторических данных"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Хранить сырые логи в CSV"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать только матричную факторизацию"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Горизонтальное масштабирование потоковой обработки",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://www.flink-packages.org/"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как организовать Feature Store для 100+ моделей в production?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Единый версионируемый хранилище с access control"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Отдельные CSV-файлы для каждой модели"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Хранить фичи в RAM инстансов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Ручной экспорт фич из БД"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Централизованное управление фичами",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://feast.dev/"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как спроектировать canary-развертывание для ML-моделей?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Постепенный rollout с A/B тестированием"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Полная замена всех инстансов сразу"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Тестировать только на тестовых данных"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать мониторинг после деплоя"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Контролируемое внедрение изменений",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://martinfowler.com/bliki/CanaryRelease.html"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Как обеспечить GDPR-совместимость в системе предсказаний персональных данных?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Differential Privacy + право на удаление"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Хранить все данные вечно"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать открытые персональные данные"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Шифровать только логи"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Privacy-by-design подход",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://arxiv.org/abs/1909.01917"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как интегрировать ML-пайплайн в legacy-систему с 10+ микросервисами?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "API-шлюз + асинхронная шина событий"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Переписать все микросервисы заново"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Хранить предсказания в Excel"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать прямой доступ к БД"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Минимизация точек интеграции",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как уменьшить false positive в fraud detection системе?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Cost-sensitive learning + кастомные пороги"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Увеличить recall любой ценой"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать только правила экспертов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать precision"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Оптимизация бизнес-метрик",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://fraud-detection-handbook.github.io/fraud-detection-handbook/"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как обработать временные ряды с пропусками 90% данных?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Multiple Imputation + attention-механизмы"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Удалить все строки с пропусками"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Заполнить нулями"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать raw data как есть"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Учет природы пропусков",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://stefvanbuuren.name/fimd/"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как улучшить качество сегментации изображений с малым количеством labeled data?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Semi-supervised learning + weak supervision"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Обучить ResNet-152 с нуля"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Увеличить размер батча"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать только grayscale"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Комбинация размеченных и неразмеченных данных",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://snorkel.org/"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как оптимизировать hyperparameter search для нейросети с 100+ слоями?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Bayesian Optimization + early stopping"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Сеточный поиск по всем параметрам"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Ручная настройка"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать дефолтные параметры"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Эффективный поиск в высокоразмерном пространстве",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://automl.github.io/fanova/"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как бороться с adversarial атаками на CV-модель?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Adversarial training + input preprocessing"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Увеличить глубину сети"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать угрозы"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Отключить градиенты"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Защита через разнообразие данных",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://openai.com/research/robust-adversarial-inputs"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как выбрать метрику для multi-objective оптимизации?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Pareto front + weighted sum"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Максимизировать одну метрику"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Случайный выбор"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать конфликт целей"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Торговые отношения между целями",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://www.sciencedirect.com/science/article/pii/S2210650220304645"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как обработать графы социальных сетей с 1M+ узлов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "GraphSAGE + subgraph sampling"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Полный adjacency matrix"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать связи"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать только node features"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Индуктивное обучение на подграфах",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://snap.stanford.edu/graphsage/"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как ускорить инференс NLP-модели в 10 раз без потерь качества?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Knowledge Distillation + Quantization"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Увеличить hidden size"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать CPU вместо GPU"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Удалить attention layers"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Компрессия модели",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1910.01108"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как детектировать аномалии в многомерных временных рядах?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Autoencoders + attention механизмы"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Правило 3-х сигм для каждой фичи"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Удалить временную зависимость"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать только mean-shift"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Учет временных и кросс-фичевых зависимостей",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1901.03407"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как интерпретировать feature interactions в Gradient Boosting?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "SHAP Interaction Values + partial dependence"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Анализировать только feature importance"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать взаимодействия"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Визуализировать raw деревья"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Неаддитивные эффекты",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://christophm.github.io/interpretable-ml-book/"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Как убедить менеджмент инвестировать в ML-инфраструктуру?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "ROI-расчет + кейсы из индустрии"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Технический жаргон"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Угроза увольнения"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Скрыть затраты"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Язык бизнес-ценности",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://hbr.org/2017/06/how-to-talk-to-your-ceo-about-ai"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как распределить задачи в команде с junior/senior DS?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Парное программирование + постепенное усложнение"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Дать всем одинаково сложные задачи"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Junior - только документация"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Senior - только митинги"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Баланс обучения и продуктивности",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.manning.com/books/team-topologies"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как реагировать на этические вопросы в ML (например, bias в моделях)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Fairness metrics + diverse dataset audits"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Игнорировать как \"не техническую проблему\""
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Удалить protected features"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Сократить тестовую выборку"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Proactive ответственный подход",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.fatml.org/"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как презентовать результаты A/B теста с p=0.06?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Эффект размера + доверительные интервалы"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Заявить о статистической значимости"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Скрыть p-value"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Преувеличить результаты"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Контекстная интерпретация",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4877414/"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как поддерживать work-life balance в crunch time?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Четкие границы + ротация срочных задач"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Работать 16 часов ежедневно"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать burnout признаки"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Отказаться от отпусков"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Предотвращение выгорания",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.apa.org/topics/healthy-workplaces"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 7,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Как спроектировать систему для обработки видео в реальном времени с детекцией аномалий?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Apache Kafka + OpenCV на edge-устройствах"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ежедневный batch-процессинг на сервере"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Ручной анализ случайных кадров"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Хранить видео без обработки"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Распределенная потоковая обработка",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://spark.apache.org/streaming/"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как организовать версионирование данных для воспроизводимости экспериментов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "DVC + объектное хранилище с snapshot'ами"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ручное копирование CSV-файлов"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Хранить только последнюю версию"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать версионирование"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Data Version Control инструменты",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://dvc.org/"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как спроектировать распределенное обучение модели на 100+ GPU?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Horovod + параметрический сервер"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Обучать на одной машине"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать только CPU"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Ручная синхронизация градиентов"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Фреймворки для распределенного обучения",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://eng.uber.com/horovod/"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Как обеспечить отказоустойчивость ML-пайплайна?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Airflow с retry политикой + мониторинг"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Запускать пайплайн вручную"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать ошибки выполнения"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Хранить логи в /dev/null"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Оркестрация workflows",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://airflow.apache.org/"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как интегрировать AutoML в production-систему?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "MLflow + автоматическое A/B тестирование"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ручной деплой каждой модели"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать только Jupyter ноутбуки"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Отключить мониторинг"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "End-to-end платформы",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://mlflow.org/"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как бороться с overfitting при 1M+ фичах?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "L1-регуляризация + feature selection"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Увеличить сложность модели"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать все фичи как есть"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Удалить 90% данных"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Сокращение размерности",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://scikit-learn.org/stable/modules/feature_selection.html"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как улучшить качество предсказаний для редких классов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Focal Loss + oversampling"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Случайное удаление примеров"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать дисбаланс"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать accuracy"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Метрики для несбалансированных данных",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1708.02002"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как обработать текст с 50+ языками без словарей?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Byte Pair Encoding + multilingual embeddings"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Удалить редкие языки"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Ручная токенизация"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать только stop-words"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Субсловные методы токенизации",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1508.07909"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как визуализировать 100-мерные embeddings?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "t-SNE/UMAP + кластеризация"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Построить 100 scatter plots"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать визуализацию"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать только PCA до 2D"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Нелинейное снижение размерности",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://umap-learn.readthedocs.io/"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как оптимизировать гиперпараметры для временных рядов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Time-series split + optuna"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Случайный split данных"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать дефолтные параметры"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Тестировать на будущих данных"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Валидация с учетом времени",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://optuna.org/"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как детектировать data leakage в feature engineering?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Анализ информации о будущем"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Игнорировать проблему"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Нормализовать все данные глобально"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать все данные для обучения"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Хронологический split",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://mlcourse.ai/articles/topic5-data-leakage/"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как улучшить качество модели на imbalanced data?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "SMOTE + ансамблирование"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Удалить миноритарный класс"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать accuracy"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Увеличить batch size"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Синтетические данные",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1106.1813"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как обработать отсутствующие данные в 80% столбцов?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "MICE + анализ паттернов пропусков"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Заполнить нулями"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Удалить все строки с пропусками"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать пропуски"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Множественное импутирование",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://stefvanbuuren.name/fimd/"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как объяснить модель для регуляторных требований?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "LIME + global surrogate модели"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Скрыть детали модели"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать black-box подход"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Удалить важные фичи"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Интерпретируемость vs точность",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://christophm.github.io/interpretable-ml-book/"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как уменьшить размер NLP-модели для мобильных устройств?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Pruning + квантизация"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Увеличить число параметров"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать float64"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Хранить модель на сервере"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Оптимизация вычислений",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1910.04732"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Как объяснить переобучение модели нетехническому заказчику?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Аналогия с зубрежкой без понимания"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать термин 'high variance'"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Скрыть проблему"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Обвинить в плохих данных"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Бытовые аналогии",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://hbr.org/2022/05/how-to-present-technical-information-to-nontechnical-people"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как разрешить спор между DS и инженерами по поводу tech stack?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Proof-of-Concept сравнение + компромисс"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Навязать решение менеджментом"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать мнение команды"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Выбрать случайный инструмент"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Data-driven решение",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.atlassian.com/agile/teams"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как мотивировать команду на документирование кода?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Интеграция в CI/CD + примеры"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Штрафы за отсутствие комментариев"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать документацию"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Нанять отдельного техписателя"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Автоматизация и культура качества",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://swimm.io/"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как реагировать на ошибку в продовской модели?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Rollback + postmortem анализ"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Скрыть инцидент"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Обвинить тестировщиков"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать метрики"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Прозрачность и улучшение процессов",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://postmortemtemplate.com/"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как планировать исследования с неопределенным результатом?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Гибкие этапы + регулярные демо"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Жесткий график на год вперед"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Отказаться от исследований"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Полагаться на удачу"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Agile подход к R&D",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.scrum.org/"
+                ]
+            }
+        ]
+    },
+    {
+        "option_id": 8,
+        "questions": [
+            {
+                "question_id": 1,
+                "question": "Как спроектировать систему для обучения модели на распределенных данных без централизации?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Federated Learning с агрегацией градиентов"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Пересылать все данные на центральный сервер"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать только локальные модели без синхронизации"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Хранить данные в единой БД"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Децентрализованное обучение с сохранением приватности",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://ai.googleblog.com/2017/04/federated-learning-collaborative.html"
+                ]
+            },
+            {
+                "question_id": 2,
+                "question": "Как организовать мониторинг дрифта данных в production?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "KS-тест + мониторинг распределений фичей"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Сравнивать accuracy моделей раз в год"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Игнорировать изменения в данных"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Визуальный осмотр случайных выборок"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Статистические метрики для распределений",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://arxiv.org/abs/2004.05761"
+                ]
+            },
+            {
+                "question_id": 3,
+                "question": "Как спроектировать CI/CD для ML-моделей?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "MLOps: Тесты данных/модели + канареечный деплой"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ручное обновление моделей по расписанию"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Деплой без валидации"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать только git для контроля версий"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Автоматизация жизненного цикла моделей",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://ml-ops.org/"
+                ]
+            },
+            {
+                "question_id": 4,
+                "question": "Как обеспечить воспроизводимость экспериментов с внешними данными?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Docker + Data Version Control (DVC)"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Ручные заметки в Excel"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Хранить данные в временных папках"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать seed для RNG"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Иммutable снимки данных и кода",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://dvc.org/doc/use-cases/versioning-data-and-model-files"
+                ]
+            },
+            {
+                "question_id": 5,
+                "question": "Как реализовать механизм отката (rollback) для моделей?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "A/B тестирование + shadow mode"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Удалить предыдущие версии модели"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Переобучать модель с нуля при ошибках"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать только одну модель"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Безопасное развертывание изменений",
+                "theme": "Системный дизайн",
+                "useful_info": [
+                    "https://martinfowler.com/bliki/CanaryRelease.html"
+                ]
+            },
+            {
+                "question_id": 6,
+                "question": "Как обработать текст с эмодзи и сленгом?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Специальные токены + контекстные эмбеддинги"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Удалить все нестандартные символы"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать только частотный словарь"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Заменить эмодзи на случайные слова"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Учет неформальной семантики",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1908.06024"
+                ]
+            },
+            {
+                "question_id": 7,
+                "question": "Как выбрать оптимальный batch size для GPU?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Авто-тюнинг через память GPU + скорость обучения"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Всегда использовать 32"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Максимально возможный размер"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Случайный выбор"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Баланс между памятью и скоростью",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://wandb.ai/articles/batch-size"
+                ]
+            },
+            {
+                "question_id": 8,
+                "question": "Как бороться с шумом в разметке данных?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Co-teaching + confident learning"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Удалить 50% данных"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Увеличить сложность модели"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать проблему"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Алгоритмы устойчивые к noise",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1911.00068"
+                ]
+            },
+            {
+                "question_id": 9,
+                "question": "Как визуализировать важность фич для ансамбля моделей?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "SHAP + permutation importance"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Только feature_importances_"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Случайные цветовые карты"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать интерпретацию"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Глобальная и локальная интерпретируемость",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://shap.readthedocs.io/"
+                ]
+            },
+            {
+                "question_id": 10,
+                "question": "Как ускорить GridSearch для 100+ гиперпараметров?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "HalvingGridSearch + параллелизация"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Перебор всех комбинаций"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Случайный выбор 10%"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Использовать дефолтные параметры"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Адаптивные методы поиска",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://scikit-learn.org/stable/modules/grid_search.html"
+                ]
+            },
+            {
+                "question_id": 11,
+                "question": "Как обработать мультимодальные данные (текст + таблицы)?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Cross-modal transformers + совместное обучение"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Удалить один из модальностей"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Конкатенация эмбеддингов"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Обучить отдельные модели"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Глубокое взаимодействие модальностей",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://arxiv.org/abs/2103.14897"
+                ]
+            },
+            {
+                "question_id": 12,
+                "question": "Как детектировать аномалии в графах знаний?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Graph Neural Networks + attention механизмы"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Удалить редкие узлы"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Случайный поиск аномалий"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать структуру графа"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Учет топологии графа",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://arxiv.org/abs/2006.10690"
+                ]
+            },
+            {
+                "question_id": 13,
+                "question": "Как улучшить Robustness NLP-модели к опечаткам?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Data augmentation с ошибками + adversarial training"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Использовать только чистые данные"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Увеличить размер слоев"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Лемматизация всех слов"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Имитация реальных условий",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1901.06796"
+                ]
+            },
+            {
+                "question_id": 14,
+                "question": "Как уменьшить влияние outliers в регрессии?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Huber Loss + IQR фильтрация"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Квадратичная ошибка без модификаций"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Удалить 10% крайних значений"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Логарифмирование целевой переменной"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Робастные функции потерь",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://en.wikipedia.org/wiki/Huber_loss"
+                ]
+            },
+            {
+                "question_id": 15,
+                "question": "Как оптимизировать инференс для модели на 1 млрд параметров?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Model parallelism + квантзация"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Запуск на CPU"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Использовать float32 без оптимизаций"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Удалить слои модели"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Распределенные вычисления",
+                "theme": "Продвинутые кейсы",
+                "useful_info": [
+                    "https://arxiv.org/abs/1909.08053"
+                ]
+            },
+            {
+                "question_id": 16,
+                "question": "Как объяснить провал проекта нетехническому руководству?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Root-cause анализ + план улучшений"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Обвинить внешние факторы"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Скрыть детали провала"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Преуменьшить масштаб проблемы"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Фокус на решениях, а не ошибках",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://hbr.org/2017/01/strategies-for-learning-from-failure"
+                ]
+            },
+            {
+                "question_id": 17,
+                "question": "Как распределить роли в команде DS и DE?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Четкие SLA + кросс-функциональные митинги"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Полная изоляция команд"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "DE выполняет всю работу"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "DS пишет прод код"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Совместная ответственность за пайплайн",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.oreilly.com/radar/data-science-and-the-data-engineering-team/"
+                ]
+            },
+            {
+                "question_id": 18,
+                "question": "Как убедить команду перейти на новый фреймворк?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Бенчмарки + пилотный проект"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Приказом сверху"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Критиковать текущий стек"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Сменить команду"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Данные вместо мнений",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.forbes.com/sites/forbestechcouncil/2020/01/03/"
+                ]
+            },
+            {
+                "question_id": 19,
+                "question": "Как давать обратную связь junior DS?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Конкретные примеры + ресурсы для улучшения"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Общие фразы вроде 'старайся больше'"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Публичная критика"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Игнорировать ошибки"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Конструктивный и поддерживающий подход",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://www.radicalcandor.com/"
+                ]
+            },
+            {
+                "question_id": 20,
+                "question": "Как приоритезировать задачи при ограниченных ресурсах?",
+                "answers": [
+                    {
+                        "answer_id": 1,
+                        "answer_text": "Матрица Эйзенхауэра + согласование с OKR"
+                    },
+                    {
+                        "answer_id": 2,
+                        "answer_text": "Делать всё параллельно"
+                    },
+                    {
+                        "answer_id": 3,
+                        "answer_text": "Фокус только на срочном"
+                    },
+                    {
+                        "answer_id": 4,
+                        "answer_text": "Случайный выбор задач"
+                    }
+                ],
+                "correct_answer_id": 1,
+                "hint": "Стратегическое выравнивание целей",
+                "theme": "Soft Skills",
+                "useful_info": [
+                    "https://asana.com/resources/eisenhower-matrix"
+                ]
+            }
+        ]
+    }
+]
